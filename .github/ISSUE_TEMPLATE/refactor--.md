@@ -1,5 +1,5 @@
 ---
-name: 리펙토링 템플릿
+name: 'Refactor: '
 about: 리펙토링 이슈 작성을 돕기위한 템플릿 입니다
 title: ''
 labels: ''
