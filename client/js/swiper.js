@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
   speed: 1000,
   pagination: {
     el: '.swiper-pagination', // 버튼을 담을 태그 설정
-    clickable: true, // 버튼 클릭 여부
+    type: "fraction"
   },
   navigation: { // 버튼
     nextEl: ".swiper-button-next",
