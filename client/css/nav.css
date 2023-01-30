@@ -49,11 +49,137 @@ body {
   height: 125px;
   background-color: antiquewhite;
 }
+
+
+
+
+
+
+
+
 /* 네비게이션 */
-.navigation{
+.navCenter{
   height: 72px;
   background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
+  font-size: 16px;
+  width: 1050px;
 }
+
+.category{
+  width: 100px;
+  height: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  background-color:transparent;
+  border: 0;
+  
+}
+
+.hamburger{
+  padding-right: 12px;
+}
+
+
+.categoryIcon{
+  width: 24px;
+  height: 24px;
+  margin: 4px 8px 4px 12px;
+}
+
+.category:hover{
+  color: var(--primary);
+}
+
+.categoryList{
+  overflow: scroll;
+  position: absolute;
+  top: 197px;
+  background-color: #fff;
+  width: 247px;
+  height: 600px;
+  /* display: none; */
+} 
+
+.categoryList:hover{
+  display: block;
+}
+  
+
+.categoryMenu:hover{
+  color: var(--primary);
+}
+
+.categoryMenu{
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+
+}
+
+.menuList{
+  width: 150px;
+  font-weight: 600;
+  color: var(--content);
+  text-align: center;
+}
+
+.menuList:hover{
+  color: var(--primary);
+  text-decoration: underline;
+  
+}
+
+.delivery{
+  border: 1px solid var(--gray300);
+  border-radius: 40px;
+  padding: 4px 8px;
+  font-size: 12.003px;
+  font-weight: 400;
+  line-height: 160%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.deliveryColor{
+  color: var(--primary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 메인 */
 .main{
   height: 1421px;
