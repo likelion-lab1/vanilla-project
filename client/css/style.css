@@ -113,8 +113,9 @@ button {
 .footerCall {
   display: block;
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 40px;
+  font-weight: 700;
 }
 
 .footerDay {
@@ -182,13 +183,13 @@ button {
   font-size: 14px;
 }
 
+.liList {
+  margin-left: 14px;
+}
 .innerList1 {
   margin-left: 0px;
 }
 
-.liList {
-  margin-left: 14px;
-}
 
 .innerList5 {
   font-weight: 500;
