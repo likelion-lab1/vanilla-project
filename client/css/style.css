@@ -1,9 +1,10 @@
 @import url(./reset.css);
 @import url(./normalize.css);
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
 /* 숨김 컨텐츠 */
-.a11y-hidden, legend {
+.a11y-hidden,
+legend {
   background-color: red;
   position: absolute;
   width: 1px;
@@ -24,47 +25,131 @@ a {
 }
 
 /* 기본 스타일 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* 공통 바디 스타일 */
 body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* 공통 */
-.center{
+.center {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 1050px;
-  margin:0 auto;
- /* margin: 0 435px; */
+  margin: 0 auto;
+  /* margin: 0 435px; */
 }
 /* 헤더 */
-.header{
+.header {
   height: 125px;
   background-color: antiquewhite;
 }
 /* 네비게이션 */
-.navigation{
+.navigation {
   height: 72px;
   background-color: aqua;
 }
 /* 메인 */
-.main{
+.main {
   height: 1421px;
   background-color: aquamarine;
 }
 
+/* 메인 상품 */
+
+.today-recommend-product {
+  width: 1421px;
+}
+.today-recommend-product > h2 {
+  font-weight: 700;
+  font-size: 28.43px;
+  line-height: 140%;
+}
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-left: 0;
+  list-style-type: none;
+}
+.product-list-item::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.product-list-item {
+  /* margin-right: 16px; */
+}
+
+.product-thumbnail > img {
+  width: 249px;
+}
+
+.cart-button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: 0;
+}
+
+.product-info {
+  content: block;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-info > h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.selling > em {
+  font-weight: 600;
+  font-size: 21.328px;
+  line-height: 150%;
+}
+
+.discount-rate {
+  color: #fa622f;
+}
+
+.price > del {
+  font-weight: 400;
+  font-size: 12.003px;
+  line-height: 160%;
+  color: #898989;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list-button-prev,
+.product-list-button-next {
+  width: 50px;
+  height: 50px;
+}
+
 /* 푸터 */
-.footer{
-  height:737px;
+.footer {
+  height: 737px;
   background-color: beige;
 }
 /* 배너 */
-.banner{
+.banner {
   background-color: bisque;
   height: 370px;
 }
