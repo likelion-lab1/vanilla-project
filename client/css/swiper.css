@@ -3,8 +3,8 @@
 
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 1920px;
+  height: 370px;
 }
 
 .swiper .swiper-slide {
@@ -20,10 +20,14 @@
 }
 
 .swiper-button-prev{ 
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -10;
   background: url(./img/Arrow.png) 50% 50% no-repeat;
   height: 52px;
   width: 52px;
-  margin: 146px 1518px 172px 350px;
+  margin: auto 0px auto 590px;
 }
 
 .swiper-button-next{
@@ -40,8 +44,9 @@
 }
 
 img {
-  background-size: 1920px 370px;
-  object-fit: cover;
+  /* background-size: 1920px 370px; */
+  /* object-fit: cover; */
+  background-position: center;
 }
 
 
