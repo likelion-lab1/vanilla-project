@@ -31,12 +31,5 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
     bulletClass: "bullet", // bullet 이라고 클래스를 바꾼것
     bulletActiveClass: "is-active", // active 클래스를 바꾼것
-    // 불렛 커스텀 , 안에 이미지를 넣는것 !
-    renderBullet: function (index, className) {
-      return /* html */ `
-       <span class="${className}">
-       <img src="./assets/part01/${data[index].src}" alt="${data[index].alt}" />
-     </span>
-    },
   },
 });
