@@ -1,0 +1,35 @@
+/* 공통 */
+.center{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1050px;
+  margin:0 auto;
+ /* margin: 0 435px; */
+}
+/* 헤더 */
+.header{
+  height: 125px;
+  background-color: antiquewhite;
+}
+/* 네비게이션 */
+.navigation{
+  height: 72px;
+  background-color: aqua;
+}
+/* 메인 */
+.main{
+  height: 1421px;
+  background-color: aquamarine;
+}
+
+/* 푸터 */
+.footer{
+  height:737px;
+  background-color: beige;
+}
+/* 배너 */
+.banner{
+  background-color: bisque;
+  height: 370px;
+}
