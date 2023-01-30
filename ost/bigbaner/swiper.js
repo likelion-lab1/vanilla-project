@@ -21,15 +21,12 @@ const data = [
   },
 ];
 
-const swiper = new Swiper(".swiper", {
+
+const swiper = new Swiper('.swiper', {
   autoplay: true,
-  loop: true,
-  parallax:true,
-  speed: 2000,
+  loop: true, // 무한루프로 걸어서 맨 앞으로 후루룩 돌아오는 걸 방지
+  speed: 1000,
   pagination: {
-    el: ".pagination",
-    clickable: true,
-    bulletClass: "bullet", // bullet 이라고 클래스를 바꾼것
-    bulletActiveClass: "is-active", // active 클래스를 바꾼것
+    el: '.pagination',
   },
-});
+})
