@@ -73,7 +73,20 @@ body {
   margin : 0 auto;
 }
 
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
 
+.footerLeft {
+  background-color: tomato;
+}
+
+.footerRight {
+  background-color: powderblue;
+}
 
 
 
