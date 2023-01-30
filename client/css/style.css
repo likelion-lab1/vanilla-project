@@ -62,9 +62,21 @@ body {
 
 /* 푸터 */
 .footer{
-  height:737px;
+  padding-top: 30px;
+  border-top: 1px solid rgb(247,247,247);
+  /* height:737px; */
   background-color: beige;
 }
+
+.footerMain {
+  width : 1050px;
+  margin : 0 auto;
+}
+
+
+
+
+
 /* 배너 */
 .banner{
   background-color: bisque;
