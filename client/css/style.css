@@ -1,3 +1,7 @@
+@import url(./reset.css);
+@import url(./normalize.css);
+
+
 /* 공통 */
 .center{
   display: flex;
