@@ -28,6 +28,7 @@ a {
 /* 기본 스타일 */
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* 공통 바디 스타일 */
@@ -55,6 +56,12 @@ button {
   margin: 0;
 }
 
+/* img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: top;
+} */
+
 /* 헤더 */
 .header{
   height: 125px;
@@ -72,7 +79,7 @@ button {
 }
 
 /* 푸터 */
-.footer{
+.footer {
   padding-top: 30px;
   border-top: 1px solid rgb(247,247,247);
   height:auto;
@@ -172,6 +179,7 @@ button {
   display: flex;
   width: 100%;
   padding-bottom: 29px;
+  font-size: 14px;
 }
 
 .innerList1 {
@@ -221,6 +229,12 @@ button {
   border-top: 1px solid rgb(238,238,238);
 }
 
+.footerBottom button {
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+}
+
 .footerBottomButton {
   display: flex;
   text-align: left;
@@ -231,11 +245,16 @@ button {
   margin-right: 10px;
 }
 
+.tossButton {
+  width: 102px;
+  margin-right: 10px;
+}
+
 .footerButtonText {
   font-size: 10px;
   line-height: 14.5px;
   color: rgb(153,153,153);
-  /* word-break: break-word; */
+  word-break: break-word;
 }
 
 .copyright {
