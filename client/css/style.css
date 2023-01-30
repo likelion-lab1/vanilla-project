@@ -75,7 +75,7 @@ button {
 .footer{
   padding-top: 30px;
   border-top: 1px solid rgb(247,247,247);
-  /* height:737px; */
+  height:auto;
   background-color: beige;
   text-align: left;
 }
@@ -220,9 +220,44 @@ button {
   margin-left: 10px;
 }
 
+.footerBottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0px 33px;
+  border-top: 1px solid rgb(238,238,238);
+}
 
+.footerBottomButton {
+  display: flex;
+  text-align: left;
+}
 
+.footerBottomButton img {
+  width: 34px;
+  margin-right: 10px;
+}
 
+.footerButtonText {
+  font-size: 10px;
+  line-height: 14.5px;
+  color: rgb(153,153,153);
+  /* word-break: break-word; */
+}
+
+.copyright {
+  padding: 20px 0px 30px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  background-color: rgb(247,247,247);
+  color: rgb(153, 153, 153);
+}
+
+.copyrightEm {
+  display: block;
+  padding-top: 7px;
+  font-style: normal;
+}
 
 
 /* 배너 */
