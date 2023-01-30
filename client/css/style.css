@@ -76,7 +76,6 @@ button {
   padding-top: 30px;
   border-top: 1px solid rgb(247,247,247);
   height:auto;
-  background-color: beige;
   text-align: left;
 }
 
@@ -92,12 +91,7 @@ button {
   padding-bottom: 30px;
 }
 
-.footerLeft {
-  background-color: tomato;
-}
-
 .footerRight {
-  background-color: powderblue;
   display: flex;
   flex-direction: column;
 }
