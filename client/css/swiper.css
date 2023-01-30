@@ -4,7 +4,7 @@
 
 .container {
   width: 1920px;
-  height: 370px;
+  
 }
 
 .swiper .swiper-slide {
@@ -20,11 +20,12 @@
 }
 
 .swiper-button-prev{ 
+  background: url(./img/Arrow.png) 50% 50% no-repeat;
+  transform: rotate(180deg);
   position: absolute;
   top: 0px;
   bottom: 0px;
-  left: -10;
-  background: url(./img/Arrow.png) 50% 50% no-repeat;
+  left: 50%;
   height: 52px;
   width: 52px;
   margin: auto 0px auto 590px;
@@ -32,9 +33,13 @@
 
 .swiper-button-next{
   background: url(./img/Arrow.png)  no-repeat;
-  transform: rotate(180deg);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 50%;
   height: 52px;
   width: 52px;
+  margin: auto 590px auto 0px
   
 }
 
@@ -44,9 +49,8 @@
 }
 
 img {
-  /* background-size: 1920px 370px; */
-  /* object-fit: cover; */
-  background-position: center;
+  background-size: 1920px 370px;
+  
 }
 
 
