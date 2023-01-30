@@ -192,10 +192,33 @@ button {
   font-weight: 500;
 }
 
+.footerConfirm {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(153,153,153);
+  margin-bottom: 40px;
+}
 
+.confirm {
+  padding-left: 4px;
+}
 
+.aConfirm {
+  margin-left: 3px;
+  color: rgb(95,0,128);
+}
 
+.footerImageLink {
+  display: flex;
+}
 
+.aImageLink img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
 
 
 
