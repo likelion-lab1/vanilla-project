@@ -44,6 +44,17 @@ body {
   margin:0 auto;
  /* margin: 0 435px; */
 }
+
+button {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  text-transform: none;
+  background-color: transparent;
+  font: inherit;
+  margin: 0;
+}
+
 /* 헤더 */
 .header{
   height: 125px;
@@ -87,6 +98,8 @@ body {
 
 .footerRight {
   background-color: powderblue;
+  display: flex;
+  flex-direction: column;
 }
 
 .footerHeader {
@@ -108,6 +121,72 @@ body {
   font-weight: normal;
   font-size: 16px;
 }
+
+.footerAsk {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 버튼 공통 스타일 */
+.askButton {
+  display: block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid rgb(236,236,236);
+  border-radius: 3px;
+  line-height: 39px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+/* 디바이더 공통 스타일 */
+.divider{
+  margin: 0px 6px;
+}
+
+/* 설명 공통 스타일 */
+.describe {
+  margin-top: 2px;
+  color: rgb(153,153,153);
+  letter-spacing: -0.5px;
+  line-height: 16.8px;
+}
+
+.footerKakao {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerBig {
+  display: flex;
+  flex-direction: row;
+}
+
+.notMember {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(153,153,153);
+}
+
+.footerRight {
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* 배너 */
