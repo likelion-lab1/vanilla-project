@@ -4,7 +4,6 @@
 
 .container {
   width: 1920px;
-  
 }
 
 .swiper .swiper-slide {
@@ -14,10 +13,6 @@
   overflow: hidden;
 }
 
-.pagination {
-  display: flex;
-  justify-content: space-between;
-}
 
 .swiper-button-prev{ 
   background: url(./img/Arrow.png) 50% 50% no-repeat;
@@ -48,9 +43,5 @@
   display: none;
 }
 
-img {
-  background-size: 1920px 370px;
-  
-}
 
 
