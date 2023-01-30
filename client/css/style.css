@@ -1,6 +1,21 @@
 @import url(./reset.css);
 @import url(./normalize.css);
 
+/* 숨김 컨텐츠 */
+.a11y-hidden, legend {
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* 기본 스타일 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 /* 공통 */
 .center{
