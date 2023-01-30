@@ -1,3 +1,6 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
 
 .container {
   width: 100%;
@@ -38,6 +41,7 @@
 
 img {
   background-size: 1920px 370px;
+  object-fit: cover;
 }
 
 
