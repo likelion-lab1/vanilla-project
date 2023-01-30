@@ -174,10 +174,23 @@ button {
   color: rgb(153,153,153);
 }
 
-.footerRight {
-
+.footerList {
+  display: flex;
+  width: 100%;
+  padding-bottom: 29px;
 }
 
+.innerList1 {
+  margin-left: 0px;
+}
+
+.liList {
+  margin-left: 14px;
+}
+
+.innerList5 {
+  font-weight: 500;
+}
 
 
 
