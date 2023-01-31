@@ -55,12 +55,11 @@ body {
 /* 네비게이션 */
 .navCenter{
   height: 72px;
+  width: 1050px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin:0 auto;
-  font-size: 16px;
-  width: 1050px;
 }
 
 .category{
