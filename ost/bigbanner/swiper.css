@@ -2,7 +2,7 @@
 @import url(/client/css/reset.css);
 
 
-.container {
+.bigBannerContainer {
   width: 100%;
   height: 370px;
 }
