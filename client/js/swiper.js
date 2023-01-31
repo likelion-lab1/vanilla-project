@@ -1,12 +1,8 @@
 const swiper = new Swiper('.swiper', {
-  autoplay: {     //자동슬라이드 (false-비활성화)
-    delay: 2000, // 시간 설정
-    disableOnInteraction: false, // false-스와이프 후 자동 재생
-  },
   slidesPerView: 4, // 슬라이드 갯수 나누기
   spaceBetween: 30, // 슬라이드 사이 간격
   loop: true, // 무한루프로 걸어서 맨 앞으로 후루룩 돌아오는 걸 방지
-  speed: 1000,
+  speed: 500,
   pagination: {
     el: '.swiper-pagination', // 버튼을 담을 태그 설정
     type: "fraction" // 기본 슬라이더를 fraction으로 변경

@@ -67,23 +67,39 @@ body {
 /* 메인 상품 */
 .container {
   width: 100%;
+  height: 320px;
 }
 
-.swiper {
-  position: relative;
+.swiper{
+  position: relative
 }
 
 .swiper .swiper-slide {
   display: flex;
   width: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .swiper .swiper-slide img{
   width: 240px;
 }
 
+.swiper-button-next{ 
+  background: url(/client/img/Arrow.png) 50% 50% no-repeat;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  height: 52px;
+  width: 52px;
+  /* margin: auto 0px auto 590px; */ 
+}
 
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
+}
 
 
 
