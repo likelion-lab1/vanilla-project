@@ -71,7 +71,7 @@ body {
 
 .category{
   width: 100px;
-  height: 24px;
+  height: 75px;
   font-weight: 600;
   line-height: 150%;
   margin: 0px;
@@ -98,19 +98,21 @@ body {
 }
 
 .categoryList{
-  overflow: scroll;
   position: absolute;
   top: 197px;
-  background-color: #fff;
+  background-color: var(--white);
   width: 247px;
-  height: 600px;
-  /* display: none; */
+  display: none;
 } 
 
 .categoryList:hover{
   display: block;
+
 }
   
+.categoryList li:hover{
+  background-color: var(--gray100);
+  }
 
 .categoryMenu:hover{
   color: var(--primary);
