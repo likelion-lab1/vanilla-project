@@ -52,15 +52,9 @@ body {
 
 
 
-
-
-
-
-
 /* 네비게이션 */
 .navCenter{
   height: 72px;
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,6 +116,8 @@ body {
   display: flex;
   align-items: center;
   height: 40px;
+  font-weight: 600;
+  line-height: 150%;
 }
 
 
@@ -160,25 +156,6 @@ body {
 .deliveryColor{
   color: var(--primary);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
