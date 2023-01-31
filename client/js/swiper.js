@@ -1,4 +1,4 @@
-const SWIPER = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   autoplay: {     //자동슬라이드 (false-비활성화)
     delay: 2000, // 시간 설정
     disableOnInteraction: false, // false-스와이프 후 자동 재생
