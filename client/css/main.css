@@ -208,6 +208,7 @@ body {
 
 .recentProductItem img {
   width: 40px;
+  margin-bottom: 4px;
   display: block;
 }
 
@@ -215,16 +216,42 @@ body {
   box-sizing: border-box;
 }
 
-.recent-product-button-top .recent-product-button-bottom {
+.recent-product-swiper-container {
+  position: relative;
+  padding: 0;
+}
+
+.recent-product-button-top,
+.recent-product-button-bottom {
+  /* display: block; */
   width: 18px;
   height: 18px;
   position: absolute;
+  border: none;
+  /* background-color: black; */
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .recent-product-button-top {
-  top: 50px;
+  top: 8px;
+  background-image: url(../assets/icons/Icon/Direction=Up.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
 }
+.recent-product-button-bottom {
+  bottom: 8px;
+  background-image: url(../assets/icons/Icon/Direction=Down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+}
+
 .recent-product-swiper-container h2 {
+  /* display: block; */
+
+  margin-top: 28px;
   font-weight: 600;
   font-size: 12.003px;
   line-height: 150%;
@@ -238,6 +265,7 @@ body {
   width: 40px;
   height: 129px;
   background: yellowgreen;
+  overflow: hidden;
 }
 
 /* 푸터 */
