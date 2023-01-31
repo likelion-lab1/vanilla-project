@@ -1,6 +1,7 @@
 @import url(./reset.css);
 @import url(./normalize.css);
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url(./color.css);
 
 /* 숨김 컨텐츠 */
 .a11y-hidden, legend {
@@ -33,6 +34,7 @@ a {
 /* 기본 스타일 */
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* 공통 바디 스타일 */
@@ -58,6 +60,18 @@ body {
   margin:0 auto;
  /* margin: 0 435px; */
 }
+
+/* 공통버튼 */
+button {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  text-transform: none;
+  background-color: transparent;
+  font: inherit;
+  margin: 0;
+}
+
 /* 탑 광고*/
 
 input:focus{
@@ -221,9 +235,199 @@ padding-left: 20px;
 }
 
 /* 푸터 */
-.footer{
-  height:737px;
-  background-color: beige;
+.footer {
+  padding-top: 30px;
+  border-top: 1px solid rgb(247,247,247);
+  height:auto;
+  text-align: left;
+}
+
+.footerMain {
+  width : 1050px;
+  margin : 0 auto;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerHeader {
+  padding-bottom: 17px;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.footerCall {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.footerDay {
+  margin-left: 8px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.footerAsk {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 버튼 공통 스타일 */
+.askButton {
+  display: block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid rgb(236,236,236);
+  border-radius: 3px;
+  line-height: 39px;
+  text-align: center;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+/* 디바이더 공통 스타일 */
+.divider{
+  margin: 0px 6px;
+}
+
+/* 설명 공통 스타일 */
+.describe {
+  margin-top: 2px;
+  color: rgb(153,153,153);
+  letter-spacing: -0.5px;
+  line-height: 16.8px;
+}
+
+.footerKakao {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerBig {
+  display: flex;
+  flex-direction: row;
+}
+
+.notMember {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(153,153,153);
+}
+
+.footerList {
+  display: flex;
+  width: 100%;
+  padding-bottom: 29px;
+  font-size: 14px;
+}
+
+.liList {
+  margin-left: 14px;
+}
+.innerList1 {
+  margin-left: 0px;
+}
+
+
+.innerList5 {
+  font-weight: 500;
+}
+
+.footerConfirm {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(153,153,153);
+  margin-bottom: 40px;
+}
+
+.confirm {
+  padding-left: 4px;
+}
+
+.aConfirm {
+  margin-left: 3px;
+  color: rgb(95,0,128);
+}
+
+.footerImageLink {
+  display: flex;
+}
+
+.aImageLink img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.footerBottom{
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0px 33px;
+  border-top: 1px solid rgb(238,238,238);
+}
+
+.footerBottom button {
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+}
+
+.footerBottomButton {
+  display: flex;
+  text-align: left;
+}
+
+.footerBottomButton img {
+  width: 34px;
+  margin-right: 10px;
+}
+
+.tossButton img{
+  width: 102px;
+  margin-right: 10px;
+}
+
+.footerButtonText {
+  font-size: 10px;
+  line-height: 14.5px;
+  color: rgb(153,153,153);
+  word-break: break-word;
+}
+
+.copyright {
+  display: block;
+  padding: 20px 0px 30px;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  background-color: rgb(247,247,247);
+  color: rgb(153, 153, 153);
+}
+
+.copyrightEm {
+  display: block;
+  padding-top: 7px;
+  font-style: normal;
 }
 /* 배너 */
 .banner{
