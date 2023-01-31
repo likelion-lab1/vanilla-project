@@ -97,18 +97,14 @@ body {
   font-weight: 500; 
 }
 
-.recommendWrapper {
-  position: relative;
-}
-
 .swiper {
-  /* position: relative; */
   overflow: hidden;
   width: 1050px;
 }
 
 .swiper-wrapper {
   /* position: relative; */
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -136,7 +132,7 @@ body {
 }
 
 .productInfo {
-  /* position: relative; */
+  position: relative;
   padding: 14px 10px 0px 0px;
 }
 
@@ -158,8 +154,8 @@ body {
   outline: 0px;
   width: 60px;
   height: 60px;
-  top: calc(50% - 50px);
-  left: 0px;
+  top: calc(50% - -98px);
+  left: 433px;
   transform: translate(-50%, -50%);
 }
 
@@ -171,8 +167,8 @@ body {
   outline: 0px;
   width: 60px;
   height: 60px;
-  top: calc(50% - 50px);
-  right: 0px;
+  top: calc(50% - -98px);
+  right: 433px;
   transform: translate(50%, -50%) rotate(180deg);
   /* margin: auto 480px auto 0px; */
 }
