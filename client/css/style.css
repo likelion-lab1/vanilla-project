@@ -259,6 +259,7 @@ button {
 }
 
 .copyright {
+  display: block;
   padding: 20px 0px 30px;
   font-size: 10px;
   line-height: 15px;
