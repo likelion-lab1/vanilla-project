@@ -58,6 +58,7 @@ body {
   height: 72px;
   background-color: aqua;
 }
+
 /* 메인 */
 .main {
   height: 1421px;
@@ -76,6 +77,9 @@ body {
   line-height: 140%;
   margin-top: 84px;
 }
+.swipeWrap {
+  position: relative;
+}
 .productList {
   display: flex;
   flex-direction: row;
@@ -83,6 +87,7 @@ body {
   padding-left: 0;
   list-style-type: none;
   margin-top: 40px;
+  background: cornflowerblue;
 }
 .productListItem {
   margin-left: 16px;
@@ -103,10 +108,15 @@ body {
   position: absolute;
   width: 45px;
   height: 45px;
-  background-color: transparent;
+  /* background-color: transparent; */
   border: 0;
   right: 15px;
   bottom: 17px;
+  display: block;
+}
+.cartButton > img {
+  width: 45px;
+  height: 45px;
 }
 
 .productInfo {
@@ -156,13 +166,68 @@ body {
 .productListButtonNext {
   width: 50px;
   height: 50px;
-  background-color: transparent;
+  background-color: transpaxrent;
   border: 0;
   position: absolute;
 }
 
 .productListButtonPrev {
-  top: 20px;
+  top: 213px;
+}
+.productListButtonNext {
+  top: 213px;
+}
+
+/* 최근 본 상품  */
+
+.recentProduct {
+  background: palevioletred;
+}
+.recent-product-swiper-container {
+  background: white;
+  width: 74px;
+  height: 223px;
+
+  border: 1px solid #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  position: relative;
+}
+
+.recentProductItem > img {
+  width: 40px;
+}
+
+.recent-product-swiper-wrap {
+  box-sizing: border-box;
+}
+
+.recent-product-button-top .recent-product-button-bottom {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+
+.recent-product-button-top {
+  top: 50px;
+}
+.recent-product-swiper-container > h2 {
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+}
+.recent-product-list-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 40px;
+  height: 129px;
+  background: yellowgreen;
 }
 
 /* 푸터 */
