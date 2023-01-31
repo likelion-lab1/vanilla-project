@@ -69,16 +69,17 @@ body {
 
 .todayRecommendProduct {
   width: 1421px;
-  position: relative;
 }
-.todayRecommendProduct > h2 {
+.todayRecommendProduct h2 {
   font-weight: 700;
   font-size: 28.43px;
   line-height: 140%;
   margin-top: 84px;
 }
-.swipeWrap {
+.today-product-list-wrap {
+  display: block;
   position: relative;
+  background: green;
 }
 .productList {
   display: flex;
@@ -100,16 +101,18 @@ body {
 .productThumbnail {
   position: relative;
 }
-.productThumbnail > img {
+.productThumbnail img {
   width: 249px;
+  display: block;
 }
 
 .cartButton {
   position: absolute;
   width: 45px;
   height: 45px;
-  /* background-color: transparent; */
-  border: 0;
+  background-color: transparent;
+  background-image: url(../assets/icons/Icon/Cart.svg);
+  border: none;
   right: 15px;
   bottom: 17px;
   display: block;
@@ -117,6 +120,7 @@ body {
 .cartButton > img {
   width: 45px;
   height: 45px;
+  display: block;
 }
 
 .productInfo {
@@ -143,7 +147,7 @@ body {
   margin-left: 8px;
 }
 
-.price > del {
+.price del {
   font-weight: 400;
   font-size: 12.003px;
   line-height: 160%;
@@ -166,16 +170,21 @@ body {
 .productListButtonNext {
   width: 50px;
   height: 50px;
-  background-color: transpaxrent;
-  border: 0;
+  border: none;
   position: absolute;
+  cursor: pointer;
+  display: block;
 }
 
 .productListButtonPrev {
-  top: 213px;
+  /* top: 213px; */
+  background-image: url(../assets/icons/product-list-button-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50px 50px;
 }
 .productListButtonNext {
-  top: 213px;
+  /* top: 213px; */
 }
 
 /* 최근 본 상품  */
@@ -197,8 +206,9 @@ body {
   position: relative;
 }
 
-.recentProductItem > img {
+.recentProductItem img {
   width: 40px;
+  display: block;
 }
 
 .recent-product-swiper-wrap {
@@ -214,13 +224,13 @@ body {
 .recent-product-button-top {
   top: 50px;
 }
-.recent-product-swiper-container > h2 {
+.recent-product-swiper-container h2 {
   font-weight: 600;
   font-size: 12.003px;
   line-height: 150%;
 }
 .recent-product-list-wrap {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
