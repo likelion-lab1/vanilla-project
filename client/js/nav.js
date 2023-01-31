@@ -1,6 +1,6 @@
 
 let categoryBtn = document.querySelector('.category');
-let categoryList = document.querySelector('.categoryList');
+let categoryList = document.querySelector('.category-list');
 
 categoryBtn.addEventListener('mouseover', function() {
   categoryList.style.display = 'block';
