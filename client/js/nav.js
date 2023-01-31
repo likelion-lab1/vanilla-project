@@ -1,4 +1,4 @@
-
+// hover effect
 let categoryBtn = document.querySelector('.category');
 let categoryList = document.querySelector('.category-list');
 

@@ -2,6 +2,7 @@
 @import url(./normalize.css);
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url(./color.css);
+@import url(./fontello.css);
 
 
 /* 숨김 컨텐츠 */
@@ -53,7 +54,7 @@ body {
 
 
 /* 네비게이션 */
-.nav-center{
+.nav-center,.nav-small{
   height: 72px;
   width: 1050px;
   display: flex;
@@ -88,6 +89,10 @@ body {
 
 .category:hover{
   color: var(--primary);
+}
+
+.hamburger:hover{
+  filter: invert(11%) sepia(100%) saturate(5229%) hue-rotate(285deg) brightness(59%) contrast(112%);
 }
 
 .category-list{
@@ -156,7 +161,50 @@ body {
   color: var(--primary);
 }
 
+.nav-small{
+  display: none;
+  position: sticky;
+  top: 0;
+  background: var(--white);
+}
 
+.nav-small-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+
+
+.nav-small-search input{
+  font-weight: 400;
+  font-size: 12.003px;
+  line-height: 160%;
+  color: var(--gray400);
+  width: 170px;
+  height: 36px;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  padding-left: 10px;
+
+
+ }
+ 
+ .searchButton{
+   color: var(--content);
+   cursor: pointer;
+   background-color: inherit;
+   top:24px;
+   border: 0;
+   right:170px;
+   position:absolute;
+   
+ }
+
+ .rightNavigation{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
 /* 메인 */
 .main{
