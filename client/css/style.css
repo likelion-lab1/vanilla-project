@@ -41,6 +41,15 @@ body {
 }
 
 /* 공통 */
+.new::after{
+  content:'N';
+  position: relative;
+  margin-left:3px;
+  top:-20px;
+  color:#FA622F;
+  font-size: 7px;
+  font-weight: 900;
+}
 .center{
   display: flex;
   justify-content: center;
