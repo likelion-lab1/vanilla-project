@@ -1,8 +1,8 @@
 
-let categoryBtn = document.querySelectorAll('.category');
-let categoryList = document.querySelectorAll('.categoryList');
+let categoryBtn = document.querySelector('.category');
+let categoryList = document.querySelector('.categoryList');
 
-categoryBtn.addEventListener('mouseon', function() {
+categoryBtn.addEventListener('mouseover', function() {
   categoryList.style.display = 'block';
 });
 
@@ -10,4 +10,11 @@ categoryBtn.addEventListener('mouseout', function() {
   categoryList.style.display = 'none';
 });
 
+categoryList.addEventListener('mouseover', function() {
+  categoryList.style.display = 'block';
+});
+
+categoryList.addEventListener('mouseout', function() {
+  categoryList.style.display = 'none';
+});
 
