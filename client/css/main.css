@@ -29,6 +29,7 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* 공통 바디 스타일 */
@@ -61,126 +62,106 @@ body {
 /* 메인 */
 .main {
   height: 1421px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 /* 메인 상품 */
 
-
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1050px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
 
 .todayRecommendProduct {
-  width: 1421px;
-  position: relative;
-}
-.todayRecommendProduct > h2 {
-  font-weight: 700;
-  font-size: 28.43px;
-  line-height: 140%;
-  margin-top: 84px;
-}
-.productList {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding-left: 0;
-  list-style-type: none;
-  margin-top: 40px;
-}
-.productListItem {
-  margin-left: 16px;
-}
-.productListItem::after {
-  content: "";
-  display: block;
-  clear: left;
-}
-.productThumbnail {
-  position: relative;
-}
-.productThumbnail > img {
-  width: 249px;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 27px;
+  align-items: center;
 }
 
-.cartButton {
+.aRecommend {
+  position: relative;
+  display: flex;
+  padding: 8px 0px 8px 8px;
+}
+
+.recommendText {
+  color: rgb(51,51,51);
+  font-size: 28px;
+  line-height: 1,15;
+  letter-spacing: -0.26px;
+  font-weight: 500; 
+}
+
+.swiper {
+  overflow: hidden;
+  width: 1050px;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  width: 249px;
+  margin-right: 18px;
+}
+
+.imgWrapper {
+  height: 320px;
+}
+
+.imgWrapper img{
   position: absolute;
-  width: 45px;
-  height: 45px;
-  background-color: transparent;
-  border: 0;
-  right: 15px;
-  bottom: 17px;
+  inset: -100%;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  background-color: rgb(238, 238, 238);
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .productInfo {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.productInfo > h3 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  margin-top: 16px;
-}
-
-.selling {
-  font-weight: 600;
-  font-size: 21.328px;
-  line-height: 150%;
-}
-
-.discountRate {
-  color: #fa622f;
-  margin-left: 8px;
-}
-
-.price > del {
-  font-weight: 400;
-  font-size: 12.003px;
-  line-height: 160%;
-  color: #898989;
-  margin-top: 8px;
-}
-
-.price {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 8px;
-}
-/* .productContainer {
   position: relative;
-  display: flex;
-  background-color: red;
-} */
-.productListButtonPrev,
-.productListButtonNext {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: 0;
-  position: absolute;
+  padding: 14px 10px 0px 0px;
 }
 
-.productListButtonPrev {
-  top: 20px;
-}
-
-.mainContainer .swiper-slide{
-  display: flex;
+.productName {
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+  margin-bottom: 8px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: normal;
 }
 
-
-
+.swiper-button-next{ 
+  background: url(/client/img/Arrow.png) 50% 50% no-repeat;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  height: 52px;
+  width: 52px;
+  /* margin: auto 0px auto 590px; */ 
+}
 /* 푸터 */
 .footer {
-  height: 737px;
+  /* height: 737px; */
   background-color: beige;
 }
 /* 배너 */
 .banner {
   background-color: bisque;
-  height: 370px;
+  /* height: 370px; */
 }
