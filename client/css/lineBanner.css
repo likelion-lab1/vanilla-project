@@ -1,0 +1,11 @@
+.lineBanner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 219px;
+}
+
+.lineBanner1{
+  width: 1050px;
+  max-height: 100%;
+}
