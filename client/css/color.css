@@ -30,4 +30,34 @@
 
   --info : #F03F40;
 
+  --primary-color: var(--primary);
+  --secondary-color: var(--secondary);
+  --white-color: var(--white);
+  --black-color: var(--black);
+  --content-color: var(--content);
+
+  --gray100-color: var(--gray100);
+  --gray200-color: var(--gray200);
+  --gray300-color: var(--gray300);
+  --gray400-color: var(--gray400);
+  --gray500-color: var(--gray500);
+  --gray600-color: var(--gray600);
+  --gray700-color: var(--gray700);
+  --gray800-color: var(--gray800);
+  --gray900-color: var(--gray900);
+
+  --accent-color: var(--accent);
+
+  --blue100-color: var(--blue100);
+  --blue200-color: var(--blue200);
+  --blue300-color: var(--blue300);
+  --blue400-color: var(--blue400);
+  --blue500-color: var(--blue500);
+  --blue600-color: var(--blue600);
+  --blue700-color: var(--blue700);
+  --blue800-color: var(--blue800);
+  --blue900-color: var(--blue900);
+
+  --info-color: var(--info);
+
 }
