@@ -112,6 +112,10 @@ body {
 
 /* 메인 PRODUCT LIST */
 
+.recomend-product-list {
+  display: flexbox;
+}
+
 .heading {
   font-style: normal;
   font-weight: 700;
@@ -178,9 +182,15 @@ body {
   justify-content: flex-start;
   margin-top: 8px;
 }
+
+.line-banner {
+  height: 219px;
+  background-color: palevioletred;
+}
+
 /* 푸터 */
 .footer {
-  /* height: 737px; */
+  height: 737px;
   background-color: beige;
 }
 /* 배너 */
