@@ -116,7 +116,7 @@ body {
   transform: rotate(180deg);
 }
 
-
+/* 기본 swiper-button 사라지게 하는법 */
 .swiper-button-next::after,
 .swiper-button-prev::after{
   display: none;
