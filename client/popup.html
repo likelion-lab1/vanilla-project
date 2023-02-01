@@ -1,8 +1,79 @@
-<div class="popup">
-  <figure>
-    <a href="링크" class="popupLink" ><img src="./images/popup.svg" alt="처음 만나는 뷰티 플랫폼 Beauty Kurly 바로가기" class="popupImg"/></a>
-  </figure>
-  <div class="popupButton">
-    <button class="popupButtonLeft" type="button" onclick="">오늘 하루 안 보기</button>
-    <button class="popupButtonRight" type="button" onclick="" >닫기</button>
-  </div>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/popup.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/popup.js" type="module"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header class="header center">
+    헤더
+  </header>
+  <!-- 네비게이션 -->
+  <nav class="navigation center">
+    네비게이션
+  </nav> 
+  <!-- 배너 -->
+  <section class="banner">
+    배너
+  
+    <!-- <script>
+        window.addEventListener('load', function() {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var x = new XMLHttpRequest();
+                    x.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    x.open('GET', includePath, true);
+                    x.send();
+                }
+            });
+        });
+    </script>
+
+    <div data-include-path="lineBanner.html"></div> -->
+
+
+    <!-- 라인배너 마크업 -->
+    <div type="LINE_BANNER" class="lineBanner">
+      <div class="lineBanner1" title="10월의 퍼플위크 바로가기"><a href="주소명"><img src="./images/lineBanner1.svg" alt="더 풍성해진 10월의 퍼플위크 바로가기"></a>
+      </div>
+    </div>
+
+
+    <!-- 팝업배너 마크업 -->
+    <div class="popup">
+        <figure>
+          <a href="#" class="popupLink" ><img src="./images/popup.svg" alt="처음 만나는 뷰티 플랫폼 Beauty Kurly 바로가기" class="popupImg"/></a>
+        </figure>
+        <div class="popupButton">
+          <button onclick="todaycloseWin('todayCookie_${status.count}');" class="popupButtonLeft" type="button">오늘 하루 안 보기</button>
+          <button onclick="closeWin('popup_${status.count}');" class="popupButtonRight" type="button">닫기</button>
+    </div>
+
+  </section>
+  <!-- 메인 -->
+  <main class="main center">
+    메인
+  </main> 
+  <!-- 푸터 -->
+  <footer class="footer center">
+    푸터
+  </footer>
+
+</body>
+</html>
