@@ -1,7 +1,6 @@
 @import url(./reset.css);
 @import url(./normalize.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-@import url(./color.css);
 
 /* 숨김 컨텐츠 */
 .a11y-hidden,
@@ -30,6 +29,7 @@ a {
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 /* 공통 바디 스타일 */
@@ -65,13 +65,54 @@ body {
   background-color: aquamarine;
 }
 
+/* 메인 상품 */
+.container {
+  width: 100%;
+  height: 320px;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper .swiper-slide {
+  display: flex;
+  width: auto;
+  /* overflow: hidden; */
+}
+
+.swiper .swiper-slide img {
+  width: 240px;
+}
+
+.swiper-button-next {
+  background: url(/client/img/Arrow.png) 50% 50% no-repeat;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  height: 52px;
+  width: 52px;
+  /* margin: auto 0px auto 590px; */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
 /* 푸터 */
 .footer {
-  height: 737px;
+  /* height: 737px; */
   background-color: beige;
 }
 /* 배너 */
 .banner {
   background-color: bisque;
-  height: 370px;
+  /* height: 370px; */
 }

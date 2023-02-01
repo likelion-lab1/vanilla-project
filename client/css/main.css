@@ -62,51 +62,62 @@ body {
 /* 메인 */
 .main {
   height: 1421px;
+  position: relative;
   /* background-color: aquamarine; */
 }
 
-/* 메인 상품 */
+/* 메인 PRODUCT SWIPER */
 .container {
   width: 100%;
   height: 320px;
 }
 
-.swiper{
-  position: relative
+.swiper {
+  /* position: relative; */
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  position: relative;
+  display: flex;
+  z-index: 1;
 }
 
 .swiper .swiper-slide {
-  display: flex;
-  width: auto;
-  /* overflow: hidden; */
+  /* position: relative; */
+  flex-shrink: 0;
+  overflow: hidden;
 }
 
-.swiper .swiper-slide img{
-  width: 240px;
+.swiper .swiper-slide img {
+  width: 249px;
 }
 
-.swiper-button-next{ 
-  background: url(/client/img/Arrow.png) 50% 50% no-repeat;
-  transform: rotate(180deg);
+.swiper-button-next {
+  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
+    no-repeat;
+  /* transform: rotate(180deg); */
   position: absolute;
-  top: 50%;
-  right: -20px;
+  border: none;
+  top: 18%;
+  right: -25px;
   height: 52px;
   width: 52px;
-  /* margin: auto 0px auto 590px; */ 
 }
 
-
 .swiper-button-next::after,
-.swiper-button-prev::after{
+.swiper-button-prev::after {
   display: none;
 }
 
+/* 메인 PRODUCT LIST */
 
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-  display: none;
+.heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.43px;
+  line-height: 140%;
+  color: #333333;
 }
 
 /* 푸터 */
