@@ -103,7 +103,7 @@ body {
   width: 52px;
   position: absolute;
   top: 18%;
-  right:-25px;
+  right:-17px;
 }
 
 .swiper-button-prev{
@@ -112,7 +112,7 @@ body {
   height: 52px;
   position: absolute;
   top: 18%;
-  left: -25px;
+  left: -42px;
   transform: rotate(180deg);
 }
 
