@@ -1,13 +1,3 @@
-// 헤더 닫기버튼
-let button = document.querySelector('.AdClose');
-function handler(){
-  let AD = document.querySelector('.TopAd');
-  AD.style.display = 'none';
-}
-button.addEventListener('click',handler);
-
-
-// 호버 클릭 이벤ㅇ트
 let categoryBtn = document.querySelector('.category');
 let categoryList = document.querySelector('.category-list');
 
