@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="css/swiper.css" />
+  <link rel="stylesheet" href="/ost/bigbanner/ostswiper.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/swiper.js" type="module"></script>
-  <title>Document</title>
+  <script src="/ost/bigbanner/ostswiper.js" type="module"></script>
+  <title>마켓칼리</title>
 </head>
 <body>
 <!-- 헤더 -->
@@ -62,8 +62,30 @@
   </nav>
   <!-- 배너 -->
   <section class="banner">
+  <div class="bigBannerContainer">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img data-swiper-parallax-x="200" data-swiper-parallax-scale="1.2" src="/client/css/img/banner01.png" />
+        </div>
+        <div class="swiper-slide">
+          <img data-swiper-parallax-x="200" data-swiper-parallax-scale="1.2" src="/client/css/img/banner02.png" />
+        </div>
+        <div class="swiper-slide">
+          <img data-swiper-parallax-x="200" data-swiper-parallax-scale="1.2" src="/client/css/img/banner03.png" />
+        </div>
+        <div class="swiper-slide">
+          <img data-swiper-parallax-x="200" data-swiper-parallax-scale="1.2" src="/client/css/img/banner05.png" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class=" swiper-button-prev"></div>
+      <div class=" swiper-button-next"></div>
+    </div>
+  </div>
 
-  </section>
+
+</section>
   <!-- 메인 -->
   <main class="main center">
   </main>

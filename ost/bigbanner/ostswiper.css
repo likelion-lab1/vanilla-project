@@ -18,7 +18,7 @@
 
 
 .swiper-button-next{ 
-  background: url(./img/Arrow.png) 50% 50% no-repeat;
+  background: url(/client/css/img/Arrow.png) 50% 50% no-repeat;
   transform: rotate(180deg);
   position: absolute;
   top: 0px;
@@ -30,7 +30,7 @@
 }
 
 .swiper-button-prev{
-  background: url(./img/Arrow.png) no-repeat;
+  background: url(/client/css/img/Arrow.png) no-repeat;
   position: absolute;
   top: 0px;
   bottom: 0px;
