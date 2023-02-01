@@ -62,6 +62,7 @@ body {
 /* 메인 */
 .main {
   height: 1421px;
+  position: relative;
   /* background-color: aquamarine; */
 }
 
@@ -72,36 +73,39 @@ body {
 }
 
 .swiper{
-  position: relative
+  /* position: relative; */
+  padding: 50px 0;
+}
+
+.swiper-wrapper{
+  position: relative;
+  display: flex;
+  z-index: 1;
+  
 }
 
 .swiper .swiper-slide {
-  display: flex;
-  width: auto;
-  /* overflow: hidden; */
+  /* position: relative; */
+  flex-shrink: 0;
+  overflow: hidden;
+
+  
 }
 
 .swiper .swiper-slide img{
-  width: 240px;
+  width: 249px;
 }
+
 
 .swiper-button-next{ 
   background: url(/client/img/Arrow.png) 50% 50% no-repeat;
   transform: rotate(180deg);
   position: absolute;
-  top: 50%;
-  right: -20px;
+  top: 18%;
+  right:-25px;
   height: 52px;
   width: 52px;
-  /* margin: auto 0px auto 590px; */ 
 }
-
-
-.swiper-button-next::after,
-.swiper-button-prev::after{
-  display: none;
-}
-
 
 
 .swiper-button-next::after,
@@ -119,3 +123,4 @@ body {
   background-color: bisque;
   /* height: 370px; */
 }
+
