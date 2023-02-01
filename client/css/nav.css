@@ -63,7 +63,7 @@ body {
   margin:0 auto;
 }
 
-.category{
+.category, .small-category{
   width: 100px;
   height: 75px;
   font-weight: 600;
@@ -87,7 +87,8 @@ body {
   margin: 4px 8px 4px 12px;
 }
 
-.category:hover{
+.category:hover,
+.small-category:hover{
   color: var(--primary);
 }
 
@@ -103,10 +104,18 @@ body {
   display: none;
 } 
 
-.category-list:hover{
+.small-category-list {
+  position: absolute;
+  top: 70px;
+  background-color: var(--white);
+  width: 247px;
+  display: none;
+}
+
+/* .category-list:hover{
   display: block;
 
-}
+} */
   
 .category-list li:hover{
   background-color: var(--gray100);
