@@ -19,10 +19,14 @@ categoryList.addEventListener('mouseout', function() {
 })
 
 
+
 // let mainNav = document.querySelectorAll('.nav-center');
 // let smallNav = document.querySelectorAll('.nav-small');
 
 // document.body.scrollTop >= 0 ? smallNav.style.display = "flex" : mainNav.style.display = "flex";
+
+
+
 
 // 스크롤
 const navigation = document.querySelector('.nav-center');

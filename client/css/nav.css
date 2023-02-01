@@ -54,7 +54,7 @@ body {
 
 
 /* 네비게이션 */
-.nav-center,.nav-small{
+.nav-center{
   height: 72px;
   width: 1050px;
   display: flex;
@@ -162,10 +162,24 @@ body {
 }
 
 .nav-small{
+  height: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   display: none;
   position: sticky;
   top: 0;
   background: var(--white);
+}
+
+.nav-small-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
+
+
 }
 
 .nav-small-menu{
@@ -195,7 +209,7 @@ body {
    background-color: inherit;
    top:24px;
    border: 0;
-   right:170px;
+   right:350px;
    position:absolute;
    
  }
