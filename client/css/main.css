@@ -69,7 +69,7 @@ body {
 /* 메인 PRODUCT SWIPER */
 .container {
   width: 100%;
-  height: 320px;
+  /* height: 320px; */
 }
 
 .swiper {
@@ -99,7 +99,7 @@ body {
   /* transform: rotate(180deg); */
   position: absolute;
   border: none;
-  top: 18%;
+  top: 21%;
   right: -25px;
   height: 52px;
   width: 52px;
@@ -118,8 +118,66 @@ body {
   font-size: 28.43px;
   line-height: 140%;
   color: #333333;
+  margin-top: 52px;
+}
+.product-thumbnail {
+  position: relative;
 }
 
+.product-thumbnail img {
+  width: 249px;
+  display: block;
+}
+.cart-button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  background-image: url(../assets/icons/Icon/Cart.svg);
+  border: none;
+  right: 15px;
+  bottom: 17px;
+  display: block;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.product-info h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin-top: 16px;
+  color: #333333;
+}
+
+.selling {
+  font-weight: 600;
+  font-size: 21.328px;
+  line-height: 150%;
+}
+
+.discount-rate {
+  color: #fa622f;
+}
+
+.price del {
+  font-weight: 400;
+  font-size: 12.003px;
+  line-height: 160%;
+  color: #898989;
+  margin-top: 8px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
 /* 푸터 */
 .footer {
   /* height: 737px; */
@@ -128,5 +186,5 @@ body {
 /* 배너 */
 .banner {
   background-color: bisque;
-  /* height: 370px; */
+  height: 370px;
 }
