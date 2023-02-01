@@ -122,6 +122,15 @@ body {
   display: none;
 }
 
+.main-swiper-left-button{
+  border: none;
+}
+
+.main-swiper-right-button{
+  border : none
+}
+
+
 /* 푸터 */
 .footer {
   /* height: 737px; */
