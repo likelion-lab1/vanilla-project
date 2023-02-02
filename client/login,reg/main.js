@@ -1,12 +1,10 @@
 // 전체 체크 전체 체크 해제
 
-import { getNode, getNodes } from "../lib/index.js"
+import { getNode, getNodes, } from "../lib/index.js"
 
 let allCheck = getNode('.all-check');
 let subCheck = getNodes('.sub-check');
-
-
-
+let s
 
 function checkhandler(){
   
@@ -20,5 +18,15 @@ function checkhandler(){
   }
 }
 
+function inputCheck(el,maxlength){
+  if(el.value.length > maxlength){
+    el.value = el.value.substr(0, maxlength);
+  }
+}
+
+
+
 allCheck.addEventListener('click',checkhandler)
+
+
 

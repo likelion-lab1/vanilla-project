@@ -122,8 +122,8 @@
 
         <ul class="register-list">
           <li>
-            <p class="important">아이디</p> <input class="button-size" type="text" placeholder="아이디를 입력해주세요" minlength="6"
-              maxlength="12" required>
+            <p class="important">아이디</p> <input class="button-size" type="text" oninput="inputCheck(this,6)"
+              placeholder="아이디를 입력해주세요" required>
             <button type="submit" value="ID중복확인" class="side-button-size">중복확인</button>
           </li>
           <li>
