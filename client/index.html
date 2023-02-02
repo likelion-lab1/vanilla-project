@@ -14,6 +14,8 @@
   <script src="/ost/bigbanner/ostswiper.js" type="module"></script>
   <script defer src="./js/nav.js" type="module"></script>
   <script defer src="./js/header.js" type="module"></script>
+  <script defer src="./js/popup.js" type="module"></script>
+  <script defer src="./js/cookie.js" type="module"></script>
   <title>마켓칼리</title>
 </head>
 <body>
@@ -187,11 +189,11 @@
     <!-- 팝업배너 마크업 -->
     <div class="popup">
         <figure>
-          <a href="#" class="popupLink" ><img src="./assets/images/ilovejenni.png" alt="처음 만나는 뷰티 플랫폼 Beauty Kurly 바로가기" class="popupImg"/></a>
+          <a href="#" class="popupLink" ><img class="popupImg" src="./assets/images/ilovejenni.png" alt="처음 만나는 뷰티 플랫폼 Beauty Kurly 바로가기"/></a>
         </figure>
         <div class="popupButton">
-          <button onclick="todaycloseWin('todayCookie_${status.count}');" class="popupButtonLeft" type="button">오늘 하루 안 보기</button>
-          <button onclick="closeWin('popup_${status.count}');" class="popupButtonRight" type="button">닫기</button>
+          <button class="popupButtonLeft" type="button">오늘 하루 안 보기</button>
+          <button class="popupButtonRight" type="button">닫기</button>
         </div>
     </div>
 
