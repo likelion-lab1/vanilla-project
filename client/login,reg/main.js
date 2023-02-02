@@ -18,12 +18,13 @@ function checkhandler(){
   }
 }
 
-function clickSubmitHandler(e) {
+function clickIdHandler(e) {
   e.preventDefault();
   let name = getInputValue('#nameField')
   if(!name){
     alert('아이디를 입력해주세요')
     return
+
   }
   if(name.length<6){
     alert('6글자 이상 입력해주세요')
@@ -31,6 +32,8 @@ function clickSubmitHandler(e) {
     alert('인증되었습니다')
     return
   }
+
+
   
 
 
@@ -43,7 +46,7 @@ function clickSubmitHandler(e) {
 
 
 allCheck.addEventListener('click',checkhandler)
-submitCheck.addEventListener('click',clickSubmitHandler)
+submitCheck.addEventListener('click',clickIdHandler)
 
 
 
