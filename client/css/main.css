@@ -145,7 +145,8 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.heading {
+.recommend-product-title,
+.special-price-product-title {
   display: flex;
   width: 100%;
   flex-direction: column;
