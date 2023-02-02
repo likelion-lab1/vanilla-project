@@ -121,10 +121,13 @@ body {
 
 /* 메인 PRODUCT LIST */
 
+.recomend-product-container {
+  background-color: pink;
+}
+
 .recomend-product-list {
   width: 1050px;
-  /* height: 601px; */
-  background-color: pink;
+  margin: 40px 0 40px 0;
 }
 .special-price-product-list {
   /* display: flex; */
@@ -214,8 +217,6 @@ body {
 }
 
 .line-banner {
-  height: 219px;
-  background-color: palevioletred;
   margin: 40px 0 40px 0;
 }
 
