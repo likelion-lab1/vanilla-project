@@ -72,3 +72,6 @@ window.addEventListener('scroll',scrollHandeler)
         
         
         // document.scrollingElement.scrollTop; >= 0 ? smallNav.style.display = "flex" : mainNav.style.display = "flex";
+
+
+        
