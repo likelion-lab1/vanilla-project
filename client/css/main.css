@@ -43,7 +43,7 @@ body {
 /* 공통 */
 .center {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   width: 1050px;
   margin: 0 auto;
@@ -63,6 +63,8 @@ body {
 .main {
   width: 1050px;
   height: 1421px;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: rgb(192, 227, 206);
 }
@@ -73,12 +75,12 @@ body {
   display: flex;
   flex-direction: column;
 
-  height: 320px;
+  /* height: 320px; */
 }
 
 .swiper {
   /* position: relative; */
-  padding: 50px 0;
+  /* padding-top: 50px; */
 }
 
 .swiper-wrapper {
@@ -118,15 +120,16 @@ body {
 }
 
 /* 메인 PRODUCT LIST */
+
 .recomend-product-list {
   width: 1050px;
-  height: 601px;
+  /* height: 601px; */
   background-color: pink;
 }
 .special-price-product-list {
   /* display: flex; */
   width: 1050px;
-  height: 601px;
+  /* height: 601px; */
   /* display: flex-box;
   flex-direction: column;
   align-items: center; */
@@ -213,6 +216,7 @@ body {
 .line-banner {
   height: 219px;
   background-color: palevioletred;
+  margin: 40px 0 40px 0;
 }
 
 /* 푸터 */

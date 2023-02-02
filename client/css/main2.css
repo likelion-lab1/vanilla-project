@@ -62,6 +62,8 @@ body {
 /* 메인 */
 .main {
   height: 1421px;
+  display: flex;
+  flex-direction: column;
   position: relative;
   /* background-color: aquamarine; */
 }
