@@ -1,6 +1,6 @@
 // re-export
 
-export * from './css.js';
+export * from './css.js'
 export * from './attr.js';
 export * from './swiper.js';
 export * from './insert.js';
