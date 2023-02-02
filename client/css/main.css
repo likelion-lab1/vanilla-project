@@ -70,8 +70,10 @@ body {
 /* 메인 PRODUCT SWIPER */
 .container {
   width: 100%;
-  /* display: flex-box; */
-  /* height: 320px; */
+  display: flex;
+  flex-direction: column;
+
+  height: 320px;
 }
 
 .swiper {
@@ -85,8 +87,10 @@ body {
   z-index: 1;
 }
 
-.swiper .swiper-slide {
+.swiper,
+.swiper-slide {
   /* position: relative; */
+  flex-direction: row;
   flex-shrink: 0;
   overflow: hidden;
 }
