@@ -1,4 +1,4 @@
-const swiper1 = new Swiper(".swiper", {
+const swiper1 = new Swiper(".recommend-list-swiper", {
   slidesPerView: 4, // 슬라이드 갯수 나누기
   spaceBetween: 30, // 슬라이드 사이 간격
   slidesPerGroup: 4, // 슬라이드 4개씩 들어가기
@@ -15,7 +15,7 @@ const swiper1 = new Swiper(".swiper", {
   },
 });
 
-const swiper2 = new Swiper2(".special-deal-list-siwper", {
+const swiper2 = new Swiper(".special-deal-list-siwper", {
   slidesPerView: 4, // 슬라이드 갯수 나누기
   spaceBetween: 30, // 슬라이드 사이 간격
   slidesPerGroup: 4, // 슬라이드 4개씩 들어가기
@@ -27,7 +27,7 @@ const swiper2 = new Swiper2(".special-deal-list-siwper", {
   },
   navigation: {
     // 버튼
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".special-deal-list-next",
+    prevEl: ".special-deal-list-prev",
   },
 });
