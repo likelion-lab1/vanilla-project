@@ -53,7 +53,7 @@ function setCookie(name,value,day){
   document.cookie = mycookie
   
 }
-setCookie('user','tom',86400e3)
+// setCookie('user','tom',1)
 
 //쿠키 삭제
 function delCookie(name){
@@ -71,13 +71,12 @@ function getCookie(name) {
   for(let i in cookies){
 
     if(cookies[i].indexOf(name) > -1){
-      let visited = true;
+      visited = true;
       console.log(visited);
     }
   }
-    console.log(visited);
 
-    if(visited === true){
+    if(visited){
       // 재방문
       popup.style.display = 'none';
     }else {
@@ -86,11 +85,11 @@ function getCookie(name) {
     }
 }
 
-getCookie('tom');
+getCookie('mike');
 
 
 popupButtonLeft.addEventListener('click',function(){
-  // setCookie('user','mike',1)
+  setCookie('user','mike',1)
   popup.style.display = 'none';
 })
 
