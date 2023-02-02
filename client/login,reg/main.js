@@ -1,14 +1,12 @@
 // 전체 체크 전체 체크 해제
 
-import { getNode } from "../lib/index.js";
+import { getNode, getNodes } from "../lib/index.js"
 
-let allCheck = document.querySelector('.all-check');
-let subCheck = document.querySelectorAll('.sub-check');
-let idCheck = document.querySelectorAll('.button-size')
-
+let allCheck = getNode('.all-check');
+let subCheck = getNodes('.sub-check');
 
 
-console.log()
+
 
 function checkhandler(){
   
