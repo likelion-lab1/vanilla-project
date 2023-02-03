@@ -54,6 +54,17 @@ body {
   font-weight: 900;
 }
 
+.new {
+  font-weight: normal;
+  color: rgb(181, 181, 181);
+  font-size: 18px;
+}
+
+.new:hover{
+  color: #5F0080;
+  font-weight: inherit;
+}
+
 .center{
   display: flex;
   justify-content: center;
