@@ -7,7 +7,7 @@ let subCheck = getNodes('.sub-check');
 let submitCheck = getNode('#submit1')
 let passwordCheck = getNode('#submit-password')
 
-const REGPASSSWORD = /(?=.*\d{1,50})(?=.*[~`!@#$%\^&*()-+=]{1,50})(?=.*[a-zA-Z]{2,50}).{8,20}$/;
+const REGPASSSWORD = /(?=.*\d{1,50})(?=.*[~`!@#$%&*()-+=]{1,50})(?=.*[a-zA-Z]{2,50}).{8,20}$/;
 
 function checkhandler(){
   
