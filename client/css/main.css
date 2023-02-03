@@ -62,7 +62,6 @@ body {
 /* 메인 */
 .main {
   width: 1050px;
-  height: 1421px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -109,7 +108,7 @@ body {
   /* transform: rotate(180deg); */
   position: absolute;
   border: none;
-  top: 50%;
+  top: 45%;
   right: -25px;
   height: 52px;
   width: 52px;
@@ -121,7 +120,7 @@ body {
   /* transform: rotate(180deg); */
   position: absolute;
   border: none;
-  bottom: 50%;
+  top: 45%;
   right: -25px;
   height: 52px;
   width: 52px;
@@ -133,7 +132,7 @@ body {
   transform: rotate(180deg);
   position: absolute;
   border: none;
-  top: 50%;
+  top: 45%;
   left: -25px;
   height: 52px;
   width: 52px;
@@ -145,15 +144,15 @@ body {
   transform: rotate(180deg);
   position: absolute;
   border: none;
-  top: 50%;
+  top: 45%;
   left: -25px;
   height: 52px;
   width: 52px;
   z-index: 100;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+.next::after,
+.prev::after {
   display: none;
 }
 
@@ -182,11 +181,12 @@ body {
   background-color: skyblue;
 }
 
-.recommend-product-list-items,
+.recommend-list--swiper-wrapper,
 .special-deal-list-swiper-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: flex-start;
 }
 .recommend-product-title,
 .special-deal-list-title {
@@ -203,10 +203,10 @@ body {
 }
 .product-thumbnail {
   position: relative;
+  width: 249px;
 }
 
 .product-thumbnail img {
-  width: 249px;
   display: block;
 }
 .cart-button {
