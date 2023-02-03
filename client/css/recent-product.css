@@ -38,6 +38,7 @@ body {
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  position: relative;
 }
 
 /* 공통 */
@@ -63,6 +64,87 @@ body {
 .main {
   height: 1421px;
   background-color: aquamarine;
+}
+
+/* 최근 본 상품 영역 */
+
+.recent-product-list {
+  background: steelblue;
+  position: absolute;
+  right: 2%;
+}
+
+.recent-list-title {
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+}
+
+.recent-list-container {
+  background: white;
+  width: 74px;
+  height: 223px;
+
+  border: 1px solid #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-list-slide {
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 40px;
+  height: 129px;
+  background: yellowgreen;
+  overflow: hidden;
+}
+
+.recent-list-item img {
+  width: 40px;
+  margin-bottom: 4px;
+  display: block;
+  position: relative;
+}
+
+.recent-list-slide {
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 40px;
+  height: 129px;
+  background: yellowgreen;
+  overflow: hidden;
+}
+
+.recent-list-button-prev {
+  width: 18px;
+  height: 18px;
+  top: 8px;
+  border: none;
+  background-image: url(../assets/icons/Direction=Up.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  position: absolute;
+  z-index: 100;
+}
+.recent-list-button-next {
+  width: 18px;
+  height: 18px;
+  bottom: 8px;
+  border: none;
+  background-image: url(../assets/icons/Direction=Down.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  position: absolute;
+  z-index: 100;
 }
 
 /* 푸터 */
