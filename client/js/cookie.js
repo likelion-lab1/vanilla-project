@@ -1,5 +1,5 @@
 // 작업시작
-let popupButtonLeft = document.querySelector('.popupButtonLeft');
+let popupButtonLeft = document.querySelector('.popup-button-left');
 let popup = document.querySelector('.popup');
 
 
