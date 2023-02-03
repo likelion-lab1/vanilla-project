@@ -5,6 +5,9 @@ import { getInputValue, getNode, getNodes, } from "../lib/index.js"
 let allCheck = getNode('.all-check');
 let subCheck = getNodes('.sub-check');
 let submitCheck = getNode('#submit1')
+let passwordCheck = getNode('#submit-password')
+
+const REGPASSSWORD = /(?=.*\d{1,50})(?=.*[~`!@#$%\^&*()-+=]{1,50})(?=.*[a-zA-Z]{2,50}).{8,20}$/;
 
 function checkhandler(){
   
@@ -32,21 +35,15 @@ function clickIdHandler(e) {
     alert('인증되었습니다')
     return
   }
-
-
-  
-
-
-
-
-
-
 }
+
+
 
 
 
 allCheck.addEventListener('click',checkhandler)
 submitCheck.addEventListener('click',clickIdHandler)
 
+password
 
 
