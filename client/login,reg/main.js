@@ -36,14 +36,44 @@ function clickIdHandler(e) {
     return
   }
 }
-
-
-
-
-
 allCheck.addEventListener('click',checkhandler)
 submitCheck.addEventListener('click',clickIdHandler)
+// 활성화버튼
+const register = document.querySelector('.register');
 
-password
+let pw = document.querySelector('.pw-input');
+let email = document.querySelector('.email-input');
+let resgisterButton =document.querySelector('.register-button');
+
+
+function keycheck(e){
+  e = e.target
+  // if(e ==pw){
+  //   console.log('pw');
+  // }
+  // if(e == email){
+  //   console.log('eamil')
+  // }
+ 
+  if (pw.value.length >= 8&&email.value.includes('@') && email.value.includes('.') )
+  {
+    // disable 쓰지마세요
+    resgisterButton.disabled = false
+  } else{
+    resgisterButton.disabled = true
+  }
+}
+
+register.addEventListener('keyup',keycheck)
+// document.querySelector('.pw-input').value.length>=9
+// document.querySelector('.email-input').value.includes('@')
+// document.querySelector('.email-input').value.includes(',')
+// document.querySelector('.email-input').value.includes('.')
+
+
+
+
+
+
 
 
