@@ -91,6 +91,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 40%;
+  right: 2%;
 }
 
 .recent-product-list-wrap {
