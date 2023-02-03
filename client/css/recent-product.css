@@ -44,6 +44,7 @@ body {
 /* 공통 */
 .center {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   text-align: center;
   width: 1050px;
@@ -84,11 +85,16 @@ body {
   background: white;
   width: 74px;
   height: 223px;
+  padding: 34px 0 34px 0;
 
   border: 1px solid #c4c4c4;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.recent-product-list-wrap {
+  margin: 8px 0 8px 0;
 }
 
 .recent-list-slide {
