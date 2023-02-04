@@ -53,17 +53,20 @@ let resgisterButton =document.querySelector('.register-button');
 
 function registerCheck(e){
   e.preventDefault();
-  if (!password){
+  if (password > 8){
+    resgisterButton.disabled = false
     alert('password를 입력해주세요')
   }
-  if(password.value.length > 8 ){
-    alert('비밀번호를 8자리 이상 입력해주세요')
-    return;
-  }
-  if (password.value.length< 8 || password.value.length>20){
-    resgisterButton.disabled = true
+  // if(password.value.length < 8 ){
+  //   alert('비밀번호를 8자리 이상 입력해주세요')
+  //   return;
+  // }
+  if (password.value.length < 8 || password.value.length > 20){
+    resgisterButton.disabled = false
   }
 }
+
+
 
 
 
