@@ -5,7 +5,8 @@ import { getInputValue, getNode, getNodes, } from "../lib/index.js"
 let allCheck = getNode('.all-check');
 let subCheck = getNodes('.sub-check');
 let submitCheck = getNode('#submit1')
-let passwordCheck = getNode('#submit-password')
+
+// let passwordCheck = getNode('#submit-password')
 
 const REGPASSSWORD = /(?=.*\d{1,50})(?=.*[~`!@#$%\^&*()-+=]{1,50})(?=.*[a-zA-Z]{2,50}).{8,20}$/;
 
@@ -37,6 +38,8 @@ function clickIdHandler(e) {
   }
 }
 allCheck.addEventListener('click',checkhandler)
+
+
 submitCheck.addEventListener('click',clickIdHandler)
 // 활성화버튼
 const register = document.querySelector('.register');
