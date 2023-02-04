@@ -26,17 +26,18 @@ input::-webkit-search-results-decoration{
     display:none;
 }
 
+/* 기본 스타일 */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 /* 링크 스타일 */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* 기본 스타일 */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-}
 
 /* 공통 바디 스타일 */
 body {
@@ -52,6 +53,17 @@ body {
   color:#FA622F;
   font-size: 7px;
   font-weight: 900;
+}
+
+.new {
+  font-weight: normal;
+  color: rgb(181, 181, 181);
+  font-size: 18px;
+}
+
+.new:hover{
+  color: #5F0080;
+  font-weight: inherit;
 }
 
 .center{
@@ -86,7 +98,7 @@ input:focus{
   align-items: center;
   justify-content: center;
   width: 100%;
- 
+
   background-color: #5F0080;
   height: 50px;
   
@@ -104,9 +116,9 @@ input:focus{
   right:22%;
   position: absolute;
   z-index: 100;
- cursor: pointer;
- border: none;
- background-color: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
 }
 /* 헤더 */
 
@@ -121,7 +133,7 @@ input:focus{
   height: 125px;
 }
 
-.mainNavigation{
+.main-navigation{
   padding:0;
   gap:12px;
   font-weight: 600;
@@ -132,13 +144,13 @@ input:focus{
 /* .MainBanner li,input{
   transform : translate(0, -50%);
 } */
-.mainNavigation li:first-child{
+.main-navigation li:first-child{
   margin-top:38px;
 }
-.mainNavigation li:nth-child(2){
+.main-navigation li:nth-child(2){
   color: #5F0080;
 }
-.mainNavigation li:nth-child(2)::after{
+.main-navigation li:nth-child(2)::after{
   margin-left:12px;
   color: #D9D9D9;
   font-size:16px;
@@ -164,14 +176,14 @@ padding-left: 20px;
 
   width:400px;
   height: 60px;
- border: 2px solid #5F0080;
- border-radius: 5px;
+  border: 2px solid #5F0080;
+  border-radius: 5px;
 }
 .search input:focus{
   color:black;
 
 }
-.searchButton{
+.search-button {
   color: #5F0080;
   cursor: pointer;
   background-color: inherit;
@@ -180,21 +192,25 @@ padding-left: 20px;
   right:20px;
   position:absolute;
 }
-.rightNavigation{
+.right-navigation{
   
   gap:12px;
   display:flex;
 }
-.rightNavigation a{
+.right-navigation a{
   font-size: 24px;
   height: 24px;
 }
 
-.rightNavigation img{
+/* .right-navigation img{
   fill: #5F0080;
+} */
+
+.right-navigation img:hover{
+  filter: invert(11%) sepia(100%) saturate(5229%) hue-rotate(285deg) brightness(59%) contrast(112%);
 }
 
-.topNavigation{
+.top-navigation{
   
   font-weight: 400;
   font-size: 12px;
@@ -213,19 +229,7 @@ padding-left: 20px;
   margin-left:6px;
   content:'ㅣ'
 }
-/* .CustomerServiceList{
-  
-  text-align: left;
-  top:40px;
-  font-size: 12px;
-  z-index: 1000;
-  background: #FFFFFF;
-  position: relative;
-  border: 1px black solid;
-}
-.CustomerServiceList li{
-  margin-top:4px;
-} */
+
 /* 네비게이션 */
 .nav-center{
   height: 72px;
@@ -375,33 +379,42 @@ padding-left: 20px;
   width: 600px;
 }
 
+.nav-small-search{
+  position: relative;
+}
+
+.input-search {
+  margin-right: 15px;
+}
 
 .nav-small-search input{
   font-weight: 400;
   font-size: 12.003px;
   line-height: 160%;
   color: var(--gray400);
-  width: 170px;
+  width: 193px;
   height: 36px;
   border: 2px solid var(--primary);
   border-radius: 5px;
   padding-left: 10px;
 
 
- }
- 
- .nav-small-searchButton{
-   color: var(--content);
-   cursor: pointer;
-   background-color: inherit;
-   top:24px;
-   border: 0;
-   right:350px;
-   position:absolute;
-   
- }
+}
 
- .rightNavigation{
+
+.nav-small-search-button{
+  position:absolute;
+  color: var(--content);
+  cursor: pointer;
+  background-color: inherit;
+  top:5px;
+  border: 0;
+  right:14px;
+  font-size: 21px;
+
+}
+
+.right-navigation{
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -409,14 +422,14 @@ padding-left: 20px;
 
 
 /* 라인배너 css */
-.lineBanner{
+.line-banner{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 219px;
 }
 
-.lineBanner1{
+.line-banner1{
   width: 1050px;
   max-height: 100%;
 }
@@ -434,26 +447,27 @@ padding-left: 20px;
   width: 100%;
   height: 100%;
   z-index: 10;
+  /* display: none; */
 }
 
-.popupLink{
+.popup-link{
   cursor: pointer;
 }
 
-.popupImg{
+.popup-img{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.popupButton{
-    margin: -3px auto;
+.popup-button{
+    margin: -4px auto;
     width: 440px;
     height: 86px;
     display: flex;
 
 }
   
-.popupButtonLeft{
+.popup-button-left{
     background-color: rgb(255, 255, 255);
     border: none;
     flex: 1;
@@ -462,7 +476,7 @@ padding-left: 20px;
     border-bottom-left-radius: 20px;
   }
   
-  .popupButtonRight{
+  .popup-button-right{
     background-color: rgb(255, 255, 255);
     flex: 1;
     border: none;
@@ -491,31 +505,31 @@ padding-left: 20px;
   text-align: left;
 }
 
-.footerMain {
+.footer-main {
   width : 1050px;
   margin : 0 auto;
 }
 
-.footerInner {
+.footer-inner {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   padding-bottom: 30px;
 }
 
-.footerRight {
+.footer-right {
   display: flex;
   flex-direction: column;
 }
 
-.footerHeader {
+.footer-header {
   padding-bottom: 17px;
   font-weight: 500px;
   font-size: 20px;
   line-height: 29px;
 }
 
-.footerCall {
+.footer-call {
   display: block;
   padding-bottom: 20px;
   font-size: 28px;
@@ -523,19 +537,19 @@ padding-left: 20px;
   font-weight: 700;
 }
 
-.footerDay {
+.footer-day {
   margin-left: 8px;
   font-weight: normal;
   font-size: 16px;
 }
 
-.footerAsk {
+.footer-ask {
   display: flex;
   flex-direction: column;
 }
 
 /* 버튼 공통 스타일 */
-.askButton {
+.ask-button {
   display: block;
   width: 140px;
   height: 40px;
@@ -560,47 +574,47 @@ padding-left: 20px;
   line-height: 16.8px;
 }
 
-.footerKakao {
+.footer-kakao {
   display: flex;
   flex-direction: row;
 }
 
-.footerOne {
+.footer-one {
   display: flex;
   flex-direction: row;
 }
 
-.footerBig {
+.footer-big {
   display: flex;
   flex-direction: row;
 }
 
-.notMember {
+.not-member {
   font-size: 12px;
   line-height: 18px;
   color: rgb(153,153,153);
 }
 
-.footerList {
+.footer-list {
   display: flex;
   width: 100%;
   padding-bottom: 29px;
   font-size: 14px;
 }
 
-.liList {
+.li-list {
   margin-left: 14px;
 }
-.innerList1 {
+.inner-list1 {
   margin-left: 0px;
 }
 
 
-.innerList5 {
+.inner-list5 {
   font-weight: 500;
 }
 
-.footerConfirm {
+.footer-confirm {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -612,51 +626,51 @@ padding-left: 20px;
   padding-left: 4px;
 }
 
-.aConfirm {
+.a-confirm {
   margin-left: 3px;
   color: rgb(95,0,128);
 }
 
-.footerImageLink {
+.footer-image-link {
   display: flex;
 }
 
-.aImageLink img{
+.a-image-link img{
   display: block;
   width: 30px;
   height: 30px;
   margin-left: 10px;
 }
 
-.footerBottom{
+.footer-bottom{
   display: flex;
   justify-content: space-between;
   padding: 26px 0px 33px;
   border-top: 1px solid rgb(238,238,238);
 }
 
-.footerBottom button {
+.footer-bottom button {
   overflow: visible;
   background-color: transparent;
   border: none;
 }
 
-.footerBottomButton {
+.footer-bottom-button {
   display: flex;
   text-align: left;
 }
 
-.footerBottomButton img {
+.footer-bottom-button img {
   width: 34px;
   margin-right: 10px;
 }
 
-.tossButton img{
+.toss-button img{
   width: 102px;
   margin-right: 10px;
 }
 
-.footerButtonText {
+.footer-button-text {
   font-size: 10px;
   line-height: 14.5px;
   color: rgb(153,153,153);
@@ -673,7 +687,7 @@ padding-left: 20px;
   color: rgb(153, 153, 153);
 }
 
-.copyrightEm {
+.copyright-em {
   display: block;
   padding-top: 7px;
   font-style: normal;
