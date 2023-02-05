@@ -3,13 +3,37 @@
 import {removeClass,insertAfter,getInputValue, getNode, getNodes,insertLast,showAlert,typeError, clearContents, addClass } from "../lib/index.js"
 
 
+// 아이디 인증버튼
+let idCheck = getNode('#submit1')
+let userIdError = getNode('.alert-error')
+
+function clickIdHandler(e) {
+  e.preventDefault();
+  let name = getInputValue('#nameField')
+  if(!name){
+    // userID 라는 노드에 deactive 클래스를 지운다
+    removeClass(userIdError, 'deactive') 
+    console.log(userIdError);
+    return
+  } else {
+    // 조건이 만족하면 userID에 deactive 클래스를 추가해준다.
+    addClass(userIdError,'deactive')
+  }
+  if(name.length<6){
+    alert('6글자 이상 입력해주세요')
+  }else{
+    alert('인증되었습니다')
+    return
+  }
+}
+
+
+
 
 
 // 전체항목 선태 
 let allCheck = getNode('.all-check');
 let subCheck = getNodes('.sub-check');
-let submitCheck = getNode('#submit1')
-let userIdError = getNode('.alert-error')
 
 // let passwordCheck = getNode('#submit-password')
 function checkhandler(){
@@ -23,37 +47,18 @@ function checkhandler(){
       item.checked = false;})
   }
 }
-
-
-// 아이디 인증버튼
-const REGISTERID = /^[a-z]+[a-z0-9]{5,19}$/g
-function clickIdHandler(e) {
-  e.preventDefault();
-  let name = getInputValue('#nameField')
-  if(!name){
-    // addClass(userIdError,'is-active')
-    removeClass(userIdError, 'deactive')
-    console.log(userIdError);
-    return
-  } else {
-    // removeClass(userIdError, 'is-active')
-    addClass(userIdError,'deactive')
-  }
-  if(name.length<6){
-    alert('6글자 이상 입력해주세요')
-  }else{
-    alert('인증되었습니다')
-    return
-  }
-}
-
-
 // 이메일 검사
+// let emailCheck = getNode('.submit2')
+// function clickEmailHandler(e){
+//   e.preventDefault();
+
+// }
 
 
 
 
-// 활성화버튼
+
+// 회원가입 버튼
 const register = document.querySelector('.register');
 let password = document.querySelector('.pw-input');
 let email = document.querySelector('.email-input');
@@ -80,9 +85,11 @@ async function registerCheck(e){
 
 
 // addEventListener('keyup',passwordCheck)
-register.addEventListener('keyup',registerCheck)
+
+register.addEventListener('click',registerCheck)
 allCheck.addEventListener('click',checkhandler)
-submitCheck.addEventListener('click',clickIdHandler)
+idCheck.addEventListener('click',clickIdHandler)
+emailCheck.addEventListener('click',clickEmailHandler)
 // document.querySelector('.pw-input').value.length>=9
 // document.querySelector('.email-input').value.includes('@')
 // document.querySelector('.email-input').value.includes(',')
