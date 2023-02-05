@@ -44,7 +44,7 @@ const swiper3 = new Swiper(".recent-product-swiper", {
   direction: "vertical",
   slidesPerView: 2.5,
   spaceBetween: 4,
-  speed: 450,
+  speed: 300,
   navigation: {
     nextEl: ".recent-list-button-next",
     prevEl: ".recent-list-button-prev",
