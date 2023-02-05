@@ -55,12 +55,19 @@ let userEmailCheck = getNode('.alert-error-email')
 function clickEmailHandler(e){
   e.preventDefault();
     let emailValue = getInputValue('#emailField')
+    const EMAILREGEX = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
     if(!emailValue){
       removeClass(userEmailCheck, 'deactive') 
       console.log(userEmailCheck);
       return
     } else{
       addClass(userEmailCheck,'deactive')
+    }
+    if(!EMAILREGEX.test('test@test.com')){
+      return alert('@포함해주세요')
+      
+    }else{
+      return true
     }
 
 
