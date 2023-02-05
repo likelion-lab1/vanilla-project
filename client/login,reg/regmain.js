@@ -1,6 +1,8 @@
 // 전체 체크 전체 체크 해제
 
-import { getInputValue, getNode, getNodes,showAlert,typeError } from "../lib/index.js"
+import { getInputValue, getNode, getNodes,insertLast,showAlert,typeError } from "../lib/index.js"
+
+
 
 
 // 전체항목 선태 
@@ -27,8 +29,13 @@ const REGISTERID = /^[a-z]+[a-z0-9]{5,19}$/g
 function clickIdHandler(e) {
   e.preventDefault();
   let name = getInputValue('#nameField')
+  let userIdError = /* html */ `
+  <div>
+    <span class='alert-error'>8자리 이상 입력해주세요</span>
+  </div>
+  `
   if(!name){
-    alert('아이디를 입력해주세요')
+    insertLast('.important',userIdError)
     return
   }
   if(name.length<6){
@@ -51,10 +58,9 @@ let password = document.querySelector('.pw-input');
 let email = document.querySelector('.email-input');
 let resgisterButton =document.querySelector('.register-button');
 
-function registerCheck(e){
+async function registerCheck(e){
   e.preventDefault();
-  if (password > 8){
-    resgisterButton.disabled = false
+  if (!password){
     alert('password를 입력해주세요')
   }
   // if(password.value.length < 8 ){
@@ -62,7 +68,7 @@ function registerCheck(e){
   //   return;
   // }
   if (password.value.length < 8 || password.value.length > 20){
-    resgisterButton.disabled = false
+  
   }
 }
 

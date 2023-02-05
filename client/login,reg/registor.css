@@ -428,6 +428,14 @@ padding-left: 20px;
 }
 
 /* 메인 */
+.alert-error{
+  display: flex;
+  color: red;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+
 button:disabled{
   cursor: not-allowed;
   background: #111 !important;
