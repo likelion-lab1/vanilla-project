@@ -48,14 +48,24 @@ function checkhandler(){
   }
 }
 // 이메일 검사
-// let emailCheck = getNode('.submit2')
-// function clickEmailHandler(e){
-//   e.preventDefault();
+let emailCheck = getNode('#submit2')
+let userEmailCheck = getNode('.alert-error-email')
+// let emailValidation = ('^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
 
-// }
+function clickEmailHandler(e){
+  e.preventDefault();
+    let emailValue = getInputValue('#emailField')
+    if(!emailValue){
+      removeClass(userEmailCheck, 'deactive') 
+      console.log(userEmailCheck);
+      return
+    } else{
+      addClass(userEmailCheck,'deactive')
+    }
 
 
-
+    
+}
 
 
 // 회원가입 버튼

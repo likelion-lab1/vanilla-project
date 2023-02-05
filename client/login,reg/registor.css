@@ -446,6 +446,25 @@ padding-left: 20px;
   display: none;
 }
 
+.check-container{
+  position: relative;  
+}
+
+.alert-error-email{
+  position: absolute;
+  left: 23%;
+  bottom: -27px;
+  /* margin: 10px 0 5px 0; */
+  color: red;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.alert-error-email.deactive{
+  display: none;
+}
+
+
 /*
 .alert-error{
   display: none;
