@@ -428,13 +428,38 @@ padding-left: 20px;
 }
 
 /* 메인 */
+.id-input{
+  position: relative;  
+}
+
 .alert-error{
-  display: flex;
+  position: absolute;
+  left: 23%;
+  bottom: -27px;
+  /* margin: 10px 0 5px 0; */
   color: red;
   font-size: 12px;
   margin-bottom: 3px;
 }
 
+.alert-error.deactive{
+  display: none;
+}
+
+/*
+.alert-error{
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.alert-error.is-active{
+  color: red;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+*/
 
 button:disabled{
   cursor: not-allowed;
