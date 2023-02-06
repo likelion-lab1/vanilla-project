@@ -78,13 +78,13 @@ body {
 
 /* 장바구니 팝업 */
 
-#add-cart-container {
+#add-cart-content {
   position: fixed;
   top: 32%;
   left: 40%;
   width: 396px;
   height: 296px;
-  background-color: rgb(234, 245, 255);
+  background-color: white;
   border-radius: 16px;
   padding: 24px 20px;
   justify-content: center;
@@ -226,9 +226,9 @@ body {
 
 /* 장바구니 팝업 모달  */
 
-/* .add-cart-hidden {
+.add-cart-hidden {
   display: none;
-} */
+}
 
 .add-cart-overlay {
   background-color: rgba(0, 0, 0, 0.6);
