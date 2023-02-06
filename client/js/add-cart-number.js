@@ -1,6 +1,6 @@
 let plus = document.querySelector(".add-quantiy");
 let minus = document.querySelector(".minus-quantity");
-let result = document.querySelector("#result");
+let result = document.querySelector("#add-cart-result");
 let totalCost = document.querySelector(".total-cost");
 let i = 1;
 
@@ -16,8 +16,8 @@ minus.addEventListener("click", () => {
     i--;
     result.textContent = i;
     let totalCostNum = i * 4980;
-    totalCost.textContent = totalCostNum.toLocalString();
+    totalCost.textContent = totalCostNum.toLocaleString();
   } else {
-    totalCost.textContent = 0 + 1;
+    totalCost.textContent = 0;
   }
 });
