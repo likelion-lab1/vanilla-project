@@ -56,7 +56,7 @@ function checkhandler(){
       item.checked = false;})
   }
 }
-// 이메일 검사
+// 이메일 검사 
 const REG = (/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i);
 
 function clickEmailHandler(e){
@@ -78,15 +78,28 @@ function clickEmailHandler(e){
 }
 
 
-// 회원가입 버튼
+// uniqueID 랜덤함수 생성
 
 
 
-// 패스워드 8자리
-async function registerCheck(e){
-  e.preventDefault();
-  let response = tiger.get('http://localhost:3000/users');
-  console.log(response)
+
+// 회원가입
+ function registerCheck(){
+  fetch("http://localhost:3000", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    title: "Test",
+    body: "I am testing!",
+    userId: 1,
+  }),
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+ }
+
 
 
 
@@ -104,7 +117,7 @@ async function registerCheck(e){
   // if (password.value.length < 8 || password.value.length > 20){
   
   // }
-}
+
 
 
 
