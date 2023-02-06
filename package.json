@@ -1,11 +1,11 @@
 {
-  "name": "Vanilla Project",
+  "name": "project-template",
   "version": "1.0.0",
   "description": "멋쟁이 사자처럼 바닐라 프로젝트",
   "main": "main.js",
   "scripts": {
     "all": "run-p serve start",
-    "serve": "json-server/data/data.json",
+    "serve": "npx json-server server/db/data.json",
     "start": "npx live-server client --host=localhost --port=5500 --no-browser"
   },
   "devDependencies": {
