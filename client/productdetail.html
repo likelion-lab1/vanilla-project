@@ -38,7 +38,7 @@
           <fieldset>
             <legend>검색영역</legend>
             <input type="search" placeholder="검색어를 입력해주세요"  required>
-            <button type="submit" class="search-button icon-search-1"></button>
+            <button type="submit" class="search-button icon-search-1"><p class="a11y-hidden">검색 버튼</p></button>
           </fieldset>
         </form>
       </ul>
@@ -57,7 +57,7 @@
 
     <!-- 네비게이션 -->
     <nav class="nav-center">
-      <button class="category"><img  class="hamburger" src="css/icon/Hamburger.png">카테고리</button>
+      <button class="category"><img  class="hamburger" src="css/icon/Hamburger.png" alt="카테고리 버튼">카테고리</button>
       <ul class="category-list">
         <li class="category-menu"><img class="category-icon" src="css/icon/gift.png"  alt="">선물하기</li>
         <li class="category-menu"><img class="category-icon" src="css/icon/vegetable.png"  alt="">채소</li>
@@ -214,7 +214,9 @@
     </div>
     <div class="product-detail-cart">
       <button class="cart-button">
-        <img class="product-detail-heart-icon" src="assets/icons/Icon/Heartpurple.png" alt="좋아요 버튼" />
+        <svg class="product-detail-heart-icon" width="54" height="54" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="heart-path" fill-rule="evenodd" clip-rule="evenodd" d="M28.9269 8.89295C28.3269 8.29261 27.6146 7.81636 26.8305 7.49144C26.0465 7.16651 25.2061 6.99927 24.3574 6.99927C23.5086 6.99927 22.6682 7.16651 21.8842 7.49144C21.1001 7.81636 20.3878 8.29261 19.7879 8.89295L17.9589 10.7209L16.1319 8.89295C14.9201 7.68091 13.2765 6.99989 11.5626 6.9997C9.84867 6.99951 8.2049 7.68017 6.99286 8.89195C5.78082 10.1037 5.0998 11.7473 5.09961 13.4612C5.09942 15.1751 5.78008 16.8189 6.99186 18.0309L8.81986 19.8599L17.2519 28.2939C17.4394 28.4814 17.6937 28.5867 17.9589 28.5867C18.224 28.5867 18.4783 28.4814 18.6659 28.2939L27.0989 19.8599L28.9269 18.0319C29.5271 17.432 30.0032 16.7198 30.328 15.9358C30.6528 15.1518 30.82 14.3115 30.82 13.4629C30.82 12.6144 30.6528 11.7741 30.328 10.9901C30.0032 10.2061 29.5271 9.49386 28.9269 8.89395V8.89295Z" stroke="#E1E1E1" stroke-width="1.7" stroke-linecap="round"/>
+          </svg>
       </button>
       <button class="cart-button">
         <img class="product-detail-bell-icon" src="assets/icons/Icon/bell.png" alt="상품 알림 버튼" /></button>
@@ -232,19 +234,19 @@
       <section class="product-detail-item-info">
         <ul class="product-detail-item-category">
           <li class="product-detail-item-categry-name">
-            <a href="#explain" class="item-explain">상품설명</a>
+            <a href="#sedtion1" class="item-explain">상품설명</a>
           </li>
           <li class="product-detail-item-categry-name">
-            <a href="#" class="detail-info">상세정보</a>
+            <a href="#section2" class="detail-info">상세정보</a>
           </li>
           <li class="product-detail-item-categry-name">
-            <a href="#" class="review">후기(1,000)</a>
+            <a href="#section3" class="review">후기(1,000)</a>
           </li>
           <li class="product-detail-item-categry-name">
-            <a href="#" class="inquiry">문의</a>
+            <a href="#section4" class="inquiry">문의</a>
           </li>
         </ul>
-        <article class="product-detail-item-explain-img">
+        <article id="section1" class="product-detail-item-explain-img">
           <img src="./assets/images/tangtang.png" alt="풀무원 탱탱쫄면 4개입"/>
           <p class="item-shrot-explain">튀기지 않아 부담 없는 매콤함</p>
           <p class="item-name">[풀무원] 탱탱쫄면</p>
@@ -252,7 +254,7 @@
             튀기지 않고 만든 탱탱쫄면을 선보입니다. 밀가루와 감자전분을 적절히 배합해 탄력이 좋고, 입에 넣었을 때는 찰지게 씹히죠. 고추장을 넣어 숙성한 비빔장은 자연스럽고 깊은 맛을 냅니다. 간단하게 조리해 마지막 한 가닥까지 탱탱한 식감을 즐겨보세요. 취향에 따라 다양한 고명을 올려 드셔도 좋아요.
           </p>
         </article>
-        <article class="check-point">
+        <article id="section2" class="check-point">
           <p class="karlys-check-point">karly's check point</p>
           <img class="check-point-img" src="assets/images/karly's check point.png" alt="칼리의 체크포인트 내용" />
         </article>

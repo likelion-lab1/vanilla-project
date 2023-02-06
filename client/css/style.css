@@ -201,14 +201,6 @@ padding-left: 20px;
   height: 24px;
 }
 
-/* .right-navigation img{
-  fill: #5F0080;
-} */
-
-.right-navigation img:hover{
-  filter: invert(11%) sepia(100%) saturate(5229%) hue-rotate(285deg) brightness(59%) contrast(112%);
-}
-
 .top-navigation{
   
   font-weight: 400;
