@@ -145,9 +145,6 @@ body {
 
   margin-bottom: 28px;
 }
-.save-point-detail {
-  /* text-align: left; */
-}
 
 .total {
   display: flex;
@@ -235,9 +232,8 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  /* z-index: 250; */
 }
 
-#cart1 {
+/* #cart1 {
   position: absolute;
-}
+} */
