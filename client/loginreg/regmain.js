@@ -17,6 +17,7 @@ let id = getNode('#nameField');
 
 
 
+
 // 아이디 인증버튼
 function clickIdHandler(e) {
   e.preventDefault();
@@ -94,8 +95,8 @@ function goToLogin() {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      "username": this.state.name,
-      "password": this.state.password
+      username: id.value,
+      password: password.value
     })
   })
   .then(res => {
