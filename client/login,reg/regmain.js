@@ -55,7 +55,6 @@ let userEmailCheck = getNode('.alert-error-email')
 function clickEmailHandler(e){
   e.preventDefault();
     let emailValue = getInputValue('#emailField')
-    const EMAILREGEX = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
     if(!emailValue){
       removeClass(userEmailCheck, 'deactive') 
       console.log(userEmailCheck);
@@ -81,11 +80,20 @@ let password = document.querySelector('.pw-input');
 let email = document.querySelector('.email-input');
 let resgisterButton =document.querySelector('.register-button');
 
-async function registerCheck(e){
-  e.preventDefault();
-  if (!password){
-    alert('password를 입력해주세요')
-  }
+// 패스워드 8자리
+async function registerCheck(){
+  let response = tiger.get( 'http://localhost:3000/users');
+  console.log(response)
+
+
+
+
+
+  // if (!password){
+  //   alert('password를 입력해주세요')
+  // }
+
+
   // if(password.value.length < 8 ){
   //   alert('비밀번호를 8자리 이상 입력해주세요')
   //   return;
