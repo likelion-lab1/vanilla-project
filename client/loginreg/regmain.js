@@ -82,7 +82,35 @@ function clickEmailHandler(e){
 
 // uniqueID 랜덤함수 생성
 
+function welcomeAlert() {alert("회원이 되신것을 축하합니다.")}
+function alreadyUserAlert() {alert("이미 존재하는 회원입니다.")}
+function serverErrorAlert() {alert("알 수 없는 오류가 발생했습니다.")}
 
+// signup에서 login으로 이동시킬 fetch 함수 //
+function goToLogin() {
+  fetch('http://localhost:3000/users', {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      "username": this.state.name,
+      "password": this.state.password
+    })
+  })
+  .then(res => {
+    if (res.status === 200) {
+      this.welcomeAlert();
+      this.props.history.push('/');
+    }
+    if (res.status === 401) {
+      this.alreadyUserAlert();
+    }
+    if (res.status === 400) {
+      this.serverErrorAlert()
+    }
+  })
+}
 
 
 // 회원가입
@@ -131,7 +159,7 @@ function clickEmailHandler(e){
 
 // addEventListener('keyup',passwordCheck)
 // allInputValue.addEventListener('input',allregister)
-// resgisterButton.addEventListener('click',registerCheck)
+resgisterButton.addEventListener('submit',goToLogin)
 allCheck.addEventListener('click',checkhandler)
 idCheck.addEventListener('click',clickIdHandler)
 emailCheck.addEventListener('click',clickEmailHandler)
