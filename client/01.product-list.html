@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/recent-product.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -35,7 +36,7 @@
           <h2>이 상품 어때요?</h2>
         </div>
         <div class="recommend-list-swiper swiper">
-          <div class="recommend-list--swiper-wrapper swiper-wrapper">
+          <div class="recommend-list-swiper-wrapper swiper-wrapper">
             <div class="product-list-item swiper-slide">
               <div class="product-thumbnail">
                 <a href="#"
@@ -338,6 +339,86 @@
         <button type="button" class="special-deal-list-next next"></button>
       </div>
     </main>
+
+    <!-- 최근 본 상품 영역  -->
+
+    <aside class="recent-product-list">
+      <h2 class="recent-list-title">최근 본 상품</h2>
+      <div class="recent-list-container container">
+        <div class="recent-product-swiper swiper">
+          <div class="recent-product-list-wrap swiper-wrapper">
+            <div class="recent-list-slide swiper-slide">
+              <a href="#"
+                ><img src="./assets/main-product/product01.png" alt="탱탱쫄면"
+              /></a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#">
+                <img
+                  src="./assets/main-product/product02.png"
+                  alt="온더바디 죠르디 시카 자석 쿠션"
+                />
+              </a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#">
+                <img
+                  src="./assets/main-product/product03.png"
+                  alt="유기농 밀키퀸 현미 4kg"
+                />
+              </a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#">
+                <img
+                  src="./assets/main-product/product04.png"
+                  alt="프로쉬 베이비 세탁세제"
+                />
+              </a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#"
+                ><img src="./assets/main-product/product01.png" alt="탱탱쫄면"
+              /></a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#">
+                <img
+                  src="./assets/main-product/product02.png"
+                  alt="온더바디 죠르디 시카 자석 쿠션"
+                />
+              </a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#">
+                <img
+                  src="./assets/main-product/product03.png"
+                  alt="유기농 밀키퀸 현미 4kg"
+                />
+              </a>
+            </div>
+            <div class="recent-list-slide swiper-slide">
+              <a href="#">
+                <img
+                  src="./assets/main-product/product04.png"
+                  alt="프로쉬 베이비 세탁세제"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        aria-label="이전 버튼"
+        class="recent-list-button-prev prev"
+      ></button>
+      <button
+        type="button"
+        aria-label="다음 버튼"
+        class="recent-list-button-next next"
+      ></button>
+    </aside>
 
     <!-- 푸터 -->
     <footer class="footer center">푸터</footer>
