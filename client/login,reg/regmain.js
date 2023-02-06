@@ -1,12 +1,21 @@
 // 전체 체크 전체 체크 해제
 
-import {removeClass,insertAfter,getInputValue, getNode, getNodes,insertLast,showAlert,typeError, clearContents, addClass } from "../lib/index.js"
+import {removeClass,insertAfter,getInputValue, getNode, getNodes,insertLast,showAlert,typeError, clearContents, addClass,tiger } from "../lib/index.js"
+
+
+let allregister = getNode('.register')
+let idCheck = getNode('#submit1')
+let userIdError = getNode('.alert-error')
+let emailCheck = getNode('#submit2')
+let userEmailCheck = getNode('.alert-error-email')
+let password = document.querySelector('.pw-input');
+let email = document.querySelector('.email-input');
+let resgisterButton =document.querySelector('.register-button');
+
+
 
 
 // 아이디 인증버튼
-let idCheck = getNode('#submit1')
-let userIdError = getNode('.alert-error')
-
 function clickIdHandler(e) {
   e.preventDefault();
   let name = getInputValue('#nameField')
@@ -48,9 +57,7 @@ function checkhandler(){
   }
 }
 // 이메일 검사
-let emailCheck = getNode('#submit2')
-let userEmailCheck = getNode('.alert-error-email')
-// let emailValidation = ('^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
+const REG = (/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i);
 
 function clickEmailHandler(e){
   e.preventDefault();
@@ -62,27 +69,23 @@ function clickEmailHandler(e){
     } else{
       addClass(userEmailCheck,'deactive')
     }
-    if(!EMAILREGEX.test('test@test.com')){
-      return alert('@포함해주세요')
-      
-    }else{
-      return true
+    if(emailValue.match(REG)){
+      alert('인증되었습니다.')
+
+    }else if(!emailValue.match(REG)){
+      alert('이메일 형식이 올바르지 않습니다.')
     }
-
-
-    
 }
 
 
 // 회원가입 버튼
-const register = document.querySelector('.register');
-let password = document.querySelector('.pw-input');
-let email = document.querySelector('.email-input');
-let resgisterButton =document.querySelector('.register-button');
+
+
 
 // 패스워드 8자리
-async function registerCheck(){
-  let response = tiger.get( 'http://localhost:3000/users');
+async function registerCheck(e){
+  e.preventDefault();
+  let response = tiger.get('http://localhost:3000/users');
   console.log(response)
 
 
@@ -110,8 +113,8 @@ async function registerCheck(){
 
 
 // addEventListener('keyup',passwordCheck)
-
-register.addEventListener('click',registerCheck)
+// allInputValue.addEventListener('input',allregister)
+resgisterButton.addEventListener('click',registerCheck)
 allCheck.addEventListener('click',checkhandler)
 idCheck.addEventListener('click',clickIdHandler)
 emailCheck.addEventListener('click',clickEmailHandler)
