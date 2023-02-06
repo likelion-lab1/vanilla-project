@@ -59,206 +59,7 @@ body {
   height: 72px;
   background-color: aqua;
 }
-/* 메인 */
-.main {
-  width: 1050px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: rgb(192, 227, 206);
-}
-
-/* 메인 PRODUCT SWIPER */
-.special-deal-list-container,
-.recommend-list-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  /* height: 320px; */
-}
-
-.swiper {
-  /* position: relative; */
-  /* padding-top: 50px; */
-}
-
-.swiper-wrapper {
-  position: relative;
-  display: flex;
-  z-index: 1;
-}
-
-.swiper .swiper-slide {
-  /* position: relative; */
-  flex-direction: row;
-  flex-shrink: 0;
-  overflow: hidden;
-}
-
-.swiper .swiper-slide img {
-  display: block;
-  width: 249px;
-}
-
-.recommend-list-next {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
-  /* transform: rotate(180deg); */
-  position: absolute;
-  border: none;
-  top: 45%;
-  right: -25px;
-  height: 52px;
-  width: 52px;
-  z-index: 100;
-}
-.special-deal-list-next {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
-  /* transform: rotate(180deg); */
-  position: absolute;
-  border: none;
-  top: 45%;
-  right: -25px;
-  height: 52px;
-  width: 52px;
-  z-index: 100;
-}
-.recommend-list-prev {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
-  transform: rotate(180deg);
-  position: absolute;
-  border: none;
-  top: 45%;
-  left: -25px;
-  height: 52px;
-  width: 52px;
-  z-index: 100;
-}
-.special-deal-list-prev {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
-  transform: rotate(180deg);
-  position: absolute;
-  border: none;
-  top: 45%;
-  left: -25px;
-  height: 52px;
-  width: 52px;
-  z-index: 100;
-}
-
-.next::after,
-.prev::after {
-  display: none;
-}
-
-/* 메인 PRODUCT LIST */
-
-.recommend-list-container {
-  background-color: pink;
-}
-
-.special-deal-list-container {
-  background-color: skyblue;
-}
-
-.recommend-list-swiper,
-.special-deal-list-siwper {
-  width: 1050px;
-  margin: 40px 0 40px 0;
-}
-.special-price-product-list {
-  /* display: flex; */
-  width: 1050px;
-  /* height: 601px; */
-  /* display: flex-box;
-  flex-direction: column;
-  align-items: center; */
-  background-color: skyblue;
-}
-
-.recommend-list--swiper-wrapper,
-.special-deal-list-swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-}
-.recommend-product-title,
-.special-deal-list-title {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  text-align: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28.43px;
-  line-height: 140%;
-  color: var(--content);
-  margin-top: 52px;
-}
-.product-thumbnail {
-  position: relative;
-  width: 249px;
-}
-
-.product-thumbnail img {
-  display: block;
-}
-.cart-button {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  background-color: transparent;
-  background-image: url(../assets/icons/Icon/Cart.svg);
-  border: none;
-  right: 15px;
-  bottom: 17px;
-  display: block;
-}
-
-.product-info {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.product-info h3 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  margin-top: 16px;
-  color: var(--content);
-}
-
-.selling {
-  font-weight: 600;
-  font-size: 21.328px;
-  line-height: 150%;
-}
-
-.discount-rate {
-  color: var(--accent);
-}
-
-.price del {
-  font-weight: 400;
-  font-size: 12.003px;
-  line-height: 160%;
-  color: var(--gray400);
-  margin-top: 8px;
-}
-
-.price {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 8px;
-}
+/* 라인배너 */
 
 .line-banner {
   margin: 40px 0 40px 0;
@@ -277,12 +78,17 @@ body {
 
 /* 장바구니 팝업 */
 
-.add-cart-wrap {
+#add-cart-container {
+  position: fixed;
+  top: 32%;
+  left: 40%;
   width: 396px;
   height: 296px;
-  background-color: skyblue;
+  background-color: rgb(234, 245, 255);
   border-radius: 16px;
   padding: 24px 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-cart-title {
@@ -302,7 +108,7 @@ body {
   margin-bottom: 28px;
 }
 
-.total-value-title {
+.total-cost-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
@@ -319,6 +125,15 @@ body {
   width: 84px;
   height: 30px;
   display: flex;
+  border: 1px solid #c4c4c4;
+}
+#add-cart-result {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0 8px 0 8px;
+  line-height: 30px;
 }
 .in-number {
   width: 24px;
@@ -349,7 +164,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.total-value {
+.total em {
   font-weight: 700;
   font-size: 28.43px;
   line-height: 140%;
@@ -376,12 +191,20 @@ body {
   margin-left: 12px;
 }
 
+/* 장바구니 팝업 버튼 */
+
+.in-cart-button {
+  display: flex;
+  justify-content: space-between;
+}
+
 #close {
   width: 174px;
   height: 54px;
   background-color: white;
   border-radius: 4px;
   border: 1px solid #898989;
+  /* margin-right: 8px; */
 }
 
 #in-cart {
@@ -393,48 +216,28 @@ body {
   color: #ffffff;
 }
 
-/* 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.add-quantiy,
+.minus-quantity {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+/* 장바구니 팝업 모달  */
+
+/* .add-cart-hidden {
+  display: none;
 } */
 
-#btnWrap {
-  width: 500px;
-  margin: 100px auto;
-}
-#popupBtn {
-  width: 150px;
-  height: 50px;
-  padding: 10px 5px;
-}
-#modalWrap {
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  display: none;
+.add-cart-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /* z-index: 250; */
 }
 
-#modalBody {
-  width: 500px;
-  height: 300px;
-  padding: 30px 30px;
-  margin: 0 auto;
-  border: 1px solid #777;
-  background-color: #fff;
-}
-
-#closeBtn {
-  float: right;
-  font-weight: bold;
-  color: #777;
-  font-size: 25px;
-  cursor: pointer;
+#cart1 {
+  position: absolute;
 }

@@ -20,7 +20,50 @@
   </head>
 
   <body>
-    <!-- 헤더 -->
+    <div class="add-cart-wrap">
+      <div class="add-cart-hidden">
+        <div class="add-cart-overlay"></div>
+        <div id="add-cart-container">
+          <h3 class="add-cart-title">[풀무원] 탱탱쫄면 (4개입)</h3>
+
+          <div class="price-quantity">
+            <em><span class="price-per-unit">4,980원</span></em>
+
+            <div class="add-cart-quantity">
+              <input
+                class="minus-quantity"
+                type="button"
+                onclick='count("minus")'
+                value="-"
+              />
+              <span id="add-cart-result">1</span>
+              <input
+                class="add-quantiy"
+                type="button"
+                onclick='count("plus")'
+                value="+"
+              />
+            </div>
+          </div>
+
+          <div class="total">
+            <span class="total-cost-title">합계</span>
+            <em><span class="total-cost">4,980</span>원</em>
+          </div>
+          <div class="save-point">
+            <strong><span class="save-point-sticker">적립</span></strong>
+            <strong
+              ><span class="save-point-detail">구매 시 5원 적립</span></strong
+            >
+          </div>
+
+          <div class="in-cart-button">
+            <button id="close">취소</button>
+            <button id="in-cart">장바구니 담기</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="header center">헤더</header>
     <!-- 네비게이션 -->
     <nav class="navigation center">네비게이션</nav>
@@ -41,55 +84,15 @@
         <p>modal-popup 입니다.</p>
       </div>
     </div> -->
-    <!-- 
+
     <button
       type="button"
       class="cart-button"
-      id="cart-1"
+      id="cart1"
       aria-label="장바구니 버튼"
-    ></button> -->
-
-    <div class="add-cart-wrap">
-      <div id="add-cart-container">
-        <h3 class="add-cart-title">[풀무원] 탱탱쫄면 (4개입)</h3>
-
-        <div class="price-quantity">
-          <em><span class="price-per-unit">4,980원</span></em>
-
-          <div class="add-cart-quantity">
-            <input
-              class="add-quantiy"
-              type="button"
-              onclick='count("plus")'
-              value="+"
-            />
-            <div id="result">1</div>
-            <input
-              class="minus-quantity"
-              type="button"
-              onclick='count("minus")'
-              value="-"
-            />
-          </div>
-        </div>
-
-        <div class="total">
-          <span class="total-cost-title">합계</span>
-          <em><span class="total-cost">4,980</span>원</em>
-        </div>
-        <div class="save-point">
-          <strong><span class="save-point-sticker">적립</span></strong>
-          <strong
-            ><span class="save-point-detail"
-              >구매 시 <span class="save-point-unit">5</span>원 적립</span
-            ></strong
-          >
-        </div>
-
-        <button id="close">취소</button>
-        <button id="in-cart">장바구니 담기</button>
-      </div>
-    </div>
+    >
+      장바구니 버튼
+    </button>
 
     <!-- 푸터 -->
     <footer class="footer center">푸터</footer>
