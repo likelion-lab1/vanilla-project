@@ -83,7 +83,75 @@
   ],
   "users": [
     {
-     
+      "id": "faker",
+      "password": "t10987",
+      "name": "이상혁",
+      "email": "faker@t1.com",
+      "phoneNumber": "01012345678",
+      "address": "서울 강남구 선릉로 627",
+      "gender": "male",
+      "birthDate": "19960507"
+    },
+    {
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-6039",
+      "gender": "male",
+      "men": "female",
+      "birth": "",
+      "all-check-box": "on",
+      "sub-check-box": [
+        "on",
+        "on",
+        "on",
+        "on"
+      ],
+      "id": "4OVLu_B"
+    },
+    {
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-60391111",
+      "gender": "male",
+      "birth": "2023-02-04",
+      "all-check-box": "on",
+      "id": "Hd3q_Mk"
+    },
+    {
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-60391111",
+      "gender": "male",
+      "birth": "2023-02-04",
+      "all-check-box": "on",
+      "id": "bid5EHM"
+    },
+    {
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-60391111",
+      "gender": "male",
+      "birth": "2023-02-04",
+      "all-check-box": "on",
+      "sub-check-box": [
+        "on",
+        "on",
+        "on",
+        "on"
+      ],
+      "id": "LY9S_Fz"
     }
   ]
 }

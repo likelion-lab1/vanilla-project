@@ -83,35 +83,26 @@ function clickEmailHandler(e){
 
 // uniqueID 랜덤함수 생성
 
-function welcomeAlert() {alert("회원이 되신것을 축하합니다.")}
-function alreadyUserAlert() {alert("이미 존재하는 회원입니다.")}
-function serverErrorAlert() {alert("알 수 없는 오류가 발생했습니다.")}
+// const signupBtn = getNode('.signup-form__button--submit');
 
-// signup에서 login으로 이동시킬 fetch 함수 //
-function goToLogin() {
+const signupForm = getNode('#registerForm');
+
+let signFormData = new FormData(signupForm)
+
+function registerHandler(e) {
+  e.preventDefault();
   fetch('http://localhost:3000/users', {
-    method: "POST",
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      username: id.value,
-      password: password.value
-    })
+    method: 'POST',
+    // cache: 'no-cache',
+    body: signFormData // body 부분에 폼데이터 변수를 할당
   })
-  .then(res => {
-    if (res.status === 200) {
-      this.welcomeAlert();
-      this.props.history.push('/');
-    }
-    if (res.status === 401) {
-      this.alreadyUserAlert();
-    }
-    if (res.status === 400) {
-      this.serverErrorAlert()
-    }
-  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    });
 }
+
+resgisterButton.addEventListener('submit', registerHandler)
 
 
 // 회원가입
@@ -160,7 +151,6 @@ function goToLogin() {
 
 // addEventListener('keyup',passwordCheck)
 // allInputValue.addEventListener('input',allregister)
-resgisterButton.addEventListener('submit',goToLogin)
 allCheck.addEventListener('click',checkhandler)
 idCheck.addEventListener('click',clickIdHandler)
 emailCheck.addEventListener('click',clickEmailHandler)
