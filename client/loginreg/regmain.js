@@ -11,6 +11,8 @@ let userEmailCheck = getNode('.alert-error-email')
 let password = document.querySelector('.pw-input');
 let email = document.querySelector('.email-input');
 let resgisterButton =document.querySelector('.register-button');
+let id = getNode('#nameField');
+
 
 
 
@@ -84,21 +86,23 @@ function clickEmailHandler(e){
 
 
 // 회원가입
- function registerCheck(){
-  fetch("http://localhost:3000", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    title: "Test",
-    body: "I am testing!",
-    userId: 1,
-  }),
-})
-  .then((response) => response.json())
-  .then((data) => console.log(data));
- }
+//  function registerCheck(){
+//   fetch("http://localhost:3000/users", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     title: "Test",
+//     body: "I am testing!",
+//     userId: 1,
+//   }),
+// })
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+//  }
+
+ 
 
 
 
@@ -127,7 +131,7 @@ function clickEmailHandler(e){
 
 // addEventListener('keyup',passwordCheck)
 // allInputValue.addEventListener('input',allregister)
-resgisterButton.addEventListener('click',registerCheck)
+// resgisterButton.addEventListener('click',registerCheck)
 allCheck.addEventListener('click',checkhandler)
 idCheck.addEventListener('click',clickIdHandler)
 emailCheck.addEventListener('click',clickEmailHandler)

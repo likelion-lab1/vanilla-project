@@ -1,7 +1,7 @@
-@import url(/client/css/reset.css);
-@import url(/client/css/normalize.css);
-@import url(/client/css/fontello.css);
-@import url(/client/css/color.css);
+@import url(../css/reset.css);
+@import url(../css/normalize.css);
+@import url(../css/fontello.css);
+@import url(../css/color.css);
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 /* 숨김 컨텐츠 */
