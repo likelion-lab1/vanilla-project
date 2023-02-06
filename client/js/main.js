@@ -1,6 +1,10 @@
-let button = document.querySelector('.AdClose');
+import {  getNode  } from "../lib/index.js"
+
+
+
+let button = getNode('.AdClose');
 function handler(){
-  let AD = document.querySelector('.TopAd');
+  let AD = getNode('.TopAd');
   AD.style.display = 'none';
 }
 button.addEventListener('click',handler);

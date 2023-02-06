@@ -39,11 +39,11 @@ function clickIdHandler(e) {
 allCheck.addEventListener('click',checkhandler)
 submitCheck.addEventListener('click',clickIdHandler)
 // 활성화버튼
-const register = document.querySelector('.register');
+const register = getNode('.register');
 
-let pw = document.querySelector('.pw-input');
-let email = document.querySelector('.email-input');
-let resgisterButton =document.querySelector('.register-button');
+let pw = getNode('.pw-input');
+let email = getNode('.email-input');
+let resgisterButton = getNode('.register-button');
 
 
 function keycheck(e){
@@ -71,6 +71,18 @@ register.addEventListener('keyup',keycheck)
 // document.querySelector('.email-input').value.includes('.')
 
 
+const useAgreement = getNode('.use-agreement');
+
+function unCheckhandler(e){
+  e = e.target
+  
+  if(e.className == 'sub-check' && e.checked == false){
+    allCheck.checked = false;
+    
+  }
+}
+
+useAgreement.addEventListener('click',unCheckhandler)
 
 
 
