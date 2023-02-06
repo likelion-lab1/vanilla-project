@@ -1,9 +1,6 @@
-import {  getNode  } from "../lib/index.js"
-
-
 // 작업시작
-let popupButtonLeft = getNode('.popup-button-left');
-let popup = getNode('.popup');
+let popupButtonLeft = document.querySelector('.popup-button-left');
+let popup = document.querySelector('.popup');
 
 
 function setCookie(name,value,day){
@@ -27,8 +24,6 @@ function delCookie(name){
 }
 
 // 쿠키 확인
-
-
 function getCookie(name) {
   let cookies = document.cookie.split(';');
   console.log(cookies);
@@ -47,7 +42,7 @@ function getCookie(name) {
       popup.style.display = 'none';
     }else {
       // 신규방문
-      popup.style.display = 'flex';
+      popup.style.display = 'inlineblock';
     }
 }
 
