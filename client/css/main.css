@@ -103,9 +103,8 @@ body {
 }
 
 .recommend-list-next {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
-  /* transform: rotate(180deg); */
+  background: url(../assets/icons/arrow.svg) 54% 50% no-repeat;
+  background-color: white;
   position: absolute;
   border: none;
   top: 45%;
@@ -114,11 +113,13 @@ body {
   width: 52px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.03),
+    0px 0px 4px rgba(0, 0, 0, 0.08);
 }
 .special-deal-list-next {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
-  /* transform: rotate(180deg); */
+  background: url(../assets/icons/arrow.svg) 54% 50% no-repeat;
+  background-color: white;
   position: absolute;
   border: none;
   top: 45%;
@@ -127,32 +128,42 @@ body {
   width: 52px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.03),
+    0px 0px 4px rgba(0, 0, 0, 0.08);
 }
 .recommend-list-prev {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
+  background: url(../assets/icons/arrow.svg) 54% 50% no-repeat;
+
   transform: rotate(180deg);
   position: absolute;
   border: none;
+  background-color: white;
   top: 45%;
   left: -25px;
   height: 52px;
   width: 52px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.03),
+    0px 0px 4px rgba(0, 0, 0, 0.08);
 }
 .special-deal-list-prev {
-  background: url(../assets/icons/product-list-button-next.svg) 50% 50%
-    no-repeat;
+  background: url(../assets/icons/arrow.svg) 54% 50% no-repeat;
   transform: rotate(180deg);
   position: absolute;
   border: none;
+  background-color: white;
   top: 45%;
   left: -25px;
   height: 52px;
   width: 52px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.03),
+    0px 0px 4px rgba(0, 0, 0, 0.08);
 }
 
 .next::after,
@@ -161,12 +172,6 @@ body {
 }
 
 /* 메인 PRODUCT LIST */
-
-.recommend-list-container {
-}
-
-.special-deal-list-container {
-}
 
 .recommend-list-swiper,
 .special-deal-list-siwper {
