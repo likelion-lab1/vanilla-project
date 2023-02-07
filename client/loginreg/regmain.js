@@ -5,26 +5,27 @@ import {removeClass,insertAfter,getInputValue, getNode, getNodes,insertLast,show
 
 let allregister = getNode('.register')
 let idCheck = getNode('#submit1')
-let userIdError = getNode('.alert-error')
 let emailCheck = getNode('#submit2')
 let userEmailCheck = getNode('.alert-error-email')
 let password = document.querySelector('.pw-input');
 let email = document.querySelector('.email-input');
 let resgisterButton =document.querySelector('.register-button');
-let id = getNode('#nameField');
-
+let userPasswordCheck = getNode('.alert-error-password')
 
 
 
 
 
 // 아이디 인증버튼
+let id = getNode('#nameField');
+let userIdError = getNode('.alert-error')
+
 function clickIdHandler(e) {
   e.preventDefault();
   let name = getInputValue('#nameField')
   if(!name){
     // userID 라는 노드에 deactive 클래스를 지운다
-    removeClass(userIdError, 'deactive') 
+    removeClass(userIdError,'deactive') 
     console.log(userIdError);
     return
   } else {
@@ -89,8 +90,13 @@ const signupForm = getNode('#registerForm');
 
 let signFormData = new FormData(signupForm)
 
+
 function registerHandler(e) {
   e.preventDefault();
+  if (password.length > 8) {
+    removeClass(userPasswordCheck, 'deactive') 
+    console.log(userPasswordCheck)
+  }
   fetch('http://localhost:3000/users', {
     method: 'POST',
     // cache: 'no-cache',
@@ -102,7 +108,7 @@ function registerHandler(e) {
     });
 }
 
-resgisterButton.addEventListener('submit', registerHandler)
+resgisterButton.addEventListener('click', registerHandler)
 
 
 // 회원가입
