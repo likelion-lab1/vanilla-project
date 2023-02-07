@@ -797,7 +797,63 @@ height: 670px;
 }
 
 
+.why-karly{
+  height: 801px;
+  padding: 72px 52.5px 84px 52.5px;
+  background: wheat;
+}
 
+.title{
+  text-align: center;
+  font-weight: 700;
+  font-size: 28.43px;
+  color: var(--content);
+}
+
+
+.why-karly-list img,
+.why-karly-list-bottom img{
+  width: 40px;
+  height: 40px;
+  margin: 56px 137.5px 16px 137.5px;
+  
+}
+
+.why-karly-list{
+  margin-top: 35px;
+}
+
+.why-karly-list,
+.why-karly-list-bottom{
+  display: flex;
+}
+
+.why-karly-list-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.why-karly-reason{
+  width: 315px;
+  height: 272px;
+  background-color: #FA622F;
+  text-align: center;
+}
+
+.why-karly-sub-title{
+  font-weight: 600;
+font-size: 21.328px;
+color: var(--primary);
+margin-bottom: 24px;
+}
+
+.sub-title-explain{
+  width: 250px;
+  margin-left: 32.5px;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--content);
+}
 
 
 
