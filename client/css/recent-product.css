@@ -1,0 +1,143 @@
+@import url(./reset.css);
+@import url(./normalize.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url(./color.css);
+
+/* 숨김 컨텐츠 */
+.a11y-hidden,
+legend {
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+html {
+  font-size: 16px;
+}
+
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 기본 스타일 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 공통 바디 스타일 */
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  position: relative;
+}
+
+/* 공통 */
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
+  margin: 0 435px;
+}
+/* 헤더 */
+.header {
+  height: 125px;
+  background-color: antiquewhite;
+}
+/* 네비게이션 */
+.navigation {
+  height: 72px;
+  background-color: aqua;
+}
+/* 메인 */
+.main {
+  height: 1421px;
+}
+
+/* 최근 본 상품 영역 */
+
+.recent-product-list {
+  width: 74px;
+  height: 223px;
+  border: 1px solid var(--gray200);
+  padding: 34px 0 8px 0;
+  top: 50%;
+  right: 2%;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+}
+
+.recent-list-title {
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.recent-list-container {
+  width: 40px;
+  height: 129px;
+  margin: 0 17px 0 17px;
+  overflow: hidden;
+}
+
+.recent-product-list-wrap {
+  height: 129px;
+}
+
+.recent-list-slide img {
+  width: 40px;
+  height: 51.41px;
+  display: block;
+}
+
+.recent-list-slide {
+  background: black;
+}
+.recent-list-button-prev,
+.recent-list-button-next {
+  width: 18px;
+  height: 18px;
+  left: 28px;
+  align-content: center;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  position: absolute;
+  z-index: 100;
+  background-color: transparent;
+}
+
+.recent-list-button-prev {
+  background-image: url(../assets/icons/Direction=Up.svg);
+  top: 8px;
+}
+
+.recent-list-button-next {
+  background-image: url(../assets/icons/Direction=Down.svg);
+  bottom: 8px;
+}
+/* 푸터 */
+.footer {
+  height: 737px;
+  background-color: beige;
+}
+/* 배너 */
+.banner {
+  background-color: bisque;
+  height: 370px;
+}
