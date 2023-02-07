@@ -3,7 +3,7 @@ const swiper1 = new Swiper(".recommend-list-swiper", {
   spaceBetween: 18,
   slidesPerGroup: 4,
   loop: false,
-  speed: 500,
+  speed: 680,
 
   navigation: {
     nextEl: ".recommend-list-next",
@@ -13,23 +13,34 @@ const swiper1 = new Swiper(".recommend-list-swiper", {
     enabled: true,
     onlyInViewport: false,
   },
+  a11y: {
+    prevSlideMessage: "이전 상품",
+    nextSlideMessage: "다음 상품",
+    firstSlideMessage: "첫번째 상품 입니다",
+    lastSlideMessage: "마지막 상품 입니다",
+  },
 });
 
 const swiper2 = new Swiper(".special-deal-list-siwper", {
-  slidesPerView: 4, // 슬라이드 갯수 나누기
-  spaceBetween: 18, // 슬라이드 사이 간격
-  slidesPerGroup: 4, // 슬라이드 4개씩 들어가기
-  loop: true, // 무한루프로 걸어서 맨 앞으로 후루룩 돌아오는 걸 방지
-  speed: 500,
+  slidesPerView: 4,
+  spaceBetween: 18,
+  slidesPerGroup: 4,
+  loop: false,
+  speed: 680,
 
   navigation: {
-    // 버튼
     nextEl: ".special-deal-list-next",
     prevEl: ".special-deal-list-prev",
   },
   keyboard: {
     enabled: true,
     onlyInViewport: false,
+  },
+  a11y: {
+    prevSlideMessage: "이전 상품",
+    nextSlideMessage: "다음 상품",
+    firstSlideMessage: "첫번째 상품 입니다",
+    lastSlideMessage: "마지막 상품 입니다",
   },
 });
 const swiper3 = new Swiper(".recent-product-swiper", {
@@ -45,6 +56,11 @@ const swiper3 = new Swiper(".recent-product-swiper", {
     enabled: true,
     onlyInViewport: false,
   },
-  firstSlideMessage: "첫번째 상품 입니다",
-  lastSlideMessage: "마지막 상품 입니다",
+
+  a11y: {
+    prevSlideMessage: "이전 상품",
+    nextSlideMessage: "다음 상품",
+    firstSlideMessage: "첫번째 상품 입니다",
+    lastSlideMessage: "마지막 상품 입니다",
+  },
 });

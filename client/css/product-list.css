@@ -275,6 +275,10 @@ body {
   margin: 40px 0 40px 0;
 }
 
+.main .swiper-button-disabled {
+  display: none;
+}
+
 /* 푸터 */
 .footer {
   height: 737px;
