@@ -13,13 +13,13 @@ plus.addEventListener("click", () => {
 });
 
 minus.addEventListener("click", () => {
-  if (i > 0) {
+  if (i > 1) {
     i--;
     result.textContent = i;
     let totalCostNum = i * 4980;
     totalCost.textContent = totalCostNum.toLocaleString();
   } else {
-    totalCost.textContent = 0 + 1;
+    totalCost.textContent = totalCostNum.toLocaleString(i * 4980);
   }
 });
 
@@ -27,7 +27,7 @@ minus.addEventListener("click", () => {
 //cart bubble
 let cartBtn = document.querySelector('.product-detail-info-cart-btn');
 
-function handler(){
+function bubbleHandler(){
 let bubble = document.querySelector('.cart-bubble');
 bubble.style.display = 'flex';
 setTimeout(function(){
@@ -35,7 +35,7 @@ bubble.style.display = 'none';
 }, 3000);
 }
 
-cartBtn.addEventListener('click',handler);
+cartBtn.addEventListener('click',bubbleHandler);
 
 
 
