@@ -43,7 +43,7 @@ body {
 /* 공통 */
 .center {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   text-align: center;
   width: 1050px;
   margin: 0 auto;
