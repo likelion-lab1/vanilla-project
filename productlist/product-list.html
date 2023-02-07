@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/product-list.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  <script src="./js/main.js" type="module"></script>
+  <script src="./js/productlist.js" type="module"></script>
+
+  <link rel="stylesheet" href="./css/fontello.css" />
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+
+
+  <title>상품 리스트</title>
+
+</head>
+
+<body>
+
+
+<span class="topAd center">
+  
+    <a href="./css/">지금 가입하고 인기상품 <strong>100원</strong>에 받아가세요!</a>
+    <button class="adClose"><img src="./css/img/header/icon/ico_close.png" alt="상단 광고 닫기"></button>
+  
+ 
+
+</span>
+
+<header class="header center">
+  <ul class="mainNavigation">
+    <li><a href="./index.html"><img src="./assets/images/karly.png" alt="배너 로고"></a> </li>
+    <li><a href="./index.html">마켓칼리</a></li>
+    <li><a href="#" class="new">뷰티칼리</a></li>
+  
+    <form method="post" action="#" class="search">
+      <fieldset>
+        <legend>검색영역</legend>
+        <input type="search" placeholder="검색어를 입력해주세요"  required>
+        <button type="submit" class="searchButton icon-search-1"></button>
+      </fieldset>
+    </form>
+  </ul>
+<ul class="rightNavigation">
+  <li><a href="#" class="map"><img src="./assets/icons/Icon/Location.svg" alt="위치 정보" /></a></li>
+  <li><a href="#" class="heart"><img src="./assets/icons/Icon/Heart.svg" alt="관심 상품" /></a></li>
+  <li><a href="#" class="cart"><img src="./assets/icons/Icon/Cart2.svg" alt="장바구니" /></a></li>
+</ul>
+  <!--헤더네비게이션 -->
+<ul class="topNavigation">
+  <li><a href="./registor.html">회원가입</a></li>
+  <li><a href="./login.html">로그인</a></li>
+  <li><a href="#" class="CustomerService">고객센터 ▼</a></li>
+
+</ul>
+<!-- <ul class="CustomerServiceList">
+  <li><a href="#">공지사항</a></li>
+  <li><a href="#"> 자주하는 질문</a></li>
+  <li><a href="#">1:1 문의</a></li>
+  <li><a href="#">대량주문 문의</a></li>
+</ul> -->
+</header>
+<nav class="navigation center">
+  <ul class="menuBar">
+    <button class="menuButton icon-menu"> 카테고리</button>
+    
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    <li><a href="#" class="menuBarList">150560</a></li>
+    
+  </ul>
+  <ul class="menuOther">
+    <li><a href="./product-list.html">신상품</a></li>
+    <li><a href="./product-list.html">베스트</a></li>
+    <li><a href="./product-list.html">알뜰쇼핑</a></li>
+    <li><a href="./product-list.html">특가/혜택</a></li>
+  </ul>
+  <a href="#" class="notice"><span class="maincolor">샛별 낮</span> 배송안내</a>
+</nav> 
+
+
+<main class="main">
+  <h2>베스트</h2>
+  <div class="main-wrapper">
+  <section class="menu-navigation">
+     <ul>
+      <li class="menu-main-list">
+        <div class="menu-main-name">
+          <p>필터</p> 
+           <button>초기화</button>
+        </div>
+      </li>
+
+      <li class="menu-main-list">
+        <button class="menu-main-name more">카테고리<span class="menu-more-button category-button">∨</span></button>
+        <ul class="menu-sub-list">
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-salad" />
+                  <label for="food-salad">
+                      <em></em>샐러드·간편식
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-soop" />
+                  <label for="food-soop">
+                      <em></em>국·반찬·메인요리
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-meat" />
+                  <label for="food-meat">
+                      <em></em>정육·계란
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-fruit" />
+                  <label for="food-fruit">
+                      <em></em>과일·견과·떡
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-snack" />
+                  <label for="food-snack">
+                      <em></em>간식·과자·떡
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-drink" />
+                  <label for="food-drink">
+                      <em></em>생수·음료·우유·커피
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-fish" />
+                  <label for="food-fish">
+                      <em></em>수산·해산·건어물
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-bakerye" />
+                  <label for="food-bakery">
+                      <em></em>베이커리·치즈·델리
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-health" />
+                  <label for="food-health">
+                      <em></em>건강식품
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="food" value="#" class="check2" id="food-leaving" />
+                  <label for="food-leaving">
+                      <em></em>생활용품·리빙·캠핑
+                  </label>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-main-list">
+        <button class="menu-main-name">브랜드<span class="menu-more-button">∨</span></button>
+        <ul class="menu-sub-list">
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-salad" />
+                  <label for="brand-salad">
+                      <em></em>감자밭
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-soop" />
+                  <label for="brand-soop">
+                      <em></em>강남면욕
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-meat" />
+                  <label for="brand-meat">
+                      <em></em>경남제약
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-fruit" />
+                  <label for="brand-fruit">
+                      <em></em>경복궁
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-snack" />
+                  <label for="brand-snack">
+                      <em></em>고래사
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-drink" />
+                  <label for="brand-drink">
+                      <em></em>고메공방
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-fish" />
+                  <label for="brand-fish">
+                      <em></em>고온어다이어트
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-bakerye" />
+                  <label for="brand-bakery">
+                      <em></em>교토마블
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-health" />
+                  <label for="brand-health">
+                      <em></em>그래놀라 하우스
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="brand" value="#" class="check2" id="brand-leaving" />
+                  <label for="brand-leaving">
+                      <em></em>그리츠 시그니처 램
+                  </label>
+          </li>
+          <li id="brand-more">
+            <a href="#">브랜드 더보기 ></a>
+          </li>
+        </ul>
+      </li >
+
+      <li class="menu-main-list">
+        <button class="menu-main-name">가격<span class="menu-more-button">∨</span></button>
+        <ul class="menu-sub-list">
+          <li>
+            <input type="checkbox" name="price" value="#" class="check2" id="price-salad" />
+                  <label for="price-salad">
+                      <em></em>6,500원 미만
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="price" value="#" class="check2" id="price-soop" />
+                  <label for="price-soop">
+                      <em></em>6,500원 ~ 9,980원
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="price" value="#" class="check2" id="price-meat" />
+                  <label for="price-meat">
+                      <em></em>9,900원 ~ 16,250원
+          </li>
+          <li>
+            <input type="checkbox" name="price" value="#" class="check2" id="price-fruit" />
+                  <label for="price-fruit">
+                      <em></em>16,250원 이상
+                  </label>
+          </li>
+          
+        </ul>
+      </li>
+
+      <li class="menu-main-list">
+        <button class="menu-main-name">혜택<span class="menu-more-button">∨</span></button>
+        <ul class="menu-sub-list">
+          <li>
+            <input type="checkbox" name="event" value="#" class="check2" id="event-salad" />
+                  <label for="event-salad">
+                      <em></em>할인상품
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="event" value="#" class="check2" id="event-soop" />
+                  <label for="event-soop">
+                      <em></em>한정수량
+                  </label>
+          </li>
+          
+        </ul>
+      </li>
+
+      <li class="menu-main-list">
+        <button class="menu-main-name">유형<span class="menu-more-button">∨</span></button>
+        <ul class="menu-sub-list">
+          <li>
+            <input type="checkbox" name="type" value="#" class="check2" id="type-salad" />
+                  <label for="type-salad">
+                      <em></em>Kurly Only
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="type" value="#" class="check2" id="type-soop" />
+                  <label for="type-soop">
+                      <em></em>희소가치 프로젝트
+                  </label>
+          </li>
+        </ul>
+      </li>
+
+      <li class="menu-main-list">
+        <button class="menu-main-name">특정상품 제외<span class="menu-more-button">∨</span></button>
+        <ul class="menu-sub-list">
+          <li>
+            <input type="checkbox" name="name" value="#" class="check2" id="name-salad" />
+                  <label for="name-salad">
+                      <em></em>구아영
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="name" value="#" class="check2" id="name-soop" />
+                  <label for="name-soop">
+                      <em></em>이로운
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="name" value="#" class="check2" id="name-meat" />
+                  <label for="name-meat">
+                      <em></em>이승언
+          </li>
+          <li>
+            <input type="checkbox" name="name" value="#" class="check2" id="name-fruit" />
+                  <label for="name-fruit">
+                      <em></em>오승택
+                  </label>
+          </li>
+          <li>
+            <input type="checkbox" name="name" value="#" class="check2" id="name-snack" />
+                  <label for="name-snack">
+                      <em></em>배상우
+                  </label>
+          </li>
+        </ul>
+            </li>
+          </ul>
+  </section>
+  <section class="best-item"> 
+          
+    <div class="bset-item-sum">
+      <div class="sum-item"> 총 284건</div>
+      <ul class="recommend-list">
+        <li class="recommend-list-name">추천순 <img src="css/icon/Notice.png" class="recommend-icon"></li>
+        <li class="recommend-list-name">
+          <span class="best-confirm" aria-hidden="true">|</span>신상품순</li>
+        <li class="recommend-list-name">
+          <span class="best-confirm" aria-hidden="true">|</span>판매량순</li>
+        <li class="recommend-list-name">
+          <span class="best-confirm" aria-hidden="true">|</span>혜택순</li>
+        <li class="recommend-list-name">
+          <span class="best-confirm" aria-hidden="true">|</span>낮은 가격순</li>
+        <li class="recommend-list-name">
+          <span class="best-confirm" aria-hidden="true">|</span>높은 가격순</li>
+      </ul>
+    </div>
+
+<div class="best-main-item-list">
+<ul class="best-page-productlist">
+    <li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+    <img src="./assets/main-product/product01.png" alt="풀무원 탱탱쫄면 4개입"/>
+    <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+  <span class="best-page-delivery-type"> 샛별배송 </span>
+  <h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+  <span class="best-page-selling-price">4,980 원</span>
+  <span class="best-page-item-explain"> 튀기지 않아 부담없는 매콤함  </span>
+<div class="best-page-tag-area">
+  <span class="best-page-tag">karly Only</span>
+  <span class="best-page-tag">한정수량</span>
+</div>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+  <div class="best-page-product-thumbnail">
+      <img src="./assets/main-product/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션"/>
+      <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+  </div>
+  <div class="best-page-product-info">
+    <span class="best-page-delivery-type"> 샛별배송 </span>
+    <h3>[온더바디] 죠르디 시카 자석 선쿠션</h3>
+    <span class="best-page-selling-price">35,500 원</span>
+    <span class="best-page-item-explain"> 끈적함 없이 보송한 무기자차 선쿠션 </span>
+  </div>
+  </a>
+  </li>
+  <li class="best-page-productlist-item"> <a href="#">
+    <div class="best-page-product-thumbnail">
+        <img src="./assets/main-product/product04.png" alt="[프로쉬]베이비 세탁제"/>
+        <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+    </div>
+    <div class="best-page-product-info">
+      <span class="best-page-delivery-type"> 샛별배송 </span>
+      <h3>[프로쉬]베이비 세탁제</h3>
+      <div class="best-page-selling">
+      <span class="best-page-sale">24%</span>
+      <span class="best-page-selling-price">18,900 원</span>
+      </div>
+      <span class="best-page-price">24,900 원</span>
+      <span class="best-page-item-explain"> 성분을 꼼꼼히 따져 골라 더욱 편안한 </span>
+    <div class="best-page-tag-area">
+      <span class="best-page-tag">karly Only</span>
+      <span class="best-page-tag">한정수량</span>
+    </div>
+    </div>
+    </a>
+    </li>
+</ul>
+<ul class="best-page-productlist">
+  <li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+  <img src="./assets/main-product/product01.png" alt="풀무원 탱탱쫄면 4개입"/>
+  <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+<span class="best-page-delivery-type"> 샛별배송 </span>
+<h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+<span class="best-page-selling-price">4,980 원</span>
+<span class="best-page-item-explain"> 튀기지 않아 부담없는 매콤함  </span>
+<div class="best-page-tag-area">
+<span class="best-page-tag">karly Only</span>
+<span class="best-page-tag">한정수량</span>
+</div>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+    <img src="./assets/main-product/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션"/>
+    <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+  <span class="best-page-delivery-type"> 샛별배송 </span>
+  <h3>[온더바디] 죠르디 시카 자석 선쿠션</h3>
+  <span class="best-page-selling-price">35,500 원</span>
+  <span class="best-page-item-explain"> 끈적함 없이 보송한 무기자차 선쿠션 </span>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+  <div class="best-page-product-thumbnail">
+      <img src="./assets/main-product/product04.png" alt="[프로쉬]베이비 세탁제"/>
+      <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+  </div>
+  <div class="best-page-product-info">
+    <span class="best-page-delivery-type"> 샛별배송 </span>
+    <h3>[프로쉬]베이비 세탁제</h3>
+    <div class="best-page-selling">
+    <span class="best-page-sale">24%</span>
+    <span class="best-page-selling-price">18,900 원</span>
+    </div>
+    <span class="best-page-price">24,900 원</span>
+    <span class="best-page-item-explain"> 성분을 꼼꼼히 따져 골라 더욱 편안한 </span>
+  <div class="best-page-tag-area">
+    <span class="best-page-tag">karly Only</span>
+    <span class="best-page-tag">한정수량</span>
+  </div>
+  </div>
+  </a>
+  </li>
+</ul>
+<ul class="best-page-productlist">
+  <li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+  <img src="./assets/main-product/product01.png" alt="풀무원 탱탱쫄면 4개입"/>
+  <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+<span class="best-page-delivery-type"> 샛별배송 </span>
+<h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+<span class="best-page-selling-price">4,980 원</span>
+<span class="best-page-item-explain"> 튀기지 않아 부담없는 매콤함  </span>
+<div class="best-page-tag-area">
+<span class="best-page-tag">karly Only</span>
+<span class="best-page-tag">한정수량</span>
+</div>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+    <img src="./assets/main-product/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션"/>
+    <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+  <span class="best-page-delivery-type"> 샛별배송 </span>
+  <h3>[온더바디] 죠르디 시카 자석 선쿠션</h3>
+  <span class="best-page-selling-price">35,500 원</span>
+  <span class="best-page-item-explain"> 끈적함 없이 보송한 무기자차 선쿠션 </span>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+  <div class="best-page-product-thumbnail">
+      <img src="./assets/main-product/product04.png" alt="[프로쉬]베이비 세탁제"/>
+      <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+  </div>
+  <div class="best-page-product-info">
+    <span class="best-page-delivery-type"> 샛별배송 </span>
+    <h3>[프로쉬]베이비 세탁제</h3>
+    <div class="best-page-selling">
+    <span class="best-page-sale">24%</span>
+    <span class="best-page-selling-price">18,900 원</span>
+    </div>
+    <span class="best-page-price">24,900 원</span>
+    <span class="best-page-item-explain"> 성분을 꼼꼼히 따져 골라 더욱 편안한 </span>
+  <div class="best-page-tag-area">
+    <span class="best-page-tag">karly Only</span>
+    <span class="best-page-tag">한정수량</span>
+  </div>
+  </div>
+  </a>
+  </li>
+</ul>
+<ul class="best-page-productlist">
+  <li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+  <img src="./assets/main-product/product01.png" alt="풀무원 탱탱쫄면 4개입"/>
+  <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+<span class="best-page-delivery-type"> 샛별배송 </span>
+<h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+<span class="best-page-selling-price">4,980 원</span>
+<span class="best-page-item-explain"> 튀기지 않아 부담없는 매콤함  </span>
+<div class="best-page-tag-area">
+<span class="best-page-tag">karly Only</span>
+<span class="best-page-tag">한정수량</span>
+</div>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+    <img src="./assets/main-product/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션"/>
+    <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+  <span class="best-page-delivery-type"> 샛별배송 </span>
+  <h3>[온더바디] 죠르디 시카 자석 선쿠션</h3>
+  <span class="best-page-selling-price">35,500 원</span>
+  <span class="best-page-item-explain"> 끈적함 없이 보송한 무기자차 선쿠션 </span>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+  <div class="best-page-product-thumbnail">
+      <img src="./assets/main-product/product04.png" alt="[프로쉬]베이비 세탁제"/>
+      <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+  </div>
+  <div class="best-page-product-info">
+    <span class="best-page-delivery-type"> 샛별배송 </span>
+    <h3>[프로쉬]베이비 세탁제</h3>
+    <div class="best-page-selling">
+    <span class="best-page-sale">24%</span>
+    <span class="best-page-selling-price">18,900 원</span>
+    </div>
+    <span class="best-page-price">24,900 원</span>
+    <span class="best-page-item-explain"> 성분을 꼼꼼히 따져 골라 더욱 편안한 </span>
+  <div class="best-page-tag-area">
+    <span class="best-page-tag">karly Only</span>
+    <span class="best-page-tag">한정수량</span>
+  </div>
+  </div>
+  </a>
+  </li>
+</ul>
+<ul class="best-page-productlist">
+  <li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+  <img src="./assets/main-product/product01.png" alt="풀무원 탱탱쫄면 4개입"/>
+  <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+<span class="best-page-delivery-type"> 샛별배송 </span>
+<h3>[풀무원] 탱탱쫄면 (4개입)</h3>
+<span class="best-page-selling-price">4,980 원</span>
+<span class="best-page-item-explain"> 튀기지 않아 부담없는 매콤함  </span>
+<div class="best-page-tag-area">
+<span class="best-page-tag">karly Only</span>
+<span class="best-page-tag">한정수량</span>
+</div>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+<div class="best-page-product-thumbnail">
+    <img src="./assets/main-product/product02.png" alt="온더바디 죠르디 시카 자석 선쿠션"/>
+    <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+</div>
+<div class="best-page-product-info">
+  <span class="best-page-delivery-type"> 샛별배송 </span>
+  <h3>[온더바디] 죠르디 시카 자석 선쿠션</h3>
+  <span class="best-page-selling-price">35,500 원</span>
+  <span class="best-page-item-explain"> 끈적함 없이 보송한 무기자차 선쿠션 </span>
+</div>
+</a>
+</li>
+<li class="best-page-productlist-item"> <a href="#">
+  <div class="best-page-product-thumbnail">
+      <img src="./assets/main-product/product04.png" alt="[프로쉬]베이비 세탁제"/>
+      <button type="button" class="best-page-cartButton" aria-label="장바구니 버튼"></button>
+  </div>
+  <div class="best-page-product-info">
+    <span class="best-page-delivery-type"> 샛별배송 </span>
+    <h3>[프로쉬]베이비 세탁제</h3>
+    <div class="best-page-selling">
+    <span class="best-page-sale">24%</span>
+    <span class="best-page-selling-price">18,900 원</span>
+    </div>
+    <span class="best-page-price">24,900 원</span>
+    <span class="best-page-item-explain"> 성분을 꼼꼼히 따져 골라 더욱 편안한 </span>
+  <div class="best-page-tag-area">
+    <span class="best-page-tag">karly Only</span>
+    <span class="best-page-tag">한정수량</span>
+  </div>
+  </div>
+  </a>
+  </li>
+</ul>
+</div> 
+
+<div class="page-button">
+
+  <a href="#" class="page-move">
+    <img src="css/icon/forntdoublearrow.png" alt=""/>
+  </a>
+  <a href="#" class="page-move">
+    <img src="css/icon/frontarrow.png" alt=""/>
+  </a>
+  <a href="#" class="page-move">1</a>
+  <a href="#" class="page-move">2</a>
+  <a href="#" class="page-move">3</a>
+  <a href="#" class="page-move">
+  <img src="css/icon/backarrow.png" alt=""/>
+  </a>
+  <a href="#" class="page-move">
+  <img src="css/icon/backduoblearrow.png" alt=""/>
+  </a>
+
+</div>
+
+</section>
+</div>
+
+
+
+
+
+</main> 
+
+  <!-- 푸터 -->
+  <footer class="footer center">
+    <div class="footerMain">
+        <div class="footerInner">
+          <div class="footerLeft">
+            <h2 class="footerheader">고객행복센터</h2>
+            <strong class="footerCall">
+              1644-1107
+              <span class="footerDay">월~토요일 오전 7시 - 오후 6시</span>
+            </strong>
+            <div class="footerAsk">
+              <div class="footerKakao">
+                <button class="KakaoButton askButton">카카오톡 문의</button>
+                <div class="kakaoDay describe">
+                  월~토요일 
+                  <span class="divider" aria-hidden="true">|</span>
+                  오전 7시 - 오후 6시 
+                  <br>
+                  일/공휴일 오전 
+                  <span class="divider" aria-hidden="true">|</span>
+                  7시 - 오후 1시
+              </div>
+            </div>
+            <div class="footerOne">
+              <button class="oneButton askButton">1:1 문의</button>
+              <div class="oneYear describe">
+                365일
+                <br>
+                고객센터 운영시간에 순차적으로 답변드리겠습니다.
+            </div>
+            </div>
+            <div class="footerBig">
+              <button class="KakaoButton askButton">대량주문 문의</button>
+              <div class="bigDay describe">
+                월~금요일 
+                <span class="divider" aria-hidden="true">|</span>
+                오전 9시 - 오후 6시 
+                <br>
+                점심시간 
+                <span class="divider" aria-hidden="true">|</span>
+                낮 12시 - 오후 1시
+              </div>
+            </div>
+          </div>
+          <div class="notMember">
+            비회원문의
+            <span class="divider" aria-hidden="true">:</span>
+            <a href="mailto:help@karlycorp.com">help@arlycorp.com</a>
+            <br>
+            비회원 대량주문 문의
+            <span class="divider" aria-hidden="true">:</span>
+            <a href="mailto:karlygift@karlycorp.com">karlygift@karlycorp.com</a>
+          </div>
+        </div>
+        <div class="footerRight">
+          <ul class="footerList">
+            <li class="innerList1 liList">
+              <a href="#" target="self" class="introduce1 aList">칼리소개</a>
+            </li>
+            <li class="innerList2 liList">
+              <a href="#" target="self" class="introduce2 aList">칼리소개영상</a>
+            </li>
+            <li class="innerList3 liList">
+              <a href="#" target="self" class="introduce3 aList">인재채용</a>
+            </li>
+            <li class="innerList4 liList">
+              <a href="#" target="self" class="introduce4 aList">이용약관</a>
+            </li>
+            <li class="innerList5 liList">
+              <a href="#" target="self" class="introduce5 aList">개인정보처리</a>
+            </li>
+            <li class="innerList6 liList">
+              <a href="#" target="self" class="introduce6 aList">이용안내</a>
+            </li>
+          </ul>
+          <div class="footerConfirm">
+            법인명 (상호) : 주식회사 칼리
+            <span class="confirm divider" aria-hidden="true">|</span>
+            사업자등록번호 : 261-81-23567
+            <a href="#" target="blank" rel="norefferer" class="aConfirm">사업자정보 확인</a>
+            <br>
+            통신판매업 : 제 2018-서울강남-01646 호
+            <span class="confirm divider" aria-hidden="true">|</span>
+            개인정보보호책임자 : 이원준
+            <br>
+            주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
+            <span class="confirm divider" aria-hidden="true">|</span>
+            대표이사 : 김슬아
+            <br>
+            입점문의 : 
+            <a href="#" target="blank" rel="norefferer" class="aConfirm">입점문의하기</a>
+            <span class="confirm divider" aria-hidden="true">|</span>
+            제휴문의 :
+            <a href="mailto:business@karlycorp.com" class="aConfirm">business@karlycorp.com</a>
+            <br>
+            채용문의 :
+            <a href="mailto:recruit@karlycorp.com" class="aConfirm">recruit@karlycorp.com</a>
+            <br>
+            팩스 : 070 - 7500 - 6098
+          </div>
+          <ul class="footerImageLink">
+            <a href="#" class="aImageLink"><img src="./assets/icons/Icon/Instagram.png" alt="칼리 인스타그램 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="./assets/icons/Icon/FaceBook.png" alt="칼리 페이스북 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="./assets/icons/Icon/Blog.png" alt="칼리 네이버 블로그 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="./assets/icons/Icon/NaverPost.png" alt="칼리 네이버 포스트 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="./assets/icons/Icon/Youtube.png" alt="칼리 유튜브 접속 링크 로고"></a>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <button class="footerBottomButton">
+          <img src="./assets/icons/Icon/logo_isms.png" alt="isms로고">
+          <p class="footerButtonText">
+            [인증범위] 컬리 쇼핑몰 서비스 개발 . 운영
+            <br>
+            (심사받지않은 물리적 인프라 제외)
+            <br>
+            [유효기간] 2022.01.19 ~ 2025.01.18
+          </p>
+        </button>
+        <button class="footerBottomButton">
+          <img src="./assets/icons/Icon/logo_privacy.png" alt="eprivacy 로고">
+          <p class="footerButtonText">
+            개인정보보호 우수 웹사이트
+            <br>
+            개인정보처리시스템 인증 (ePRIVACY PLUS)
+          </p>
+        </button>
+        <button class="tossButton footerBottomButton">
+          <img src="./assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 로고">
+          <p class="footerButtonText">
+            토스페이먼츠 구매안전(에스크로)
+            <br>
+            서비스를 이용하실 수 있습니다.
+          </p>
+        </button>
+        <button class="footerBottomButton">
+          <img src="./assets/icons/Icon/logo_wooriBank.png" alt="우리은행 로고">
+          <p class="footerButtonText">
+            고객님이 현금으로 결제한 금액에 대해 우리은행과
+            <br>
+            채무지급보증 계약을 체결하여 안전거래를 보장하고
+            <br>
+            있습니다.
+          </p>
+        </button>
+      </div>
+      <div class="copyright">
+        컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
+        <br>
+        마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중계자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문,품절,교환/환불 등 의무와 책임을 부담하지 않습니다.
+        <em class="copyrightEm">© KURLY CORP. ALL RIGHTS RESERVED</em>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+  
+</body>
+</html>
