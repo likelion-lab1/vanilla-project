@@ -12,12 +12,12 @@ plus.addEventListener("click", () => {
 });
 
 minus.addEventListener("click", () => {
-  if (i > 0) {
+  if (i > 1) {
     i--;
     result.textContent = i;
     let totalCostNum = i * 4980;
     totalCost.textContent = totalCostNum.toLocaleString();
   } else {
-    totalCost.textContent = 0;
+    totalCost.textContent = totalCostNum.toLocaleString(i * 4980);
   }
 });
