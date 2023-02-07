@@ -1,0 +1,242 @@
+@import url(./reset.css);
+@import url(./normalize.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* 숨김 컨텐츠 */
+.a11y-hidden,
+legend {
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+html {
+  font-size: 16px;
+}
+
+/* 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 기본 스타일 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* 공통 바디 스타일 */
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 공통 */
+.center {
+  display: flex;
+  /* justify-content: center; */
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
+  /* margin: 0 435px; */
+}
+/* 헤더 */
+.header {
+  height: 125px;
+  background-color: antiquewhite;
+}
+/* 네비게이션 */
+.navigation {
+  height: 72px;
+  background-color: aqua;
+}
+/* 라인배너 */
+
+.line-banner {
+  margin: 40px 0 40px 0;
+}
+
+/* 푸터 */
+.footer {
+  height: 737px;
+  background-color: beige;
+}
+/* 배너 */
+.banner {
+  background-color: bisque;
+  height: 370px;
+}
+
+/* 장바구니 팝업 */
+
+#add-cart-content {
+  position: fixed;
+  top: 32%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 396px;
+  height: 296px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.add-cart-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--content);
+  margin-bottom: 12px;
+}
+
+.price-per-unit {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+  margin-bottom: 28px;
+}
+
+.total-cost-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+  padding-top: 16px;
+}
+.price-quantity {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 28px; */
+}
+
+.add-cart-quantity {
+  width: 84px;
+  height: 30px;
+  display: flex;
+  border: 1px solid #c4c4c4;
+}
+#add-cart-result {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 0 8px 0 8px;
+  line-height: 30px;
+}
+.in-number {
+  width: 24px;
+}
+.save-point {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  margin-bottom: 28px;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.add-cart-quantity button {
+  width: 30px;
+  height: 30px;
+}
+.add-cart-total {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.total em {
+  font-weight: 700;
+  font-size: 28.43px;
+  line-height: 140%;
+}
+.save-point-sticker {
+  display: flex;
+  width: 37px;
+  height: 18px;
+  background: #fa622f;
+  padding: 0px 8px;
+  margin-top: 3px;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: white;
+}
+
+.save-point-detail {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: black;
+  margin-left: 12px;
+}
+
+/* 장바구니 팝업 버튼 */
+
+.in-cart-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+#close {
+  width: 174px;
+  height: 54px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #898989;
+  /* margin-right: 8px; */
+}
+
+#in-cart {
+  width: 174px;
+  height: 54px;
+  background-color: #5f0080;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+}
+
+.add-quantiy,
+.minus-quantity {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+/* 장바구니 팝업 모달  */
+
+.add-cart-hidden {
+  display: none;
+}
+
+.add-cart-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1900;
+}
+
+/* #cart1 {
+  position: absolute;
+} */

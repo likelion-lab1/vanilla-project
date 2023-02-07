@@ -8,19 +8,69 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./css/add-cart.css" />
     <link rel="stylesheet" href="./css/recent-product.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/product-list.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
+    <script src="./js/modal-add-cart.js" type="module"></script>
+    <script src="./js/add-cart-number.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js" type="module"></script>
     <title>01.product-list</title>
   </head>
 
   <body>
+    <!-- Add cart 팝업  -->
+
+    <div class="add-cart-wrap">
+      <div class="add-cart-hidden">
+        <div class="add-cart-overlay"></div>
+        <div id="add-cart-content">
+          <h3 class="add-cart-title">[풀무원] 탱탱쫄면 (4개입)</h3>
+
+          <div class="price-quantity">
+            <em><span class="price-per-unit">4,980원</span></em>
+
+            <div class="add-cart-quantity">
+              <input
+                class="minus-quantity"
+                type="button"
+                onclick='count("minus")'
+                value="-"
+              />
+              <span id="add-cart-result">1</span>
+              <input
+                class="add-quantiy"
+                type="button"
+                onclick='count("plus")'
+                value="+"
+              />
+            </div>
+          </div>
+
+          <div class="total">
+            <span class="total-cost-title">합계</span>
+            <em><span class="total-cost">4,980</span>원</em>
+          </div>
+          <div class="save-point">
+            <strong><span class="save-point-sticker">적립</span></strong>
+            <strong
+              ><span class="save-point-detail">구매 시 5원 적립</span></strong
+            >
+          </div>
+
+          <div class="in-cart-button">
+            <button id="close">취소</button>
+            <button id="in-cart">장바구니 담기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 헤더 -->
     <header class="header center">헤더</header>
     <!-- 네비게이션 -->
@@ -183,10 +233,12 @@
       <!-- 메인 라인 배너  -->
 
       <div class="line-banner">
-        <img
-          src="./assets/line-banner/line-banner-1.png"
-          alt="더 풍성해진 10월 퍼플위크 배너"
-        />
+        <a href="#">
+          <img
+            src="./assets/line-banner/line-banner-1.png"
+            alt="더 풍성해진 10월 퍼플위크 배너"
+          />
+        </a>
       </div>
 
       <!-- 메인 swiper-2 놓치면 후회할 가격  -->
