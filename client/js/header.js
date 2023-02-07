@@ -1,10 +1,12 @@
 import {  getNode  } from "../lib/index.js"
 
 
-
-let button = getNode('.AdClose');
+// 헤더 닫기버튼
+let button = getNode('.adClose');
 function handler(){
-  let AD = getNode('.TopAd');
+  let AD = getNode('.topAd');
   AD.style.display = 'none';
 }
+
 button.addEventListener('click',handler);
+
