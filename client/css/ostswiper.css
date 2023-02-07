@@ -1,5 +1,5 @@
-@import url(/client/css/normalize.css);
-@import url(/client/css/reset.css);
+@import url(../css/normalize.css);
+@import url(../css/reset.css);
 
 
 .bigBanner-container {
@@ -22,7 +22,7 @@
 
 
 .big-banner-next{ 
-  background:url(/client/css/img/Right-Arrow.png) 50% 50% no-repeat;
+  background:url(./img/Right-Arrow.png) 50% 50% no-repeat;
   position: absolute;
   right: auto;
   left: 50%;
@@ -33,7 +33,7 @@
 }
 
 .big-banner-prev{
-  background:url(/client/css/img/Arrow.png) no-repeat;
+  background:url(./img/Arrow.png) no-repeat;
   position: absolute;
   right: 50%;
   height: 52px;

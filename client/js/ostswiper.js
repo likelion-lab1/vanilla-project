@@ -14,4 +14,8 @@ const swiper = new Swiper(".big-banner-swiper", {
     nextEl: ".big-banner-next",
     prevEl: ".big-banner-prev",
   },
+  a11y: {
+    prevEl: 'Previous slide',
+    nextEl: 'Next slide',
+  },
 })
