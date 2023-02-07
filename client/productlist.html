@@ -62,7 +62,6 @@
   
     <!-- 네비게이션 -->
     <nav class="nav-center">
-  
       <button class="category"><img  class="hamburger" src="css/icon/Hamburger.png">카테고리</button>
       <ul class="category-list">
         <li class="category-menu"><img class="category-icon" src="css/icon/gift.png"  alt="">선물하기</li>
@@ -88,17 +87,13 @@
         <li class="category-menu"><img class="category-icon" src="css/icon/baby.png"  alt="">베이비﹒키즈﹒완구</li>
         <li class="category-menu"><img class="category-icon" src="css/icon/travel.png"  alt="">여행﹒티켓</li>
       </ul>
-    
     <ul class="menu">
       <li class="menu-list"><a href="#">신상품</a></li>
       <li class="menu-list"><a href="#">베스트</a></li>
       <li class="menu-list"><a href="#">알뜰쇼핑</a></li>
       <li class="menu-list"><a href="#">특가/혜택</a></li>
     </ul>
-    
     <a href="#" class="delivery"><span class="delivery-color">샛별﹒낮</span> 배송안내</a>
-  
-    
   </nav>
   <nav class="nav-small">
     <div class="nav-small-content">
@@ -127,15 +122,12 @@
         <li class="category-menu"><img class="category-icon" src="css/icon/baby.png"  alt="">베이비﹒키즈﹒완구</li>
         <li class="category-menu"><img class="category-icon" src="css/icon/travel.png"  alt="">여행﹒티켓</li>
       </ul>
-    
     <ul class="nav-small-menu">
       <li class="menu-list"><a href="#">신상품</a></li>
       <li class="menu-list"><a href="#">베스트</a></li>
       <li class="menu-list"><a href="#">알뜰쇼핑</a></li>
       <li class="menu-list"><a href="#">특가/혜택</a></li>
     </ul>
-  
-  
     <form method="post" action="#" class="nav-small-search">
         <fieldset>
           <legend>검색영역</legend>
@@ -143,7 +135,6 @@
           <button type="submit" class="nav-small-searchButton icon-search-1"></button>
         </fieldset>
       </form>
-  
   <ul class="rightNavigation">
     <li><a href="#" class="map"><img src="./assets/icons/Icon/Location.svg" alt="위치 정보" /></a></li>
     <li><a href="#" class="heart"><img src="./assets/icons/Icon/Heart.svg" alt="관심 상품" /></a></li>
@@ -159,11 +150,296 @@
       <h2 class='best-page-name'>베스트</h2>
     <section class="best-page-main">
       <section class="menu-navigation">
-        
-          메뉴네비
-      </section>
+        <ul>
+         <li class="menu-main-list">
+           <div class="menu-main-name">
+             <p>필터</p> 
+              <button>초기화</button>
+           </div>
+         </li>
+   
+         <li class="menu-main-list">
+           <button class="menu-main-name more">카테고리<span class="menu-more-button category-button">∨</span></button>
+           <ul class="menu-sub-list">
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-salad" />
+                     <label for="food-salad">
+                         <em></em>샐러드·간편식
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-soop" />
+                     <label for="food-soop">
+                         <em></em>국·반찬·메인요리
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-meat" />
+                     <label for="food-meat">
+                         <em></em>정육·계란
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-fruit" />
+                     <label for="food-fruit">
+                         <em></em>과일·견과·떡
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-snack" />
+                     <label for="food-snack">
+                         <em></em>간식·과자·떡
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-drink" />
+                     <label for="food-drink">
+                         <em></em>생수·음료·우유·커피
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-fish" />
+                     <label for="food-fish">
+                         <em></em>수산·해산·건어물
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-bakerye" />
+                     <label for="food-bakery">
+                         <em></em>베이커리·치즈·델리
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-health" />
+                     <label for="food-health">
+                         <em></em>건강식품
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="food" value="#" class="check2" id="food-leaving" />
+                     <label for="food-leaving">
+                         <em></em>생활용품·리빙·캠핑
+                     </label>
+             </li>
+           </ul>
+         </li>
+   
+         <li class="menu-main-list">
+           <button class="menu-main-name">브랜드<span class="menu-more-button">∨</span></button>
+           <ul class="menu-sub-list">
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-salad" />
+                     <label for="brand-salad">
+                         <em></em>감자밭
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-soop" />
+                     <label for="brand-soop">
+                         <em></em>강남면욕
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-meat" />
+                     <label for="brand-meat">
+                         <em></em>경남제약
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-fruit" />
+                     <label for="brand-fruit">
+                         <em></em>경복궁
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-snack" />
+                     <label for="brand-snack">
+                         <em></em>고래사
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-drink" />
+                     <label for="brand-drink">
+                         <em></em>고메공방
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-fish" />
+                     <label for="brand-fish">
+                         <em></em>고온어다이어트
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-bakerye" />
+                     <label for="brand-bakery">
+                         <em></em>교토마블
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-health" />
+                     <label for="brand-health">
+                         <em></em>그래놀라 하우스
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="brand" value="#" class="check2" id="brand-leaving" />
+                     <label for="brand-leaving">
+                         <em></em>그리츠 시그니처 램
+                     </label>
+             </li>
+             <li id="brand-more">
+               <a href="#">브랜드 더보기 ></a>
+             </li>
+           </ul>
+         </li >
+   
+         <li class="menu-main-list">
+           <button class="menu-main-name">가격<span class="menu-more-button">∨</span></button>
+           <ul class="menu-sub-list">
+             <li>
+               <input type="checkbox" name="price" value="#" class="check2" id="price-salad" />
+                     <label for="price-salad">
+                         <em></em>6,500원 미만
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="price" value="#" class="check2" id="price-soop" />
+                     <label for="price-soop">
+                         <em></em>6,500원 ~ 9,980원
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="price" value="#" class="check2" id="price-meat" />
+                     <label for="price-meat">
+                         <em></em>9,900원 ~ 16,250원
+             </li>
+             <li>
+               <input type="checkbox" name="price" value="#" class="check2" id="price-fruit" />
+                     <label for="price-fruit">
+                         <em></em>16,250원 이상
+                     </label>
+             </li>
+             
+           </ul>
+         </li>
+   
+         <li class="menu-main-list">
+           <button class="menu-main-name">혜택<span class="menu-more-button">∨</span></button>
+           <ul class="menu-sub-list">
+             <li>
+               <input type="checkbox" name="event" value="#" class="check2" id="event-salad" />
+                     <label for="event-salad">
+                         <em></em>할인상품
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="event" value="#" class="check2" id="event-soop" />
+                     <label for="event-soop">
+                         <em></em>한정수량
+                     </label>
+             </li>
+             
+           </ul>
+         </li>
+   
+         <li class="menu-main-list">
+           <button class="menu-main-name">유형<span class="menu-more-button">∨</span></button>
+           <ul class="menu-sub-list">
+             <li>
+               <input type="checkbox" name="type" value="#" class="check2" id="type-salad" />
+                     <label for="type-salad">
+                         <em></em>Kurly Only
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="type" value="#" class="check2" id="type-soop" />
+                     <label for="type-soop">
+                         <em></em>희소가치 프로젝트
+                     </label>
+             </li>
+           </ul>
+         </li>
+   
+         <li class="menu-main-list">
+           <button class="menu-main-name">특정상품 제외<span class="menu-more-button">∨</span></button>
+           <ul class="menu-sub-list">
+             <li>
+               <input type="checkbox" name="name" value="#" class="check2" id="name-salad" />
+                     <label for="name-salad">
+                         <em></em>구아영
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="name" value="#" class="check2" id="name-soop" />
+                     <label for="name-soop">
+                         <em></em>이로운
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="name" value="#" class="check2" id="name-meat" />
+                     <label for="name-meat">
+                         <em></em>이승언
+             </li>
+             <li>
+               <input type="checkbox" name="name" value="#" class="check2" id="name-fruit" />
+                     <label for="name-fruit">
+                         <em></em>오승택
+                     </label>
+             </li>
+             <li>
+               <input type="checkbox" name="name" value="#" class="check2" id="name-snack" />
+                     <label for="name-snack">
+                         <em></em>배상우
+                     </label>
+             </li>
+           </ul>
+               </li>
+             </ul>
+     </section>
 
-   <section class="best-item"> 
+
+   <section class="best-item">      <div class="add-cart-wrap">
+    <div class="add-cart-hidden">
+      <div class="add-cart-overlay"></div>
+      <div id="add-cart-content">
+        <h3 class="add-cart-title">[풀무원] 탱탱쫄면 (4개입)</h3>
+
+        <div class="price-quantity">
+          <em><span class="price-per-unit">4,980원</span></em>
+
+          <div class="add-cart-quantity">
+            <input
+              class="minus-quantity"
+              type="button"
+              onclick='count("minus")'
+              value="-"
+            />
+            <span id="add-cart-result">1</span>
+            <input
+              class="add-quantiy"
+              type="button"
+              onclick='count("plus")'
+              value="+"
+            />
+          </div>
+        </div>
+
+        <div class="total">
+          <span class="total-cost-title">합계</span>
+          <em><span class="total-cost">4,980</span>원</em>
+        </div>
+        <div class="save-point">
+          <strong><span class="save-point-sticker">적립</span></strong>
+          <strong
+            ><span class="save-point-detail">구매 시 5원 적립</span></strong
+          >
+        </div>
+
+        <div class="in-cart-button">
+          <button id="close">취소</button>
+          <button id="in-cart">장바구니 담기</button>
+        </div>
+      </div>
+    </div>
+  </div>
       
   <div class="bset-item-sum">
     <div class="sum-item"> 총 284건</div>
