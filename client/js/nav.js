@@ -1,5 +1,8 @@
-let categoryBtn = document.querySelector('.category');
-let categoryList = document.querySelector('.category-list');
+import { getNode } from "../lib/index.js"
+
+
+let categoryBtn = getNode('.category');
+let categoryList = getNode('.category-list');
 
 function hoverCategoryList(e) {
   categoryList.style.display = (categoryList.style.display === 'block') ? 'none' : 'block';
@@ -11,8 +14,8 @@ categoryList.addEventListener('mouseover', hoverCategoryList);
 categoryList.addEventListener('mouseout', hoverCategoryList);
 
 
-let smallCategoryBtn = document.querySelector('.small-category');
-let smallCategoryList = document.querySelector('.small-category-list');
+let smallCategoryBtn = getNode('.small-category');
+let smallCategoryList = getNode('.small-category-list');
 
 function smallHoverCategoryList(e) {
   smallCategoryList.style.display = (smallCategoryList.style.display === 'block') ? 'none' : 'block';
@@ -25,8 +28,8 @@ smallCategoryList.addEventListener('mouseout', smallHoverCategoryList);
 
 
 // 스크롤
-const navigation = document.querySelector('.nav-center');
-const mini = document.querySelector('.nav-small');
+const navigation = getNode('.nav-center');
+const mini = getNode('.nav-small');
 
 
 

@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="/ost/bigbanner/ostswiper.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="/ost/bigbanner/ostswiper.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js" type="module"></script>
   <script defer src="./js/nav.js" type="module"></script>
   <script defer src="./js/header.js" type="module"></script>
   <script defer src="./js/popup.js" type="module"></script>
@@ -45,11 +47,12 @@
     <ul class="right-navigation">
       <li><a href="#" class="map"><img src="./assets/icons/Icon/Location.svg" alt="위치 정보" /></a></li>
       <li><a href="#" class="heart"><img src="./assets/icons/Icon/Heart.svg" alt="관심 상품" /></a></li>
-      <li><a href="#" class="cart"><img src="./assets/icons/Icon/Cart2.svg" alt="장바구니" /></a></li>
+      <li><a href="../client/cart/cart.html" class="cart"><img src="./assets/icons/Icon/Cart2.svg" alt="장바구니" /></a>
+      </li>
     </ul>
     <!--헤더네비게이션 -->
     <ul class="top-navigation">
-      <li><a href="./loginreg/registor.html">회원가입</a></li>
+      <li><a href="/client/login,reg/registor.html">회원가입</a></li>
       <li><a href="#">로그인</a></li>
       <li><a href="#" class="customer-service">고객센터 ▼</a></li>
 
@@ -85,10 +88,10 @@
     </ul>
 
     <ul class="menu">
-      <li class="menu-list"><a href="#">신상품</a></li>
-      <li class="menu-list"><a href="#">베스트</a></li>
-      <li class="menu-list"><a href="#">알뜰쇼핑</a></li>
-      <li class="menu-list"><a href="#">특가/혜택</a></li>
+      <li class="menu-list"><a href="../client/productlist.html">신상품</a></li>
+      <li class="menu-list"><a href="../client/productlist.html">베스트</a></li>
+      <li class="menu-list"><a href="../client/productlist.html">알뜰쇼핑</a></li>
+      <li class="menu-list"><a href="../client/productlist.html">특가/혜택</a></li>
     </ul>
 
     <a href="#" class="delivery"><span class="delivery-color">샛별﹒낮</span> 배송안내</a>
@@ -146,10 +149,10 @@
       </ul>
     </div>
   </nav>
-  <!-- 배너 -->
-  <section class="banner">
+    <!-- 배너 -->
+    <section class="banner">
     <div class="bigBanner-container">
-      <div class="swiper">
+      <div class="swiper big-banner-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img data-swiper-parallax-x="200" data-swiper-parallax-scale="1.2" src="/client/css/img/banner01.png" />
@@ -164,21 +167,19 @@
             <img data-swiper-parallax-x="200" data-swiper-parallax-scale="1.2" src="/client/css/img/banner05.png" />
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class=" swiper-button-prev"></div>
-        <div class=" swiper-button-next"></div>
       </div>
+      <div class="swiper-pagination"></div>
+      <button class="big-banner-prev prev"></button>
+      <button class="big-banner-next next"></button>
     </div>
   </section>
 
   <!-- 라인배너 마크업 -->
   <section class="banner">
     <div type="LINE_BANNER" class="line-banner">
-      <div class="line-banner1" title="10월의 퍼플위크 바로가기"><a href="주소명"><img src="./assets/images/line-banner 1.png"
-            alt="더 풍성해진 10월의 퍼플위크 바로가기"></a>
+      <div class="line-banner1" title="10월의 퍼플위크 바로가기"><a href="주소명"><img src="./assets/images/line-banner 1.png" alt="더 풍성해진 10월의 퍼플위크 바로가기"></a>
       </div>
-    </div>
-
+    </div> -->
 
     <!-- 팝업배너 마크업 -->
     <div class="popup">
@@ -191,42 +192,41 @@
         <button class="popup-button-right" type="button">닫기</button>
       </div>
     </div>
-
   </section>
 
 
-  <!-- 메인 -->
-  <main class="main center">
-  </main>
-  <!-- 푸터 -->
-  <footer class="footer center">
-    <div class="footer-main">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <h2 class="footer-header">고객행복센터</h2>
-          <strong class="footer-call">
-            1644-1107
-            <span class="footer-day">월~토요일 오전 7시 - 오후 6시</span>
-          </strong>
-          <div class="footer-ask">
-            <div class="footer-kakao">
-              <button class="Kakao-button ask-button">카카오톡 문의</button>
-              <div class="kakao-day describe">
-                월~토요일
-                <span class="divider" aria-hidden="true">|</span>
-                오전 7시 - 오후 6시
-                <br>
-                일/공휴일 오전
-                <span class="divider" aria-hidden="true">|</span>
-                7시 - 오후 1시
+    <!-- 메인 -->
+    <main class="main center">
+    </main>
+    <!-- 푸터 -->
+    <footer class="footer center">
+      <div class="footer-main">
+          <div class="footer-inner">
+            <div class="footer-left">
+              <h2 class="footer-header">고객행복센터</h2>
+              <strong class="footer-call">
+                1644-1107
+                <span class="footer-day">월~토요일 오전 7시 - 오후 6시</span>
+              </strong>
+              <div class="footer-ask">
+                <div class="footer-kakao">
+                  <button class="Kakao-button ask-button">카카오톡 문의</button>
+                  <div class="kakao-day describe">
+                    월~토요일 
+                    <span class="divider" aria-hidden="true">|</span>
+                    오전 7시 - 오후 6시 
+                    <br>
+                    일/공휴일 오전 
+                    <span class="divider" aria-hidden="true">|</span>
+                    7시 - 오후 1시
+                </div>
               </div>
-            </div>
-            <div class="footer-one">
-              <button class="one-button ask-button">1:1 문의</button>
-              <div class="one-year describe">
-                365일
-                <br>
-                고객센터 운영시간에 순차적으로 답변드리겠습니다.
+              <div class="footer-one">
+                <button class="one-button ask-button">1:1 문의</button>
+                <div class="one-year describe">
+                  365일
+                  <br>
+                  고객센터 운영시간에 순차적으로 답변드리겠습니다.
               </div>
             </div>
             <div class="footer-big">
