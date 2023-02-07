@@ -1,23 +1,7 @@
 {
   "editor.tokenColorCustomizations": {
-    "[Pastel Pixels]": {
-      "textMateRules": [
-        {
-          "scope": ["comment", "comment punctuation.definition.comment"],
-          "settings": {
-            "foreground": "#bdbfe3"
-          }
-        }
-      ]
-    },
-    "textMateRules": [
-      {
-        "scope": ["comment", "comment punctuation.definition.comment"],
-        "settings": {
-          "foreground": "#bdbfe3"
-        }
-      }
-    ],
-    "comments": ""
+    "comments": "",
+    "textMateRules": []
   }
 }
+
