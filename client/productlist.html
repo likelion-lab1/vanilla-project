@@ -18,6 +18,53 @@
   <title>마켓칼리</title>
 </head>
 <body>
+
+   <!-- Add cart 팝업  -->
+
+   <div class="add-cart-wrap">
+    <div class="add-cart-hidden">
+      <div class="add-cart-overlay"></div>
+      <div id="add-cart-content">
+        <h3 class="add-cart-title">[풀무원] 탱탱쫄면 (4개입)</h3>
+
+        <div class="price-quantity">
+          <em><span class="price-per-unit">4,980원</span></em>
+
+          <div class="add-cart-quantity">
+            <input
+              class="minus-quantity"
+              type="button"
+              onclick='count("minus")'
+              value="-"
+            />
+            <span id="add-cart-result">1</span>
+            <input
+              class="add-quantiy"
+              type="button"
+              onclick='count("plus")'
+              value="+"
+            />
+          </div>
+        </div>
+
+        <div class="total">
+          <span class="total-cost-title">합계</span>
+          <em><span class="total-cost">4,980</span>원</em>
+        </div>
+        <div class="save-point">
+          <strong><span class="save-point-sticker">적립</span></strong>
+          <strong
+            ><span class="save-point-detail">구매 시 5원 적립</span></strong
+          >
+        </div>
+
+        <div class="in-cart-button">
+          <button id="close">취소</button>
+          <button id="in-cart">장바구니 담기</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 헤더 -->
     <span class="topAd center">
     
