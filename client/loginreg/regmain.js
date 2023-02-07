@@ -109,6 +109,11 @@ function registerHandler(e) {
       pw : password.value,
     }) // body 부분에 폼데이터 변수를 할당
   })
+    .then((response) => {
+      if(id.value || pw.value === ""){
+        alert('아이디와 비밀번호를 확인해주세요')
+      }
+    })
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
