@@ -32,45 +32,17 @@ function menuhandler(e){
     
 }
 
-// 장바구니 수량 증감, 총 금액 
+
 menuNavigation.addEventListener('click',menuhandler);
 
 
-let plus = document.querySelector(".add-quantiy");
-let minus = document.querySelector(".minus-quantity");
-let result = document.querySelector("#add-cart-result");
-let totalCost = document.querySelector(".total-cost");
-let i = 1;
+// 체크 초기화
 
-plus.addEventListener("click", () => {
-  i++;
-  result.textContent = i;
-  let totalCostNum = i * 4980;
-  totalCost.textContent = totalCostNum.toLocaleString();
-});
+const initializationButton = document.querySelector('.initialization');
+const checkbutton = document.querySelectorAll('.check2')
 
-minus.addEventListener("click", () => {
-  if (i > 0) {
-    i--;
-    result.textContent = i;
-    let totalCostNum = i * 4980;
-    totalCost.textContent = totalCostNum.toLocaleString();
-  } else {
-    totalCost.textContent = 0;
-  }
-});
+let han = ()=>{     
+  checkbutton.forEach((item)=>{item.checked=false})
+}
 
-//팝업
-const openButton = document.querySelector("#cart1");
-const container = document.querySelector(".add-cart-hidden");
-const closeButton = document.querySelector("#close");
-
-openButton.addEventListener("click", () => {
-  container.style.display = "flex";
-  // openButton.style.display = "none";
-});
-
-closeButton.addEventListener("click", () => {
-  container.style.display = "none";
-  openButton.style.display = "block";
-});
+initializationButton.addEventListener('click',han)
