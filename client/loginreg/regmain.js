@@ -91,6 +91,7 @@ const signupForm = getNode('#registerForm');
 let signFormData = new FormData(signupForm)
 
 
+
 function registerHandler(e) {
   e.preventDefault();
   if (password.length > 8) {
@@ -99,8 +100,14 @@ function registerHandler(e) {
   }
   fetch('http://localhost:3000/users', {
     method: 'POST',
+    headers: {
+      "Content-Type": "application/json",
+    },
     // cache: 'no-cache',
-    body: signFormData // body 부분에 폼데이터 변수를 할당
+    body: JSON.stringify({
+      name : id.value,
+      pw : password.value,
+    }) // body 부분에 폼데이터 변수를 할당
   })
     .then((response) => response.json())
     .then((data) => {
