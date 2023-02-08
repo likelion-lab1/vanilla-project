@@ -94,10 +94,6 @@ let signFormData = new FormData(signupForm)
 
 function registerHandler(e) {
   e.preventDefault();
-  if (password.length > 8) {
-    removeClass(userPasswordCheck, 'deactive') 
-    console.log(userPasswordCheck)
-  }
   fetch('http://localhost:3000/users', {
     method: 'POST',
     headers: {
@@ -113,8 +109,8 @@ function registerHandler(e) {
       if(id.value || pw.value === ""){
         alert('아이디와 비밀번호를 확인해주세요')
       }
+      else((response) => response.json())
     })
-    .then((response) => response.json())
     .then((data) => {
       console.log(data);
     });
