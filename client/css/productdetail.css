@@ -1091,11 +1091,19 @@ padding-bottom: 16px;
 .user-inquiry-notice .state,
 .user-inquiry-list .writer,
 .user-inquiry-list .date,
-.user-inquiry-list .state{
+.user-inquiry-list .state-before{
   width: 100px;
   text-align: center;
   font-weight: 600;
   color: var(--gray400);
+}
+
+
+.user-inquiry-list .state-after{
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary);
 }
 
 .user-inquiry-list{
@@ -1127,6 +1135,8 @@ height: 58px;
 }
 
 .user-inquiry img{
+  width: 24px;
+  height: 24px;
   margin-right: 12px;
 }
 
@@ -1134,6 +1144,19 @@ height: 58px;
   margin-left: 20px;
 }
 
+.karly-answer{
+  display: flex;
+  font-weight: 600;
+font-size: 12.003px;
+color: var(--content);
+line-height: 160%;
+}
+
+.karly-answer img{
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
 
 
 
