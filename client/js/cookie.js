@@ -42,7 +42,7 @@ function getCookie(name) {
       popup.style.display = 'none';
     }else {
       // 신규방문
-      popup.style.display = 'inlineblock';
+      popup.style.display = 'flex';
     }
 }
 

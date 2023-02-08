@@ -93,113 +93,83 @@
       "birthDate": "19960507"
     },
     {
-      "userId": "qwe",
-      "passwordId": "qwe",
-      "pwd2": "qwe",
-      "userName": "qwe",
-      "emailId": "qwe@naver.com",
-      "phoneNumber": "qwe",
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-6039",
+      "gender": "male",
+      "men": "female",
       "birth": "",
-      "id": "RPvpqOQ"
+      "all-check-box": "on",
+      "sub-check-box": [
+        "on",
+        "on",
+        "on",
+        "on"
+      ],
+      "id": "4OVLu_B"
     },
     {
-      "userId": "qwe",
-      "passwordId": "qwe",
-      "pwd2": "qwe",
-      "userName": "qwe",
-      "emailId": "qwe@naver.com",
-      "phoneNumber": "qwe",
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-60391111",
+      "gender": "male",
+      "birth": "2023-02-04",
+      "all-check-box": "on",
+      "id": "Hd3q_Mk"
+    },
+    {
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-60391111",
+      "gender": "male",
+      "birth": "2023-02-04",
+      "all-check-box": "on",
+      "id": "bid5EHM"
+    },
+    {
+      "userId": "ㅂㅈㄷㅂㅈㄷㅂㅈㄷ",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-60391111",
+      "gender": "male",
+      "birth": "2023-02-04",
+      "all-check-box": "on",
+      "sub-check-box": [
+        "on",
+        "on",
+        "on",
+        "on"
+      ],
+      "id": "LY9S_Fz"
+    },
+    {
+      "userId": "오승택",
+      "passwordId": "qweqweqweqwe",
+      "pwd2": "qweqweqweqwe",
+      "userName": "오승택",
+      "emailId": "elqkddl@naver.com",
+      "phoneNumber": "010-7706-6039",
+      "gender": "male",
       "birth": "",
-      "id": "7vyDW3T"
-    },
-    {
-      "userId": "qwe",
-      "passwordId": "qwe",
-      "pwd2": "qwe",
-      "userName": "qwe",
-      "emailId": "qwe@naver.com",
-      "phoneNumber": "qwe",
-      "birth": "",
-      "id": "Q60FD9e"
-    },
-    {
-      "id": "ggIy8_b"
-    },
-    {
-      "id": "Y3Tb4ks"
-    },
-    {
-      "id": "uSZ38Ht"
-    },
-    {
-      "name": {},
-      "pw": {},
-      "id": "goOHjGj"
-    },
-    {
-      "name": "asd1231",
-      "pw": "123123123",
-      "id": "TyYmlQ1"
-    },
-    {
-      "name": "",
-      "pw": "",
-      "id": "Sl1K_Xa"
-    },
-    {
-      "name": "오승택",
-      "pw": "",
-      "id": "4ahE8YJ"
-    },
-    {
-      "name": "오승택",
-      "pw": "",
-      "id": "1WEdF76"
-    },
-    {
-      "name": "오승택",
-      "pw": "",
-      "id": "qRJXtUH"
-    },
-    {
-      "name": "안녕하슈슈슈",
-      "pw": "",
-      "id": "sDB2QiA"
-    },
-    {
-      "name": "qwe",
-      "pw": "qwe",
-      "id": "xrOFIyV"
-    },
-    {
-      "name": "",
-      "pw": "",
-      "id": "349QQH2"
-    },
-    {
-      "name": "ㅂㅈㄷ",
-      "pw": "ㅂㅈe",
-      "id": "K8SY70w"
-    },
-    {
-      "name": "알림은뜨는데 데이터는 보내져",
-      "pw": "dltkdgo",
-      "id": "-wHjMgZ"
-    },
-    {
-      "name": "qwe",
-      "pw": "qwe",
-      "id": "tU0lFlq"
-    },
-    {
-      "name": "아니애들아",
-      "pw": "emfdjrk",
-      "id": "IY8s0hS"
-    },
-    {
-      "name": "제발",
-      "pw": "ehldjfk",
-      "id": "Nk4UZuy"
+      "all-check-box": "on",
+      "sub-check-box": [
+        "on",
+        "on",
+        "on",
+        "on"
+      ],
+      "id": "GI99qyK"
     }
   ]
 }

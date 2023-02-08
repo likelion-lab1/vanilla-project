@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".big-banner-swiper", {
   autoplay: {     //자동슬라이드 (false-비활성화)
     delay: 2000, // 시간 설정
     disableOnInteraction: false, // false-스와이프 후 자동 재생
@@ -11,7 +11,11 @@ const swiper = new Swiper('.swiper', {
     type: "fraction" // 기본 슬라이더를 fraction으로 변경
   },
   navigation: { // 버튼 
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".big-banner-next",
+    prevEl: ".big-banner-prev",
+  },
+  a11y: {
+    prevEl: 'Previous slide',
+    nextEl: 'Next slide',
   },
 })

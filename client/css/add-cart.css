@@ -94,7 +94,6 @@ body {
 .price-quantity {
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 28px; */
 }
 
 .add-cart-quantity {

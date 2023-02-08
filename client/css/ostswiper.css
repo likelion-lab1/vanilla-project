@@ -1,0 +1,69 @@
+@import url(../css/normalize.css);
+@import url(../css/reset.css);
+
+
+.bigBanner-container {
+  width: 100%;
+  height: 370px;
+  position: relative
+}
+
+.swiper-slide .big-banner-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  outline: 2px solid red;
+}
+
+
+.big-banner-next{ 
+  background:url(./img/Right-Arrow.png) 50% 50% no-repeat;
+  position: absolute;
+  right: auto;
+  left: 50%;
+  height: 52px;
+  width: 52px;
+  margin: auto 0px auto 590px;
+  z-index: 10;
+}
+
+.big-banner-prev{
+  background:url(./img/Arrow.png) no-repeat;
+  position: absolute;
+  right: 50%;
+  height: 52px;
+  width: 52px;
+  margin: auto 590px auto 0px;
+  left : auto;  
+  z-index: 10;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
+}
+
+.prev{
+  border : 0;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.next{
+  border : 0;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+

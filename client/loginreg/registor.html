@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./registor.css" />
+  <link rel="stylesheet" href="../css/fontello.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <script src="../loginreg/regmain.js" type="module"></script>
+  <script src="../js/nav.js" type="module"></script>
+  <script src="../js/header.js" type="module"></script>
+
+
+  <title>회원가입</title>
+  <style>
+    #if {
+      width: 0px;
+      height: 0px;
+      border: 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <span class="topAd center">
+
+    <a href="./css/">지금 가입하고 인기상품 <strong>100원</strong>에 받아가세요!</a>
+    <button class="adClose"><img src="../assets/images/ico_close.png" alt="상단 광고 닫기"></button>
+
+
+
+  </span>
+
+  <header class="header center">
+    <ul class="main-navigation">
+      <li><a href="./index.html"><img src="../assets/images/karly.png" alt="배너 로고"></a> </li>
+      <li><a href="./index.html">마켓칼리</a></li>
+      <li><a href="#" class="new">뷰티칼리</a></li>
+
+      <form method="post" action="#" class="search">
+        <fieldset>
+          <legend>검색영역</legend>
+          <input type="search" placeholder="검색어를 입력해주세요" required>
+          <button type="submit" class="search-button icon-search-1"></button>
+        </fieldset>
+      </form>
+    </ul>
+    <ul class="right-navigation">
+      <li><a href="#" class="map"><img src="./assets/icons/Icon/Location.svg" alt="위치 정보" /></a></li>
+      <li><a href="#" class="heart"><img src="./assets/icons/Icon/Heart.svg" alt="관심 상품" /></a></li>
+      <li><a href="#" class="cart"><img src="./assets/icons/Icon/Cart2.svg" alt="장바구니" /></a></li>
+    </ul>
+    <!--헤더네비게이션 -->
+    <ul class="top-navigation">
+      <li><a href="./registor.html">회원가입</a></li>
+      <li><a href="./login.html">로그인</a></li>
+      <li><a href="#" class="customer-Service">고객센터 ▼</a></li>
+
+    </ul>
+  </header>
+
+  <nav class="nav-center">
+
+    <button class="category"><img class="hamburger" src="../css/icon/Hamburger.png">카테고리</button>
+    <ul class="category-list">
+      <li class="category-menu"><img class="category-icon" src="../css/icon/gift.png" alt="">선물하기</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/vegetable.png" alt="">채소</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/fruit.png" alt="">과일﹒견과﹒쌀</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/seaFood.png" alt="">수산﹒해산﹒건어물</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/meet.png" alt="">정육﹒계란</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/cook.png" alt="">국﹒반찬﹒메인요리</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/salad.png" alt="">샐러드﹒간편식</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/spice.png" alt="">면﹒양념﹒오일</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/cook.png" alt="">생수﹒음료﹒우유﹒커피</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/snack.png" alt="">간식﹒과자﹒떡</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/bakery.png" alt="">베이커리﹒치즈﹒델리</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/wine.png" alt="">와인</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/traditionalLiquor.png" alt="">전통주</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/detergent.png" alt="">생활용품﹒리빙﹒캠핑</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/skincare.png" alt="">스킨케어﹒메이크업</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/shampoo.png" alt="">헤어﹒바디﹒구강</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/kitchen.png" alt="">주방용품</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/wash.png" alt="">가전제품</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/animal.png" alt="">반려동물</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/baby.png" alt="">베이비﹒키즈﹒완구</li>
+      <li class="category-menu"><img class="category-icon" src="../css/icon/travel.png" alt="">여행﹒티켓</li>
+    </ul>
+
+    <ul class="menu">
+      <li class="menu-list"><a href="#">신상품</a></li>
+      <li class="menu-list"><a href="#">베스트</a></li>
+      <li class="menu-list"><a href="#">알뜰쇼핑</a></li>
+      <li class="menu-list"><a href="#">특가/혜택</a></li>
+    </ul>
+
+    <a href="#" class="delivery"><span class="delivery-color">샛별﹒낮</span> 배송안내</a>
+
+
+  </nav>
+  <nav class="nav-small">
+    <div class="nav-small-content">
+      <button class="small-category"><img class="hamburger" src="../css/icon/Hamburger.png">카테고리</button>
+      <ul class="small-category-list">
+        <li class="category-menu"><img class="category-icon" src="../css/icon/gift.png" alt="">선물하기</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/vegetable.png" alt="">채소</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/fruit.png" alt="">과일﹒견과﹒쌀</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/seaFood.png" alt="">수산﹒해산﹒건어물</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/meet.png" alt="">정육﹒계란</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/cook.png" alt="">국﹒반찬﹒메인요리</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/salad.png" alt="">샐러드﹒간편식</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/spice.png" alt="">면﹒양념﹒오일</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/cook.png" alt="">생수﹒음료﹒우유﹒커피</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/snack.png" alt="">간식﹒과자﹒떡</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/bakery.png" alt="">베이커리﹒치즈﹒델리</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/wine.png" alt="">와인</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/traditionalLiquor.png" alt="">전통주
+        </li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/detergent.png" alt="">생활용품﹒리빙﹒캠핑</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/skincare.png" alt="">스킨케어﹒메이크업</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/shampoo.png" alt="">헤어﹒바디﹒구강</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/kitchen.png" alt="">주방용품</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/wash.png" alt="">가전제품</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/animal.png" alt="">반려동물</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/baby.png" alt="">베이비﹒키즈﹒완구</li>
+        <li class="category-menu"><img class="category-icon" src="../css/icon/travel.png" alt="">여행﹒티켓</li>
+      </ul>
+
+      <ul class="nav-small-menu">
+        <li class="menu-list"><a href="#">신상품</a></li>
+        <li class="menu-list"><a href="#">베스트</a></li>
+        <li class="menu-list"><a href="#">알뜰쇼핑</a></li>
+        <li class="menu-list"><a href="#">특가/혜택</a></li>
+      </ul>
+
+
+      <form method="post" action="#" class="nav-small-search">
+        <fieldset>
+          <legend>검색영역</legend>
+          <input class="input-search" type="search" placeholder="검색어를 입력해주세요" required>
+          <button type="submit" class="nav-small-search-button icon-search-1"></button>
+        </fieldset>
+      </form>
+
+      <ul class="right-navigation">
+        <li><a href="#" class="map"><img src="./assets/icons/Icon/Location.svg" alt="위치 정보" /></a></li>
+        <li><a href="#" class="heart"><img src="./assets/icons/Icon/Heart.svg" alt="관심 상품" /></a></li>
+        <li><a href="#" class="cart"><img src="./assets/icons/Icon/Cart2.svg" alt="장바구니" /></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main center">
+
+
+
+
+    <fieldset>
+      <form id="registerForm" method="post" action="http://localhost:3000/users" class="register" target="param">
+
+        <legend>
+          회원가입
+        </legend>
+
+        <div class="register-header">
+
+          <h2>회원가입</h2>
+          <p class="register-tip">필수입력사항</p>
+        </div>
+
+
+
+
+        <ul class="register-list">
+          <li class="id-input">
+            <p class="important alert">아이디</p>
+            <label for="nameField"></label>
+            <input class="button-size" type="text" name="userId" id="nameField" placeholder="아이디를 입력해주세요" required>
+            <div>
+              <p class="alert-error deactive">8자리 이상 입력해주세요</p>
+            </div>
+            <button id="submit1" type="submit" value="ID중복확인" class="side-button-size">중복확인</button>
+          </li>
+          <li>
+            <p class="important">비밀번호</p>
+            <label for="pwd"></label>
+            <input name="passwordId" class="button-size pw-input" type="password" id="pwd" placeholder="비밀번호를 입력해주세요"
+              required>
+            <!-- <div>
+              <p class="alert-error-password deactive">8자리 이상 입력해주세요</p>
+            </div> -->
+          </li>
+          <li>
+            <p class="important">비밀번호 확인</p>
+            <label for="pwd2"></label>
+            <input name="pwd2" class="button-size" type="password" id="pwd2" placeholder="비밀번호를 한번 더 입력해주세요" required>
+          </li>
+          <li>
+            <p class="important">이름</p>
+            <label for="name"></label>
+            <input class="button-size" id="name" name="userName" type="text" placeholder="이름을 입력해주세요" required>
+          </li>
+          <li class="check-container">
+            <p class="important">이메일</p>
+            <label for="emailField"></label>
+            <input name="emailId" id="emailField" class="button-size" type="email" placeholder="예)marketkarly@karly.com"
+              required>
+            <div>
+              <p class="alert-error-email deactive">이메일을 입력해주세요</p>
+            </div>
+            <button id="submit2" class="side-button-size">중복확인</button>
+          </li>
+          <li>
+            <p class="important">휴대폰</p>
+            <label for="phoneNumber"></label>
+            <input id="phoneNumber" name="phoneNumber" class="button-size" type="tel" placeholder="숫자만 입력해주세요."
+              required>
+            <button class="side-button-size">인증</button>
+          </li>
+          <li class="adress-list">
+            <p class="important">주소</p>
+
+            <button class="button-size">주소 검색</button>
+            <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+          </li>
+          <li>
+            <p>성별</p>
+            <div class="gender-wrapper">
+              <input type="radio" name="gender" value="male" class="check2" id="gender-man" />
+              <label for="gender-man">
+                <em></em>남자
+              </label>
+
+              <input type="radio" name="gender" value="female" class="check2" id="gender-woman" />
+              <label for="gender-woman">
+                <em></em>여자
+              </label>
+              <input type="radio" name="gender" value="#" class="check2" id="gender-none" />
+              <label for="gender-none">
+                <em></em>선택안함
+              </label>
+            </div>
+          </li>
+          <li>
+            <p>생년월일</p>
+            <label for="brith"></label>
+            <input name="birth" id="brith" type="date" class="button-size">
+          </li>
+          <li>
+            <p>추가입력 사항</p>
+            <div class="plus-wrapper">
+              <label for="ch7"></label>
+              <input name="check" type="checkbox" class="check2" id="ch7" />
+
+              <em class="check2"></em> 친구초대 추천인 아이디
+
+              <label for="ch6"></label>
+              <input name="check2" type="checkbox" class="check2" id="ch6" />
+              <em class="check2"></em> 참여 이벤트명
+            </div>
+          </li>
+          <li class="use-agreement" id="use-agreement">
+            <p class="important" id="use-agreement-header">이용약관동의</p>
+            <ul class="use-agreement-list">
+              <li>
+                <input id="ch1" name="all-check-box" type="checkbox" class="all-check" />
+                <label for="ch1"><em></em></label>
+                <p>전체 동의합니다.
+                  <span class="all-agree-side">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</span>
+
+
+                </p>
+              </li>
+              <li>
+                <input id="ch2" name="sub-check-box" type="checkbox" class="sub-check" />
+                <label for="ch2"><em></em></label>
+                <p>이용약관 동의(필수)</p>
+                <a href="#">약관보기</a>
+
+              </li>
+
+
+              <li>
+                <input id="ch3" name="sub-check-box" type="checkbox" class="sub-check" />
+                <label for="ch3"><em></em></label>
+                <p>개인정보 수집 이용 동의(필수)</p>
+                <a href="#">약관보기</a>
+              </li>
+
+
+              <li>
+                <input id="ch4" name="sub-check-box" type="checkbox" class="sub-check" />
+                <label for="ch4"><em></em></label>
+                <p>무료배송,할인쿠폰 등 혜택/정보 수신 동의(선택)</p>
+                <a href="#">약관보기</a>
+              </li>
+
+
+              <li>
+                <input id="ch5" name="sub-check-box" type="checkbox" class="sub-check" />
+                <label for="ch5"><em></em></label>
+                <p>본인은 만 14세 이상입니다.(필수)</p>
+                <a href="#">약관보기</a>
+              </li>
+            </ul>
+          </li>
+          <button type="submit" id="finalField" class="register-button">가입하기</button>
+        </ul>
+      </form>
+      <iframe id="if" name="param"></iframe>
+
+    </fieldset>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer center">
+    <div class="footerMain">
+      <div class="footerInner">
+        <div class="footerLeft">
+          <h2 class="footerheader">고객행복센터</h2>
+          <strong class="footerCall">
+            1644-1107
+            <span class="footerDay">월~토요일 오전 7시 - 오후 6시</span>
+          </strong>
+          <div class="footerAsk">
+            <div class="footerKakao">
+              <button class="KakaoButton askButton">카카오톡 문의</button>
+              <div class="kakaoDay describe">
+                월~토요일
+                <span class="divider" aria-hidden="true">|</span>
+                오전 7시 - 오후 6시
+                <br>
+                일/공휴일 오전
+                <span class="divider" aria-hidden="true">|</span>
+                7시 - 오후 1시
+              </div>
+            </div>
+            <div class="footerOne">
+              <button class="oneButton askButton">1:1 문의</button>
+              <div class="oneYear describe">
+                365일
+                <br>
+                고객센터 운영시간에 순차적으로 답변드리겠습니다.
+              </div>
+            </div>
+            <div class="footerBig">
+              <button class="KakaoButton askButton">대량주문 문의</button>
+              <div class="bigDay describe">
+                월~금요일
+                <span class="divider" aria-hidden="true">|</span>
+                오전 9시 - 오후 6시
+                <br>
+                점심시간
+                <span class="divider" aria-hidden="true">|</span>
+                낮 12시 - 오후 1시
+              </div>
+            </div>
+          </div>
+          <div class="notMember">
+            비회원문의
+            <span class="divider" aria-hidden="true">:</span>
+            <a href="mailto:help@karlycorp.com">help@arlycorp.com</a>
+            <br>
+            비회원 대량주문 문의
+            <span class="divider" aria-hidden="true">:</span>
+            <a href="mailto:karlygift@karlycorp.com">karlygift@karlycorp.com</a>
+          </div>
+        </div>
+        <div class="footerRight">
+          <ul class="footerList">
+            <li class="innerList1 liList">
+              <a href="#" target="self" class="introduce1 aList">칼리소개</a>
+            </li>
+            <li class="innerList2 liList">
+              <a href="#" target="self" class="introduce2 aList">칼리소개영상</a>
+            </li>
+            <li class="innerList3 liList">
+              <a href="#" target="self" class="introduce3 aList">인재채용</a>
+            </li>
+            <li class="innerList4 liList">
+              <a href="#" target="self" class="introduce4 aList">이용약관</a>
+            </li>
+            <li class="innerList5 liList">
+              <a href="#" target="self" class="introduce5 aList">개인정보처리</a>
+            </li>
+            <li class="innerList6 liList">
+              <a href="#" target="self" class="introduce6 aList">이용안내</a>
+            </li>
+          </ul>
+          <div class="footerConfirm">
+            법인명 (상호) : 주식회사 칼리
+            <span class="confirm divider" aria-hidden="true">|</span>
+            사업자등록번호 : 261-81-23567
+            <a href="#" target="blank" rel="norefferer" class="aConfirm">사업자정보 확인</a>
+            <br>
+            통신판매업 : 제 2018-서울강남-01646 호
+            <span class="confirm divider" aria-hidden="true">|</span>
+            개인정보보호책임자 : 이원준
+            <br>
+            주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)
+            <span class="confirm divider" aria-hidden="true">|</span>
+            대표이사 : 김슬아
+            <br>
+            입점문의 :
+            <a href="#" target="blank" rel="norefferer" class="aConfirm">입점문의하기</a>
+            <span class="confirm divider" aria-hidden="true">|</span>
+            제휴문의 :
+            <a href="mailto:business@karlycorp.com" class="aConfirm">business@karlycorp.com</a>
+            <br>
+            채용문의 :
+            <a href="mailto:recruit@karlycorp.com" class="aConfirm">recruit@karlycorp.com</a>
+            <br>
+            팩스 : 070 - 7500 - 6098
+          </div>
+          <ul class="footerImageLink">
+            <a href="#" class="aImageLink"><img src="../assets/icons/Icon/Instagram.png" alt="칼리 인스타그램 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="../assets/icons/Icon/FaceBook.png" alt="칼리 페이스북 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="../assets/icons/Icon/Blog.png" alt="칼리 네이버 블로그 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="../assets/icons/Icon/NaverPost.png" alt="칼리 네이버 포스트 접속 링크 로고"></a>
+            <a href="#" class="aImageLink"><img src="../assets/icons/Icon/Youtube.png" alt="칼리 유튜브 접속 링크 로고"></a>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <button class="footerBottomButton">
+          <img src="../assets/icons/Icon/logo_isms.png" alt="isms로고">
+          <p class="footerButtonText">
+            [인증범위] 컬리 쇼핑몰 서비스 개발 . 운영
+            <br>
+            (심사받지않은 물리적 인프라 제외)
+            <br>
+            [유효기간] 2022.01.19 ~ 2025.01.18
+          </p>
+        </button>
+        <button class="footerBottomButton">
+          <img src="../assets/icons/Icon/logo_privacy.png" alt="eprivacy 로고">
+          <p class="footerButtonText">
+            개인정보보호 우수 웹사이트
+            <br>
+            개인정보처리시스템 인증 (ePRIVACY PLUS)
+          </p>
+        </button>
+        <button class="tossButton footerBottomButton">
+          <img src="../assets/icons/Icon/logo_tosspayments.png" alt="토스 페이먼츠 로고">
+          <p class="footerButtonText">
+            토스페이먼츠 구매안전(에스크로)
+            <br>
+            서비스를 이용하실 수 있습니다.
+          </p>
+        </button>
+        <button class="footerBottomButton">
+          <img src="../assets/icons/Icon/logo_wooriBank.png" alt="우리은행 로고">
+          <p class="footerButtonText">
+            고객님이 현금으로 결제한 금액에 대해 우리은행과
+            <br>
+            채무지급보증 계약을 체결하여 안전거래를 보장하고
+            <br>
+            있습니다.
+          </p>
+        </button>
+      </div>
+      <div class="copyright">
+        컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.
+        <br>
+        마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중계자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문,품절,교환/환불 등 의무와 책임을 부담하지 않습니다.
+        <em class="copyrightEm">© KURLY CORP. ALL RIGHTS RESERVED</em>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>
