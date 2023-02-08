@@ -49,16 +49,7 @@ body {
   margin: 0 auto;
   /* margin: 0 435px; */
 }
-/* 헤더 */
-.header {
-  height: 125px;
-  background-color: antiquewhite;
-}
-/* 네비게이션 */
-.navigation {
-  height: 72px;
-  background-color: aqua;
-}
+
 /* 메인 */
 .main {
   width: 1050px;
@@ -265,11 +256,6 @@ main .swiper-button-disabled {
   opacity: 0.45;
 }
 
-/* 푸터 */
-.footer {
-  height: 737px;
-  background-color: beige;
-}
 /* 배너 */
 .banner {
   background-color: bisque;
