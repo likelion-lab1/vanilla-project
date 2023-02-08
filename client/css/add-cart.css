@@ -50,7 +50,7 @@ body {
   /* margin: 0 435px; */
 }
 
-/* Add Cart 장바구니 팝업 */
+/* 장바구니 팝업 */
 
 .add-cart-content {
   position: fixed;
@@ -163,7 +163,7 @@ body {
   margin-left: 12px;
 }
 
-/* Add Cart Button */
+/* 장바구니 팝업 버튼 */
 
 .in-cart-button {
   display: flex;
@@ -182,10 +182,10 @@ body {
 #in-cart {
   width: 174px;
   height: 54px;
-  background-color: var(--primary);
+  background-color: #5f0080;
   border-radius: 4px;
   border: none;
-  color: var(--white);
+  color: #ffffff;
 }
 
 .add-quantiy,
@@ -210,7 +210,7 @@ body {
   z-index: 1900;
 }
 
-/* add cart 장바구니 담기  */
+/* 장바구니 담기  */
 
 .cart-bubble {
   position: absolute;
