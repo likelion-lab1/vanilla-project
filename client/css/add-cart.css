@@ -43,42 +43,16 @@ body {
 /* 공통 */
 .center {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   text-align: center;
   width: 1050px;
   margin: 0 auto;
   /* margin: 0 435px; */
 }
-/* 헤더 */
-.header {
-  height: 125px;
-  background-color: antiquewhite;
-}
-/* 네비게이션 */
-.navigation {
-  height: 72px;
-  background-color: aqua;
-}
-/* 라인배너 */
-
-.line-banner {
-  margin: 40px 0 40px 0;
-}
-
-/* 푸터 */
-.footer {
-  height: 737px;
-  background-color: beige;
-}
-/* 배너 */
-.banner {
-  background-color: bisque;
-  height: 370px;
-}
 
 /* 장바구니 팝업 */
 
-#add-cart-content {
+.add-cart-content {
   position: fixed;
   top: 32%;
   left: 50%;
@@ -236,6 +210,57 @@ body {
   z-index: 1900;
 }
 
-/* #cart1 {
+/* 장바구니 담기  */
+
+.cart-bubble {
   position: absolute;
-} */
+  width: 260px;
+  height: 100px;
+  right: 0px;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  display: none;
+  border-radius: 0.4em;
+  border: 1px solid var(--gray200);
+  padding: 20px;
+  z-index: 2000;
+}
+
+.cart-bubble::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 235px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: var(--gray100);
+  border-top: 0;
+  margin-top: -10px;
+}
+
+.cart-bubble img {
+  width: 46px;
+  height: 60px;
+  margin-right: 24px;
+}
+
+.cart-bubble-item-name {
+  font-weight: 600;
+  font-size: 12.003px;
+  padding-bottom: 8px;
+  color: var(--gray300);
+}
+
+.cart-bubble-item-input {
+  font-weight: 600;
+  font-size: 12.003px;
+  color: var(--content);
+}
+
+.cart-button {
+  border: 0;
+  background-color: transparent;
+}
