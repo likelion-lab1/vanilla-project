@@ -8,7 +8,6 @@ openButton.addEventListener("click", () => {
   container.focus();
   // openButton.style.display = "none";
 });
-
 closeButton.addEventListener("click", () => {
   container.style.display = "none";
   openButton.style.display = "block";
@@ -16,4 +15,8 @@ closeButton.addEventListener("click", () => {
 addCartOverlay.addEventListener("click", () => {
   container.style.display = "none";
   openButton.style.display = "block";
+});
+
+container.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") container.style.display = "none";
 });
