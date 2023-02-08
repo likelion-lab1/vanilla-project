@@ -78,7 +78,7 @@ body {
 
 /* 장바구니 팝업 */
 
-#add-cart-content {
+.add-cart-content {
   position: fixed;
   top: 32%;
   left: 50%;
