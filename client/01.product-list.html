@@ -16,6 +16,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
+    <script src="./js/bubble-add-cart.js" type="module"></script>
     <script src="./js/modal-add-cart.js" type="module"></script>
     <script src="./js/add-cart-number.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -26,11 +27,18 @@
   <body>
     <!-- Add cart 팝업  -->
 
-    <div class="add-cart-wrap">
+    <div
+      class="add-cart-wrap"
+      role="dialog"
+      aria-labelledby="product1"
+      aria-modal="true"
+    >
       <div class="add-cart-hidden">
         <div class="add-cart-overlay"></div>
-        <div id="add-cart-content">
-          <h3 class="add-cart-title">[풀무원] 탱탱쫄면 (4개입)</h3>
+        <div class="add-cart-content">
+          <h3 id="product1" class="add-cart-title">
+            [풀무원] 탱탱쫄면 (4개입)
+          </h3>
 
           <div class="price-quantity">
             <em><span class="price-per-unit">4,980원</span></em>
@@ -234,7 +242,6 @@
                 <button
                   type="button"
                   class="cart-button"
-                  id="cart1"
                   aria-label="장바구니 버튼"
                 ></button>
               </div>
@@ -371,7 +378,6 @@
                 <button
                   type="button"
                   class="cart-button"
-                  id="cart1"
                   aria-label="장바구니 버튼"
                 ></button>
               </div>
@@ -508,7 +514,6 @@
                 <button
                   type="button"
                   class="cart-button"
-                  id="cart1"
                   aria-label="장바구니 버튼"
                 ></button>
               </div>
@@ -645,7 +650,6 @@
                 <button
                   type="button"
                   class="cart-button"
-                  id="cart1"
                   aria-label="장바구니 버튼"
                 ></button>
               </div>
