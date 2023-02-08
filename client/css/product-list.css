@@ -257,7 +257,7 @@ body {
   margin: 40px 0 40px 0;
 }
 
-.main .swiper-button-disabled {
+main .swiper-button-disabled {
   display: none;
 }
 
