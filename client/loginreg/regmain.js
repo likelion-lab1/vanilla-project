@@ -5,26 +5,27 @@ import {removeClass,insertAfter,getInputValue, getNode, getNodes,insertLast,show
 
 let allregister = getNode('.register')
 let idCheck = getNode('#submit1')
-let userIdError = getNode('.alert-error')
 let emailCheck = getNode('#submit2')
 let userEmailCheck = getNode('.alert-error-email')
 let password = document.querySelector('.pw-input');
 let email = document.querySelector('.email-input');
 let resgisterButton =document.querySelector('.register-button');
-let id = getNode('#nameField');
-
+let userPasswordCheck = getNode('.alert-error-password')
 
 
 
 
 
 // 아이디 인증버튼
+let id = getNode('#nameField');
+let userIdError = getNode('.alert-error')
+
 function clickIdHandler(e) {
   e.preventDefault();
   let name = getInputValue('#nameField')
   if(!name){
     // userID 라는 노드에 deactive 클래스를 지운다
-    removeClass(userIdError, 'deactive') 
+    removeClass(userIdError,'deactive') 
     console.log(userIdError);
     return
   } else {
@@ -89,20 +90,36 @@ const signupForm = getNode('#registerForm');
 
 let signFormData = new FormData(signupForm)
 
+
+
+
+
+
 function registerHandler(e) {
-  e.preventDefault();
+ 
   fetch('http://localhost:3000/users', {
     method: 'POST',
+    headers: {
+      "Content-Type": "application/json",
+    },
     // cache: 'no-cache',
-    body: signFormData // body 부분에 폼데이터 변수를 할당
+    body: JSON.stringify({
+      name : id.value,
+      pw : password.value,
+    }) // body 부분에 폼데이터 변수를 할당
   })
-    .then((response) => response.json())
+    .then((response) => {
+      if(id.value || pw.value === ""){
+        alert('아이디와 비밀번호를 확인해주세요')
+      }
+      else((response) => response.json())
+    })
     .then((data) => {
       console.log(data);
     });
 }
 
-resgisterButton.addEventListener('submit', registerHandler)
+resgisterButton.addEventListener('click', registerHandler)
 
 
 // 회원가입
